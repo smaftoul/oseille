@@ -639,13 +639,13 @@
     "slug": "PANAIS",
     "name_fr": "Panais",
     "name_en": "Panais",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "PAPAYE",
     "name_fr": "Papaye",
     "name_en": "Papaye",
-    "group": "Fruits et Légumes"
+    "group": "Fruits"
   },
   {
     "slug": "PASTEQUE",
@@ -657,13 +657,13 @@
     "slug": "PATATE-DOUCE",
     "name_fr": "Patate Douce",
     "name_en": "Patate Douce",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "PATISSON",
     "name_fr": "Patisson",
     "name_en": "Patisson",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "PECHE",
@@ -675,43 +675,43 @@
     "slug": "PERSIL",
     "name_fr": "Persil",
     "name_en": "Persil",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "PHYSALIS",
     "name_fr": "Physalis",
     "name_en": "Physalis",
-    "group": "Fruits et Légumes"
+    "group": "Fruits"
   },
   {
     "slug": "PIED-DE-MOUTON",
     "name_fr": "Pied De Mouton",
     "name_en": "Pied De Mouton",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "PIMENT",
     "name_fr": "Piment",
     "name_en": "Piment",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "PISSENLIT",
     "name_fr": "Pissenlit",
     "name_en": "Pissenlit",
-    "group": "Fruits et Légumes"
+    "group": "Salades"
   },
   {
     "slug": "PITAHAYA",
     "name_fr": "Pitahaya",
     "name_en": "Pitahaya",
-    "group": "Fruits et Légumes"
+    "group": "Fruits"
   },
   {
     "slug": "PLEUROTE",
     "name_fr": "Pleurote",
     "name_en": "Pleurote",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "POIRE",
@@ -729,7 +729,7 @@
     "slug": "POIS",
     "name_fr": "Pois",
     "name_en": "Pois",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "POIVRON",
@@ -741,7 +741,7 @@
     "slug": "POMELOS",
     "name_fr": "Pomelos",
     "name_en": "Pomelos",
-    "group": "Fruits et Légumes"
+    "group": "Fruits"
   },
   {
     "slug": "POMME",
@@ -759,19 +759,19 @@
     "slug": "POTIRON",
     "name_fr": "Potiron",
     "name_en": "Potiron",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "PRUNE",
     "name_fr": "Prune",
     "name_en": "Prune",
-    "group": "Fruits et Légumes"
+    "group": "Fruits"
   },
   {
     "slug": "PRUNEAU",
     "name_fr": "Pruneau",
     "name_en": "Pruneau",
-    "group": "Fruits et Légumes"
+    "group": "Fruits"
   },
   {
     "slug": "RADIS",
@@ -789,73 +789,73 @@
     "slug": "RHUBARBE",
     "name_fr": "Rhubarbe",
     "name_en": "Rhubarbe",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "ROMARIN",
     "name_fr": "Romarin",
     "name_en": "Romarin",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "ROQUETTE",
     "name_fr": "Roquette",
     "name_en": "Roquette",
-    "group": "Fruits et Légumes"
+    "group": "Salades"
   },
   {
     "slug": "RUTABAGA",
     "name_fr": "Rutabaga",
     "name_en": "Rutabaga",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "SALSIFIS",
     "name_fr": "Salsifis",
     "name_en": "Salsifis",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "SATSUMA",
     "name_fr": "Satsuma",
     "name_en": "Satsuma",
-    "group": "Fruits et Légumes"
+    "group": "Fruits"
   },
   {
     "slug": "SAUGE",
     "name_fr": "Sauge",
     "name_en": "Sauge",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "SCORSONERE",
     "name_fr": "Scorsonere",
     "name_en": "Scorsonere",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "SHII-TAKE",
     "name_fr": "Shii Take",
     "name_en": "Shii Take",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "SOJA",
     "name_fr": "Soja",
     "name_en": "Soja",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "TARO",
     "name_fr": "Taro",
     "name_en": "Taro",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "THYM",
     "name_fr": "Thym",
     "name_en": "Thym",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "TOMATE",
@@ -867,18 +867,18 @@
     "slug": "TOPINAMBOUR",
     "name_fr": "Topinambour",
     "name_en": "Topinambour",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "TROMPETTE-DE-LA-MORT",
     "name_fr": "Trompette De La Mort",
     "name_en": "Trompette De La Mort",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   },
   {
     "slug": "TRUFFE",
     "name_fr": "Truffe",
     "name_en": "Truffe",
-    "group": "Fruits et Légumes"
+    "group": "Légumes"
   }
 ]
