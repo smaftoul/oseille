@@ -29,7 +29,7 @@
           pname = "oseille";
           version = "0.1.0";
           src = ./.;
-          npmDepsHash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
+          npmDepsHash = "sha256-p83DIpqOEjUBZD+zwnNScWz9u/Y8poHpec8R1QsTCfQ=";
           installPhase = ''
             mkdir -p $out
             cp -r dist/* $out/ 2>/dev/null || echo "no dist — run pnpm build first"
