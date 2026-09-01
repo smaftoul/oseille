@@ -23,6 +23,8 @@ type ProductData = {
   summary: {
     conventional: PriceRow | null;
     bio: PriceRow | null;
+    bioGms: PriceRow | null;
+    bioMag: PriceRow | null;
   };
   lastDate: string | null;
 };
@@ -77,32 +79,46 @@ async function fetchSylk(espece: string): Promise<string> {
   return text;
 }
 
-function pickSummary(prices: PriceRow[]): { conventional: PriceRow | null; bio: PriceRow | null } {
-  // Prefer France DETAIL GMS for conventional, MAG. SPECIALISES BIO for bio
-  // Fallback to any Détail
-  const detail = prices;
-  let conv: PriceRow | null = null;
-  let bio: PriceRow | null = null;
+function pickBest(arr: PriceRow[], slug: string): PriceRow | null {
+  if (arr.length === 0) return null;
+  if (arr.length === 1) return arr[0];
+  // Prefer libelle exactly “SLUG France” or “SLUG France biologique”
+  // normalize slug hyphens to spaces for comparison: POMME-DE-TERRE -> "pomme de terre"
+  const normSlug = slug.replace(/-/g, " ").toLowerCase();
+  const score = (p: PriceRow) => {
+    const lib = p.libelle.toLowerCase();
+    let s = 0;
+    // exact France biologique
+    if (lib === `${normSlug} france biologique`) s += 10;
+    else if (lib === `${normSlug} france`) s += 9;
+    else if (lib.startsWith(`${normSlug} france biologique`)) s += 5;
+    else if (lib.startsWith(`${normSlug} france`)) s += 4;
+    // avoid cultivar like Noa, prefer generic
+    if (!lib.includes("noa")) s += 2;
+    // Prefer unit “la pièce” and “le kg” not “les 10 bottes” etc? keep original unit, but don’t penalize
+    return s;
+  };
+  return [...arr].sort((a, b) => score(b) - score(a))[0];
+}
 
-  const gms = detail.filter((p) => p.marche.includes("DETAIL GMS") && !p.libelle.toLowerCase().includes("biologique"));
-  const bioGms = detail.filter((p) => p.marche.includes("DETAIL GMS") && p.libelle.toLowerCase().includes("biologique"));
-  const bioMag = detail.filter((p) => p.marche.includes("MAG. SPECIALISES BIO"));
+function pickSummary(prices: PriceRow[], slug: string): { conventional: PriceRow | null; bio: PriceRow | null; bioGms: PriceRow | null; bioMag: PriceRow | null } {
+  const gms = prices.filter((p) => p.marche.includes("DETAIL GMS") && !p.libelle.toLowerCase().includes("biologique"));
+  const bioGms = prices.filter((p) => p.marche.includes("DETAIL GMS") && p.libelle.toLowerCase().includes("biologique"));
+  const bioMag = prices.filter((p) => p.marche.includes("MAG. SPECIALISES BIO"));
 
-  // Prefer a "le kg" entry if multiple; otherwise first
-  const preferKg = (arr: PriceRow[]) => arr.find((p) => p.unit.includes("kg")) ?? arr[0] ?? null;
+  const conventional = pickBest(gms, slug) ?? pickBest(prices.filter((p) => !p.isBio), slug);
+  const bioGmsBest = pickBest(bioGms, slug);
+  const bioMagBest = pickBest(bioMag, slug);
+  const bio = bioMagBest ?? bioGmsBest ?? pickBest(prices.filter((p) => p.isBio), slug);
 
-  conv = preferKg(gms) ?? preferKg(detail.filter((p) => !p.isBio));
-  // Bio: prefer specialist bio, fallback to GMS bio
-  bio = preferKg(bioMag) ?? preferKg(bioGms) ?? preferKg(detail.filter((p) => p.isBio));
-
-  return { conventional: conv, bio };
+  return { conventional, bio, bioGms: bioGmsBest, bioMag: bioMagBest };
 }
 
 async function ingestOne(entry: TaxonomyEntry): Promise<ProductData> {
   const espece = await fetchEspece(entry.slug);
   if (!espece) {
     console.warn(`[warn] no ESPECE for ${entry.slug}`);
-    return { ...entry, prices: [], summary: { conventional: null, bio: null }, lastDate: null };
+    return { ...entry, prices: [], summary: { conventional: null, bio: null, bioGms: null, bioMag: null }, lastDate: null };
   }
   // be nice to RNM
   await new Promise((r) => setTimeout(r, 300));
@@ -126,7 +142,7 @@ async function ingestOne(entry: TaxonomyEntry): Promise<ProductData> {
     };
   }).filter((p) => p.mean !== null);
 
-  const summary = pickSummary(prices);
+  const summary = pickSummary(prices, entry.slug);
   const lastDate = prices[0]?.date ?? null;
 
   return { ...entry, prices, summary, lastDate };
@@ -161,7 +177,7 @@ async function main() {
       try {
         console.log(`[ingest] ${entry.slug} (attempt ${attempt}) ...`);
         const data = await ingestOne(entry);
-        console.log(`  -> ${data.prices.length} detail rows, conv=${data.summary.conventional?.mean} ${data.summary.conventional?.unit ?? ""}, bio=${data.summary.bio?.mean} ${data.summary.bio?.unit ?? ""}`);
+        console.log(`  -> ${data.prices.length} detail rows, conv=${data.summary.conventional?.mean} ${data.summary.conventional?.unit ?? ""}, bioGms=${data.summary.bioGms?.mean} ${data.summary.bioGms?.unit ?? ""}, bioMag=${data.summary.bioMag?.mean} ${data.summary.bioMag?.unit ?? ""}`);
         out.push(data);
         // incremental save every 5
         if (out.length % 5 === 0) {
@@ -180,7 +196,7 @@ async function main() {
       } catch (e) {
         console.error(`[error] ${entry.slug} attempt ${attempt}:`, (e as Error).message ?? e);
         if (attempt === 3) {
-          out.push({ ...entry, prices: [], summary: { conventional: null, bio: null }, lastDate: null });
+          out.push({ ...entry, prices: [], summary: { conventional: null, bio: null, bioGms: null, bioMag: null }, lastDate: null });
           return;
         }
         await new Promise((r) => setTimeout(r, 1000 * attempt));

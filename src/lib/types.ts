@@ -19,7 +19,9 @@ export type ProductData = {
   prices: PriceRow[];
   summary: {
     conventional: PriceRow | null;
-    bio: PriceRow | null;
+    bio: PriceRow | null; // preferred bio (Mag if exists else Gms)
+    bioGms: PriceRow | null;
+    bioMag: PriceRow | null;
   };
   lastDate: string | null;
 };

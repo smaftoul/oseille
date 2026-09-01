@@ -7,6 +7,8 @@ export function PriceCard({ product }: { product: ProductData }) {
   const locale = i18n.language === "en" ? "en-GB" : "fr-FR";
   const conv = product.summary.conventional;
   const bio = product.summary.bio;
+  const bioGms = product.summary.bioGms;
+  const bioMag = product.summary.bioMag;
   const name = i18n.language === "en" ? product.name_en : product.name_fr;
 
   if (!conv && !bio) {
@@ -58,9 +60,12 @@ export function PriceCard({ product }: { product: ProductData }) {
 
         <div className="rounded-lg border border-dashed border-emerald-200 bg-emerald-50 p-3">
           <div className="text-[11px] font-semibold uppercase tracking-wide text-emerald-700">{t("price.organic")}</div>
-          <div className="mt-1 text-[11px] text-emerald-700/70" title="Magasin spécialisé bio (36 magasins)">Mag bio</div>
           {bio ? (
             <>
+              {/* Primary bio (prefers Mag, fallback GMS) */}
+              <div className="mt-1 text-[11px] text-emerald-700/70" title={bio.marche.includes("MAG") ? "Magasin spécialisé bio (36 magasins)" : "Grande et Moyenne Surface bio (150 GMS)"}>
+                {bio.marche.includes("MAG") ? "Mag bio" : "GMS bio"}
+              </div>
               <div className="mt-1 text-[22px] font-bold leading-none text-emerald-800">
                 {formatPrice(bio.mean, locale)} <span className="text-xs font-normal text-zinc-500">{bio.unit}</span>
               </div>
@@ -71,6 +76,21 @@ export function PriceCard({ product }: { product: ProductData }) {
               {bio.varia !== null && bio.varia !== 0 && (
                 <div className={`mt-1 text-xs font-medium ${bio.varia > 0 ? "text-red-600" : "text-emerald-700"}`}>
                   {bio.varia > 0 ? "+" : ""}{bio.varia.toFixed(2)}
+                </div>
+              )}
+              {/* Secondary bio if both GMS and Mag exist and differ */}
+              {bioGms && bioMag && bioGms.mean !== bioMag.mean && (
+                <div className="mt-2 border-t border-emerald-200 pt-2 text-[11px] text-zinc-600">
+                  <div className="font-medium text-emerald-700/70">Autre bio {bioMag.mean === bio.mean ? "GMS" : "Mag"}:</div>
+                  {(() => {
+                    const other = bioMag.mean === bio.mean ? bioGms : bioMag;
+                    return (
+                      <>
+                        <div>{formatPrice(other.mean, locale)} {other.unit}</div>
+                        <div className="text-[10px] text-zinc-500">{other.libelle}</div>
+                      </>
+                    );
+                  })()}
                 </div>
               )}
             </>
