@@ -1,0 +1,24 @@
+name: check
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  nix-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@v14
+      - uses: DeterminateSystems/magic-nix-cache-action@v8
+      - name: Nix flake check
+        run: nix flake check
+      - name: Lint
+        run: nix develop -c npm run lint
+      - name: Typecheck
+        run: nix develop -c npx tsc --noEmit
+      - name: Build
+        run: nix develop -c npm run build
