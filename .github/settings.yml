@@ -1,0 +1,20 @@
+# Managed by https://github.com/repository-settings/app
+# Branch protection as code — requires check workflow to pass before merging to main
+repository:
+  # keep Pages enabled (app will not overwrite if false)
+  has_pages: true
+
+branches:
+  - name: main
+    protection:
+      required_status_checks:
+        strict: true
+        contexts: ["nix-check"]
+      enforce_admins: false
+      required_pull_request_reviews:
+        required_approving_review_count: 0
+        dismiss_stale_reviews: false
+        require_code_owner_reviews: false
+      restrictions: null
+      allow_force_pushes: false
+      allow_deletions: false
