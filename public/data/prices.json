@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "generatedAt": "2026-09-01T13:30:00.000Z",
+    "source": "RNM FranceAgriMer — stade Détail (M2502/M2503/M3026/M3027)",
+    "note": "Free Détail tier is T+8 days (rnm/MO_site_RNM.shtml). Units verbatim (le kg / la pièce / la botte). Ingest partial — 6 products live, rest pending full ingest."
+  },
+  "products": [
+    {
+      "slug": "POMME",
+      "name_fr": "Pomme",
+      "name_en": "Apple",
+      "group": "Fruits",
+      "prices": [
+        {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"POMME Gala France +170g vrac","unit":"le kg","mean":2.95,"varia":0.27,"min":1.99,"max":3.4,"isBio":false},
+        {"date":"27-08-2026","marche":"Fruits France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"POMME Golden France biologique","unit":"le kg","mean":3.65,"varia":0.09,"min":2.99,"max":3.89,"isBio":true}
+      ],
+      "summary": {
+        "conventional": {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"POMME Gala France +170g vrac","unit":"le kg","mean":2.95,"varia":0.27,"min":1.99,"max":3.4,"isBio":false},
+        "bio": {"date":"27-08-2026","marche":"Fruits France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"POMME Golden France biologique","unit":"le kg","mean":3.65,"varia":0.09,"min":2.99,"max":3.89,"isBio":true}
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "POIRE",
+      "name_fr": "Poire",
+      "name_en": "Pear",
+      "group": "Fruits",
+      "prices": [
+        {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"POIRE Conférence France","unit":"le kg","mean":3.47,"varia":0.05,"min":2.49,"max":4.2,"isBio":false},
+        {"date":"27-08-2026","marche":"Fruits France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"POIRE Conférence France biologique","unit":"le kg","mean":3.25,"varia":null,"min":2.99,"max":3.89,"isBio":true}
+      ],
+      "summary": {
+        "conventional": {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"POIRE Conférence France","unit":"le kg","mean":3.47,"varia":0.05,"min":2.49,"max":4.2,"isBio":false},
+        "bio": {"date":"27-08-2026","marche":"Fruits France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"POIRE Conférence France biologique","unit":"le kg","mean":3.25,"varia":null,"min":2.99,"max":3.89,"isBio":true}
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "BANANE",
+      "name_fr": "Banane",
+      "name_en": "Banana",
+      "group": "Fruits",
+      "prices": [
+        {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"BANANE Import","unit":"le kg","mean":1.96,"varia":null,"min":1.49,"max":2.29,"isBio":false},
+        {"date":"27-08-2026","marche":"Fruits France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"BANANE Import biologique","unit":"le kg","mean":2.06,"varia":null,"min":1.79,"max":2.49,"isBio":true}
+      ],
+      "summary": {
+        "conventional": {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"BANANE Import","unit":"le kg","mean":1.96,"varia":null,"min":1.49,"max":2.29,"isBio":false},
+        "bio": {"date":"27-08-2026","marche":"Fruits France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"BANANE Import biologique","unit":"le kg","mean":2.06,"varia":null,"min":1.79,"max":2.49,"isBio":true}
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "FRAISE",
+      "name_fr": "Fraise",
+      "name_en": "Strawberry",
+      "group": "Fruits",
+      "prices": [
+        {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"FRAISE France","unit":"le kg","mean":10.33,"varia":null,"min":8.5,"max":12.0,"isBio":false}
+      ],
+      "summary": {
+        "conventional": {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"FRAISE France","unit":"le kg","mean":10.33,"varia":null,"min":8.5,"max":12.0,"isBio":false},
+        "bio": null
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "TOMATE",
+      "name_fr": "Tomate",
+      "name_en": "Tomato",
+      "group": "Légumes",
+      "prices": [
+        {"date":"27-08-2026","marche":"Légumes France DETAIL GMS","stade":"Détail","libelle":"TOMATE ronde France","unit":"le kg","mean":3.45,"varia":0.1,"min":2.49,"max":4.2,"isBio":false},
+        {"date":"27-08-2026","marche":"Légumes France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"TOMATE ronde France biologique","unit":"le kg","mean":4.2,"varia":null,"min":3.5,"max":5.0,"isBio":true}
+      ],
+      "summary": {
+        "conventional": {"date":"27-08-2026","marche":"Légumes France DETAIL GMS","stade":"Détail","libelle":"TOMATE ronde France","unit":"le kg","mean":3.45,"varia":0.1,"min":2.49,"max":4.2,"isBio":false},
+        "bio": {"date":"27-08-2026","marche":"Légumes France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"TOMATE ronde France biologique","unit":"le kg","mean":4.2,"varia":null,"min":3.5,"max":5.0,"isBio":true}
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "CONCOMBRE",
+      "name_fr": "Concombre",
+      "name_en": "Cucumber",
+      "group": "Légumes",
+      "prices": [
+        {"date":"27-08-2026","marche":"Légumes France DETAIL GMS","stade":"Détail","libelle":"CONCOMBRE France","unit":"la pièce","mean":1.28,"varia":-0.41,"min":0.99,"max":1.79,"isBio":false},
+        {"date":"27-08-2026","marche":"Légumes France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"CONCOMBRE France biologique","unit":"la pièce","mean":1.65,"varia":0.14,"min":1.2,"max":2.1,"isBio":true}
+      ],
+      "summary": {
+        "conventional": {"date":"27-08-2026","marche":"Légumes France DETAIL GMS","stade":"Détail","libelle":"CONCOMBRE France","unit":"la pièce","mean":1.28,"varia":-0.41,"min":0.99,"max":1.79,"isBio":false},
+        "bio": {"date":"27-08-2026","marche":"Légumes France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"CONCOMBRE France biologique","unit":"la pièce","mean":1.65,"varia":0.14,"min":1.2,"max":2.1,"isBio":true}
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "OSEILLE",
+      "name_fr": "Oseille",
+      "name_en": "Sorrel",
+      "group": "Légumes",
+      "prices": [],
+      "summary": {"conventional": null, "bio": null},
+      "lastDate": null
+    }
+  ]
+}
