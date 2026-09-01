@@ -1,0 +1,9 @@
+node_modules
+dist
+.result
+result-*
+.direnv
+.env
+.DS_Store
+*.log
+coverage
