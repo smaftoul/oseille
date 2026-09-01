@@ -49,11 +49,11 @@ export function parseSylk(content: string): { header: string[]; rows: Record<str
     }
   }
 
-  // Header is Y=4
   const headerRow = cells[4];
   if (!headerRow) return { header: [], rows: [] };
+  const maxCol = Math.max(...Object.keys(headerRow).map(Number));
   const header: string[] = [];
-  for (let x = 1; x <= 9; x++) header.push(headerRow[x] ?? "");
+  for (let x = 1; x <= maxCol; x++) header.push(headerRow[x] ?? "");
 
   const rows: Record<string, string>[] = [];
   const ys = Object.keys(cells)
@@ -66,7 +66,7 @@ export function parseSylk(content: string): { header: string[]; rows: Record<str
     if (r[1]?.startsWith("Source")) break;
     if (!r[1]) continue;
     const obj: Record<string, string> = {};
-    for (let x = 1; x <= 9; x++) {
+    for (let x = 1; x <= maxCol; x++) {
       const key = header[x - 1] || `COL${x}`;
       obj[key] = r[x] ?? "";
     }
