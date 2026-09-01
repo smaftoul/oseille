@@ -14,7 +14,7 @@ function Home() {
   const [showUnavailable, setShowUnavailable] = useState(false);
 
   useEffect(() => {
-    fetch("/data/prices.json")
+    fetch(`${import.meta.env.BASE_URL}data/prices.json`)
       .then((r) => r.json())
       .then(setData)
       .catch(() => setData(null));
