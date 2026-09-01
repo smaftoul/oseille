@@ -82,7 +82,7 @@ async function fetchSylk(espece: string): Promise<string> {
 function pickBest(arr: PriceRow[], slug: string): PriceRow | null {
   if (arr.length === 0) return null;
   if (arr.length === 1) return arr[0];
-  // Prefer libelle exactly “SLUG France” or “SLUG France biologique”
+  // Prefer libelle exactly "SLUG France" or "SLUG France biologique"
   // normalize slug hyphens to spaces for comparison: POMME-DE-TERRE -> "pomme de terre"
   const normSlug = slug.replace(/-/g, " ").toLowerCase();
   const score = (p: PriceRow) => {
@@ -95,7 +95,7 @@ function pickBest(arr: PriceRow[], slug: string): PriceRow | null {
     else if (lib.startsWith(`${normSlug} france`)) s += 4;
     // avoid cultivar like Noa, prefer generic
     if (!lib.includes("noa")) s += 2;
-    // Prefer unit “la pièce” and “le kg” not “les 10 bottes” etc? keep original unit, but don’t penalize
+    // Prefer unit "la pièce" and "le kg" not "les 10 bottes" etc? keep original unit, but don't penalize
     return s;
   };
   return [...arr].sort((a, b) => score(b) - score(a))[0];
@@ -153,30 +153,47 @@ async function main() {
   const taxRaw = await readFile("public/data/taxonomy.json", "utf-8");
   const taxonomy: TaxonomyEntry[] = JSON.parse(taxRaw);
 
-  // Support resuming: if prices.json exists, load existing progress
+  // Load previous data for fallback to older quotation if this week has no Détail
+  let previousBySlug = new Map<string, ProductData>();
   let out: ProductData[] = [];
   let doneSlugs = new Set<string>();
   try {
     const existing = JSON.parse(await readFile("public/data/prices.json", "utf-8"));
     if (existing.products) {
-      out = existing.products;
-      doneSlugs = new Set(out.map((p: ProductData) => p.slug));
-      console.log(`[resume] loaded ${out.length} existing products`);
+      for (const p of existing.products as ProductData[]) previousBySlug.set(p.slug, p);
+      // For now we re-ingest all to refresh; resume only if file was partially written this run
+      // Keep previous for fallback, but don't skip pending — force refresh
+      console.log(`[previous] loaded ${previousBySlug.size} products for fallback`);
     }
   } catch {}
-
+  // If prices.json exists from a previous interrupted run, resume those only
+  try {
+    const existing = JSON.parse(await readFile("public/data/prices.json", "utf-8"));
+    if (existing.products && existing.products.length < taxonomy.length) {
+      out = existing.products;
+      doneSlugs = new Set(out.map((p: ProductData) => p.slug));
+      console.log(`[resume] loaded ${out.length} existing products (partial)`);
+    }
+  } catch {}
   const pending = taxonomy.filter((e) => !doneSlugs.has(e.slug));
   console.log(`[ingest] total ${taxonomy.length}, pending ${pending.length}, done ${doneSlugs.size}`);
 
   const CONCURRENCY = 3;
-  let active = 0;
   let idx = 0;
 
   async function runOne(entry: TaxonomyEntry) {
     for (let attempt = 1; attempt <= 3; attempt++) {
       try {
         console.log(`[ingest] ${entry.slug} (attempt ${attempt}) ...`);
-        const data = await ingestOne(entry);
+        let data = await ingestOne(entry);
+        // Fallback to older quotation if this week has no Détail but we have previous
+        if (data.prices.length === 0 && previousBySlug.has(entry.slug)) {
+          const prev = previousBySlug.get(entry.slug)!;
+          if (prev.prices.length > 0) {
+            console.log(`  -> no Détail this week, keeping older quotation from ${prev.lastDate} (${prev.prices.length} rows)`);
+            data = { ...prev, name_fr: entry.name_fr, name_en: entry.name_en, group: entry.group };
+          }
+        }
         console.log(`  -> ${data.prices.length} detail rows, conv=${data.summary.conventional?.mean} ${data.summary.conventional?.unit ?? ""}, bioGms=${data.summary.bioGms?.mean} ${data.summary.bioGms?.unit ?? ""}, bioMag=${data.summary.bioMag?.mean} ${data.summary.bioMag?.unit ?? ""}`);
         out.push(data);
         // incremental save every 5
