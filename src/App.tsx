@@ -89,7 +89,7 @@ function Home() {
         </div>
         {data?.meta && (
           <div style={{ fontSize: 11, color: "#888", marginTop: 6, display: "flex", gap: 12, flexWrap: "wrap", alignItems: "center" }}>
-            <span>{data.meta.source} — {formatDate(filtered[0]?.lastDate ?? "")} · {filtered.length} / {data.products.length} ({data.products.filter(p=>p.summary.conventional||p.summary.bio).length} with price)</span>
+            <span>Source RNM · {formatDate(filtered[0]?.lastDate ?? data.products.find(p=>p.lastDate)?.lastDate ?? "")} · {filtered.length} prix</span>
             <label style={{ display: "flex", alignItems: "center", gap: 4, cursor: "pointer" }}>
               <input type="checkbox" checked={showUnavailable} onChange={(e)=> setShowUnavailable(e.target.checked)} />
               Show unavailable
