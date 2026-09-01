@@ -88,7 +88,7 @@ function Home() {
               onClick={() => setGroup(g)}
               className={`rounded-full border px-3 py-1.5 text-sm font-medium transition ${group === g ? "border-emerald-700 bg-emerald-700 text-white shadow-sm" : "border-zinc-300 bg-white text-zinc-700 hover:bg-zinc-50"}`}
             >
-              {g}
+              {g === "All" ? t("groups.all") : t(`groups.${g}`, { defaultValue: g })}
             </button>
           ))}
         </div>

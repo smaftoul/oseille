@@ -78,7 +78,6 @@ export function parseSylk(content: string): { header: string[]; rows: Record<str
 // Filter to Détail national only
 export function filterDetail(rows: Record<string, string>[]) {
   return rows.filter((r) => {
-    const marche = r["MARCHE"] ?? "";
     const stade = r["STADE"] ?? "";
     // Keep only Détail and national: Marche contains "DETAIL" + "France"
     // M2502/M2503 are conventional, M3026/M3027 bio specialist

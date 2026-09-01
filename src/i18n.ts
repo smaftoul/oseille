@@ -6,6 +6,13 @@ const resources = {
     translation: {
       app: { name: "Oseille", tagline: "Prix moyens fruits & légumes — référence en magasin" },
       search: { placeholder: "Rechercher oseille, concombre, pomme…", noResult: "Aucun résultat" },
+      groups: {
+        all: "Tous",
+        Champignons: "Champignons",
+        Fruits: "Fruits",
+        Légumes: "Légumes",
+        Salades: "Salades",
+      },
       price: {
         mean: "Prix moyen TTC",
         perKg: "/ kg",
@@ -26,6 +33,13 @@ const resources = {
     translation: {
       app: { name: "Oseille", tagline: "Avg. fruit & veg prices in France — in-store reference" },
       search: { placeholder: "Search sorrel, cucumber, apple…", noResult: "No results" },
+      groups: {
+        all: "All",
+        Champignons: "Mushrooms",
+        Fruits: "Fruits",
+        Légumes: "Vegetables",
+        Salades: "Salads",
+      },
       price: {
         mean: "Avg. price incl. VAT",
         perKg: "/ kg",

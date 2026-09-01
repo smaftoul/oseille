@@ -141,7 +141,7 @@
     "slug": "CEPE",
     "name_fr": "Cepe",
     "name_en": "Cepe",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "CERFEUIL",
@@ -159,19 +159,19 @@
     "slug": "CHAMPIGNON-DE-PARIS",
     "name_fr": "Champignon De Paris",
     "name_en": "Champignon De Paris",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "CHAMPIGNONS",
     "name_fr": "Champignons",
     "name_en": "Champignons",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "CHANTERELLE",
     "name_fr": "Chanterelle",
     "name_en": "Chanterelle",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "CHAYOTTE",
@@ -255,7 +255,7 @@
     "slug": "COULEMELLE",
     "name_fr": "Coulemelle",
     "name_en": "Coulemelle",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "COURGE",
@@ -375,7 +375,7 @@
     "slug": "GIROLLE",
     "name_fr": "Girolle",
     "name_en": "Girolle",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "GOMBO",
@@ -459,7 +459,7 @@
     "slug": "LACTAIRE",
     "name_fr": "Lactaire",
     "name_en": "Lactaire",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "LAITUE",
@@ -555,13 +555,13 @@
     "slug": "MORILLE",
     "name_fr": "Morille",
     "name_en": "Morille",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "MOUSSERON",
     "name_fr": "Mousseron",
     "name_en": "Mousseron",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "MURE",
@@ -687,7 +687,7 @@
     "slug": "PIED-DE-MOUTON",
     "name_fr": "Pied De Mouton",
     "name_en": "Pied De Mouton",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "PIMENT",
@@ -711,7 +711,7 @@
     "slug": "PLEUROTE",
     "name_fr": "Pleurote",
     "name_en": "Pleurote",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "POIRE",
@@ -837,7 +837,7 @@
     "slug": "SHII-TAKE",
     "name_fr": "Shii Take",
     "name_en": "Shii Take",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "SOJA",
@@ -873,12 +873,12 @@
     "slug": "TROMPETTE-DE-LA-MORT",
     "name_fr": "Trompette De La Mort",
     "name_en": "Trompette De La Mort",
-    "group": "Légumes"
+    "group": "Champignons"
   },
   {
     "slug": "TRUFFE",
     "name_fr": "Truffe",
     "name_en": "Truffe",
-    "group": "Légumes"
+    "group": "Champignons"
   }
 ]
