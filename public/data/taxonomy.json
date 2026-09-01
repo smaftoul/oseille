@@ -1,32 +1,884 @@
 [
-  { "slug": "POMME", "name_fr": "Pomme", "name_en": "Apple", "group": "Fruits" },
-  { "slug": "POIRE", "name_fr": "Poire", "name_en": "Pear", "group": "Fruits" },
-  { "slug": "BANANE", "name_fr": "Banane", "name_en": "Banana", "group": "Fruits" },
-  { "slug": "FRAISE", "name_fr": "Fraise", "name_en": "Strawberry", "group": "Fruits" },
-  { "slug": "TOMATE", "name_fr": "Tomate", "name_en": "Tomato", "group": "Légumes" },
-  { "slug": "CONCOMBRE", "name_fr": "Concombre", "name_en": "Cucumber", "group": "Légumes" },
-  { "slug": "COURGETTE", "name_fr": "Courgette", "name_en": "Zucchini", "group": "Légumes" },
-  { "slug": "CAROTTE", "name_fr": "Carotte", "name_en": "Carrot", "group": "Légumes" },
-  { "slug": "POMME-DE-TERRE", "name_fr": "Pomme de terre", "name_en": "Potato", "group": "Légumes" },
-  { "slug": "OIGNON", "name_fr": "Oignon", "name_en": "Onion", "group": "Légumes" },
-  { "slug": "AIL", "name_fr": "Ail", "name_en": "Garlic", "group": "Légumes" },
-  { "slug": "POIREAU", "name_fr": "Poireau", "name_en": "Leek", "group": "Légumes" },
-  { "slug": "CHOU-FLEUR", "name_fr": "Chou-fleur", "name_en": "Cauliflower", "group": "Légumes" },
-  { "slug": "LAITUE", "name_fr": "Laitue", "name_en": "Lettuce", "group": "Salades" },
-  { "slug": "EPINARD", "name_fr": "Épinard", "name_en": "Spinach", "group": "Légumes" },
-  { "slug": "HARICOT-VERT", "name_fr": "Haricot vert", "name_en": "Green bean", "group": "Légumes" },
-  { "slug": "POIVRON", "name_fr": "Poivron", "name_en": "Bell pepper", "group": "Légumes" },
-  { "slug": "AUBERGINE", "name_fr": "Aubergine", "name_en": "Eggplant", "group": "Légumes" },
-  { "slug": "MELON", "name_fr": "Melon", "name_en": "Melon", "group": "Fruits" },
-  { "slug": "PASTEQUE", "name_fr": "Pastèque", "name_en": "Watermelon", "group": "Fruits" },
-  { "slug": "PECHE", "name_fr": "Pêche", "name_en": "Peach", "group": "Fruits" },
-  { "slug": "ABRICOT", "name_fr": "Abricot", "name_en": "Apricot", "group": "Fruits" },
-  { "slug": "CERISE", "name_fr": "Cerise", "name_en": "Cherry", "group": "Fruits" },
-  { "slug": "RAISIN", "name_fr": "Raisin", "name_en": "Grape", "group": "Fruits" },
-  { "slug": "CITRON", "name_fr": "Citron", "name_en": "Lemon", "group": "Fruits" },
-  { "slug": "ORANGE", "name_fr": "Orange", "name_en": "Orange", "group": "Fruits" },
-  { "slug": "AVOCAT", "name_fr": "Avocat", "name_en": "Avocado", "group": "Fruits" },
-  { "slug": "KIWI", "name_fr": "Kiwi", "name_en": "Kiwi", "group": "Fruits" },
-  { "slug": "RADIS", "name_fr": "Radis", "name_en": "Radish", "group": "Légumes" },
-  { "slug": "OSEILLE", "name_fr": "Oseille", "name_en": "Sorrel", "group": "Légumes" }
+  {
+    "slug": "ABRICOT",
+    "name_fr": "Abricot",
+    "name_en": "Apricot",
+    "group": "Fruits"
+  },
+  {
+    "slug": "ABRICOT-SEC",
+    "name_fr": "Abricot Sec",
+    "name_en": "Abricot Sec",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "AGRUMES",
+    "name_fr": "Agrumes",
+    "name_en": "Agrumes",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "AIL",
+    "name_fr": "Ail",
+    "name_en": "Garlic",
+    "group": "Légumes"
+  },
+  {
+    "slug": "AILLET",
+    "name_fr": "Aillet",
+    "name_en": "Aillet",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "AMANDE",
+    "name_fr": "Amande",
+    "name_en": "Amande",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "ANANAS",
+    "name_fr": "Ananas",
+    "name_en": "Ananas",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "ANETH",
+    "name_fr": "Aneth",
+    "name_en": "Aneth",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "ANONE",
+    "name_fr": "Anone",
+    "name_en": "Anone",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "ARTICHAUT",
+    "name_fr": "Artichaut",
+    "name_en": "Artichaut",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "ASPERGE",
+    "name_fr": "Asperge",
+    "name_en": "Asperge",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "AUBERGINE",
+    "name_fr": "Aubergine",
+    "name_en": "Eggplant",
+    "group": "Légumes"
+  },
+  {
+    "slug": "AVOCAT",
+    "name_fr": "Avocat",
+    "name_en": "Avocado",
+    "group": "Fruits"
+  },
+  {
+    "slug": "BANANE",
+    "name_fr": "Banane",
+    "name_en": "Banana",
+    "group": "Fruits"
+  },
+  {
+    "slug": "BASILIC",
+    "name_fr": "Basilic",
+    "name_en": "Basilic",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "BETTE",
+    "name_fr": "Bette",
+    "name_en": "Bette",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "BETTERAVE-ROUGE",
+    "name_fr": "Betterave Rouge",
+    "name_en": "Betterave Rouge",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CARAMBOLE",
+    "name_fr": "Carambole",
+    "name_en": "Carambole",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CARDON",
+    "name_fr": "Cardon",
+    "name_en": "Cardon",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CAROTTE",
+    "name_fr": "Carotte",
+    "name_en": "Carrot",
+    "group": "Légumes"
+  },
+  {
+    "slug": "CASSIS",
+    "name_fr": "Cassis",
+    "name_en": "Cassis",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CELERI-BRANCHE",
+    "name_fr": "Celeri Branche",
+    "name_en": "Celeri Branche",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CELERI-RAVE",
+    "name_fr": "Celeri Rave",
+    "name_en": "Celeri Rave",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CEPE",
+    "name_fr": "Cepe",
+    "name_en": "Cepe",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CERFEUIL",
+    "name_fr": "Cerfeuil",
+    "name_en": "Cerfeuil",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CERISE",
+    "name_fr": "Cerise",
+    "name_en": "Cherry",
+    "group": "Fruits"
+  },
+  {
+    "slug": "CHAMPIGNON-DE-PARIS",
+    "name_fr": "Champignon De Paris",
+    "name_en": "Champignon De Paris",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CHAMPIGNONS",
+    "name_fr": "Champignons",
+    "name_en": "Champignons",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CHANTERELLE",
+    "name_fr": "Chanterelle",
+    "name_en": "Chanterelle",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CHAYOTTE",
+    "name_fr": "Chayotte",
+    "name_en": "Chayotte",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CHICOREE",
+    "name_fr": "Chicoree",
+    "name_en": "Chicoree",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CHOU",
+    "name_fr": "Chou",
+    "name_en": "Chou",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CHOU-DE-BRUXELLES",
+    "name_fr": "Chou De Bruxelles",
+    "name_en": "Chou De Bruxelles",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CHOU-FLEUR",
+    "name_fr": "Chou-fleur",
+    "name_en": "Cauliflower",
+    "group": "Légumes"
+  },
+  {
+    "slug": "CHOUCHOU",
+    "name_fr": "Chouchou",
+    "name_en": "Chouchou",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CIBOULETTE",
+    "name_fr": "Ciboulette",
+    "name_en": "Ciboulette",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CITRON",
+    "name_fr": "Citron",
+    "name_en": "Lemon",
+    "group": "Fruits"
+  },
+  {
+    "slug": "CLEMENTINE",
+    "name_fr": "Clementine",
+    "name_en": "Clementine",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "COING",
+    "name_fr": "Coing",
+    "name_en": "Coing",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CONCOMBRE",
+    "name_fr": "Concombre",
+    "name_en": "Cucumber",
+    "group": "Légumes"
+  },
+  {
+    "slug": "CORIANDRE",
+    "name_fr": "Coriandre",
+    "name_en": "Coriandre",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CORNICHON",
+    "name_fr": "Cornichon",
+    "name_en": "Cornichon",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "COULEMELLE",
+    "name_fr": "Coulemelle",
+    "name_en": "Coulemelle",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "COURGE",
+    "name_fr": "Courge",
+    "name_en": "Courge",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "COURGETTE",
+    "name_fr": "Courgette",
+    "name_en": "Zucchini",
+    "group": "Légumes"
+  },
+  {
+    "slug": "CRESSON",
+    "name_fr": "Cresson",
+    "name_en": "Cresson",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CROSNE",
+    "name_fr": "Crosne",
+    "name_en": "Crosne",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "CURCUMA",
+    "name_fr": "Curcuma",
+    "name_en": "Curcuma",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "DATTE",
+    "name_fr": "Datte",
+    "name_en": "Datte",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "ECHALION",
+    "name_fr": "Echalion",
+    "name_en": "Echalion",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "ECHALOTE",
+    "name_fr": "Echalote",
+    "name_en": "Echalote",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "ENDIVE",
+    "name_fr": "Endive",
+    "name_en": "Endive",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "EPINARD",
+    "name_fr": "Épinard",
+    "name_en": "Spinach",
+    "group": "Légumes"
+  },
+  {
+    "slug": "ESTRAGON",
+    "name_fr": "Estragon",
+    "name_en": "Estragon",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "FENOUIL",
+    "name_fr": "Fenouil",
+    "name_en": "Fenouil",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "FEVE",
+    "name_fr": "Feve",
+    "name_en": "Feve",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "FIGUE",
+    "name_fr": "Figue",
+    "name_en": "Figue",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "FIGUE-SECHE",
+    "name_fr": "Figue Seche",
+    "name_en": "Figue Seche",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "FRAISE",
+    "name_fr": "Fraise",
+    "name_en": "Strawberry",
+    "group": "Fruits"
+  },
+  {
+    "slug": "FRAMBOISE",
+    "name_fr": "Framboise",
+    "name_en": "Framboise",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "FRUIT-DE-LA-PASSION",
+    "name_fr": "Fruit De La Passion",
+    "name_en": "Fruit De La Passion",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "GINGEMBRE",
+    "name_fr": "Gingembre",
+    "name_en": "Gingembre",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "GIROLLE",
+    "name_fr": "Girolle",
+    "name_en": "Girolle",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "GOMBO",
+    "name_fr": "Gombo",
+    "name_en": "Gombo",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "GOYAVE",
+    "name_fr": "Goyave",
+    "name_en": "Goyave",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "GRENADE",
+    "name_fr": "Grenade",
+    "name_en": "Grenade",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "GRENADILLE",
+    "name_fr": "Grenadille",
+    "name_en": "Grenadille",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "GRIOTTE",
+    "name_fr": "Griotte",
+    "name_en": "Griotte",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "GROSEILLE",
+    "name_fr": "Groseille",
+    "name_en": "Groseille",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "GROSEILLE-A-MAQUEREAU",
+    "name_fr": "Groseille A Maquereau",
+    "name_en": "Groseille A Maquereau",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "HARICOT",
+    "name_fr": "Haricot",
+    "name_en": "Haricot",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "HARICOT-VERT",
+    "name_fr": "Haricot vert",
+    "name_en": "Green bean",
+    "group": "Légumes"
+  },
+  {
+    "slug": "IGNAME",
+    "name_fr": "Igname",
+    "name_en": "Igname",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "KAKI",
+    "name_fr": "Kaki",
+    "name_en": "Kaki",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "KIWI",
+    "name_fr": "Kiwi",
+    "name_en": "Kiwi",
+    "group": "Fruits"
+  },
+  {
+    "slug": "KUMQUATE",
+    "name_fr": "Kumquate",
+    "name_en": "Kumquate",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "LACTAIRE",
+    "name_fr": "Lactaire",
+    "name_en": "Lactaire",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "LAITUE",
+    "name_fr": "Laitue",
+    "name_en": "Lettuce",
+    "group": "Salades"
+  },
+  {
+    "slug": "LAURIER",
+    "name_fr": "Laurier",
+    "name_en": "Laurier",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "LIME",
+    "name_fr": "Lime",
+    "name_en": "Lime",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "LITCHI",
+    "name_fr": "Litchi",
+    "name_en": "Litchi",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MACHE",
+    "name_fr": "Mache",
+    "name_en": "Mache",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MANDARINE",
+    "name_fr": "Mandarine",
+    "name_en": "Mandarine",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MANGOUSTAN",
+    "name_fr": "Mangoustan",
+    "name_en": "Mangoustan",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MANGUE",
+    "name_fr": "Mangue",
+    "name_en": "Mangue",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MANIOC",
+    "name_fr": "Manioc",
+    "name_en": "Manioc",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MARRON",
+    "name_fr": "Marron",
+    "name_en": "Marron",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MELANGE-SALADES",
+    "name_fr": "Melange Salades",
+    "name_en": "Melange Salades",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MELON",
+    "name_fr": "Melon",
+    "name_en": "Melon",
+    "group": "Fruits"
+  },
+  {
+    "slug": "MENTHE",
+    "name_fr": "Menthe",
+    "name_en": "Menthe",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MESCLUN",
+    "name_fr": "Mesclun",
+    "name_en": "Mesclun",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MINEOLA",
+    "name_fr": "Mineola",
+    "name_en": "Mineola",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MORILLE",
+    "name_fr": "Morille",
+    "name_en": "Morille",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MOUSSERON",
+    "name_fr": "Mousseron",
+    "name_en": "Mousseron",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MURE",
+    "name_fr": "Mure",
+    "name_en": "Mure",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "MYRTILLE",
+    "name_fr": "Myrtille",
+    "name_en": "Myrtille",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "NAVET",
+    "name_fr": "Navet",
+    "name_en": "Navet",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "NECTARINE",
+    "name_fr": "Nectarine",
+    "name_en": "Nectarine",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "NEFLE",
+    "name_fr": "Nefle",
+    "name_en": "Nefle",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "NOISETTE",
+    "name_fr": "Noisette",
+    "name_en": "Noisette",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "NOIX",
+    "name_fr": "Noix",
+    "name_en": "Noix",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "NOIX-DE-COCO",
+    "name_fr": "Noix De Coco",
+    "name_en": "Noix De Coco",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "OIGNON",
+    "name_fr": "Oignon",
+    "name_en": "Onion",
+    "group": "Légumes"
+  },
+  {
+    "slug": "ORANGE",
+    "name_fr": "Orange",
+    "name_en": "Orange",
+    "group": "Fruits"
+  },
+  {
+    "slug": "ORTANIQUE",
+    "name_fr": "Ortanique",
+    "name_en": "Ortanique",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "OSEILLE",
+    "name_fr": "Oseille",
+    "name_en": "Sorrel",
+    "group": "Légumes"
+  },
+  {
+    "slug": "PANAIS",
+    "name_fr": "Panais",
+    "name_en": "Panais",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "PAPAYE",
+    "name_fr": "Papaye",
+    "name_en": "Papaye",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "PASTEQUE",
+    "name_fr": "Pastèque",
+    "name_en": "Watermelon",
+    "group": "Fruits"
+  },
+  {
+    "slug": "PATATE-DOUCE",
+    "name_fr": "Patate Douce",
+    "name_en": "Patate Douce",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "PATISSON",
+    "name_fr": "Patisson",
+    "name_en": "Patisson",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "PECHE",
+    "name_fr": "Pêche",
+    "name_en": "Peach",
+    "group": "Fruits"
+  },
+  {
+    "slug": "PERSIL",
+    "name_fr": "Persil",
+    "name_en": "Persil",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "PHYSALIS",
+    "name_fr": "Physalis",
+    "name_en": "Physalis",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "PIED-DE-MOUTON",
+    "name_fr": "Pied De Mouton",
+    "name_en": "Pied De Mouton",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "PIMENT",
+    "name_fr": "Piment",
+    "name_en": "Piment",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "PISSENLIT",
+    "name_fr": "Pissenlit",
+    "name_en": "Pissenlit",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "PITAHAYA",
+    "name_fr": "Pitahaya",
+    "name_en": "Pitahaya",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "PLEUROTE",
+    "name_fr": "Pleurote",
+    "name_en": "Pleurote",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "POIRE",
+    "name_fr": "Poire",
+    "name_en": "Pear",
+    "group": "Fruits"
+  },
+  {
+    "slug": "POIREAU",
+    "name_fr": "Poireau",
+    "name_en": "Leek",
+    "group": "Légumes"
+  },
+  {
+    "slug": "POIS",
+    "name_fr": "Pois",
+    "name_en": "Pois",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "POIVRON",
+    "name_fr": "Poivron",
+    "name_en": "Bell pepper",
+    "group": "Légumes"
+  },
+  {
+    "slug": "POMELOS",
+    "name_fr": "Pomelos",
+    "name_en": "Pomelos",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "POMME",
+    "name_fr": "Pomme",
+    "name_en": "Apple",
+    "group": "Fruits"
+  },
+  {
+    "slug": "POMME-DE-TERRE",
+    "name_fr": "Pomme de terre",
+    "name_en": "Potato",
+    "group": "Légumes"
+  },
+  {
+    "slug": "POTIRON",
+    "name_fr": "Potiron",
+    "name_en": "Potiron",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "PRUNE",
+    "name_fr": "Prune",
+    "name_en": "Prune",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "PRUNEAU",
+    "name_fr": "Pruneau",
+    "name_en": "Pruneau",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "RADIS",
+    "name_fr": "Radis",
+    "name_en": "Radish",
+    "group": "Légumes"
+  },
+  {
+    "slug": "RAISIN",
+    "name_fr": "Raisin",
+    "name_en": "Grape",
+    "group": "Fruits"
+  },
+  {
+    "slug": "RHUBARBE",
+    "name_fr": "Rhubarbe",
+    "name_en": "Rhubarbe",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "ROMARIN",
+    "name_fr": "Romarin",
+    "name_en": "Romarin",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "ROQUETTE",
+    "name_fr": "Roquette",
+    "name_en": "Roquette",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "RUTABAGA",
+    "name_fr": "Rutabaga",
+    "name_en": "Rutabaga",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "SALSIFIS",
+    "name_fr": "Salsifis",
+    "name_en": "Salsifis",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "SATSUMA",
+    "name_fr": "Satsuma",
+    "name_en": "Satsuma",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "SAUGE",
+    "name_fr": "Sauge",
+    "name_en": "Sauge",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "SCORSONERE",
+    "name_fr": "Scorsonere",
+    "name_en": "Scorsonere",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "SHII-TAKE",
+    "name_fr": "Shii Take",
+    "name_en": "Shii Take",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "SOJA",
+    "name_fr": "Soja",
+    "name_en": "Soja",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "TARO",
+    "name_fr": "Taro",
+    "name_en": "Taro",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "THYM",
+    "name_fr": "Thym",
+    "name_en": "Thym",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "TOMATE",
+    "name_fr": "Tomate",
+    "name_en": "Tomato",
+    "group": "Légumes"
+  },
+  {
+    "slug": "TOPINAMBOUR",
+    "name_fr": "Topinambour",
+    "name_en": "Topinambour",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "TROMPETTE-DE-LA-MORT",
+    "name_fr": "Trompette De La Mort",
+    "name_en": "Trompette De La Mort",
+    "group": "Fruits et Légumes"
+  },
+  {
+    "slug": "TRUFFE",
+    "name_fr": "Truffe",
+    "name_en": "Truffe",
+    "group": "Fruits et Légumes"
+  }
 ]

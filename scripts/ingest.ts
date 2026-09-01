@@ -133,21 +133,79 @@ async function ingestOne(entry: TaxonomyEntry): Promise<ProductData> {
 }
 
 async function main() {
-  const taxRaw = await import("fs/promises").then((m) => m.readFile("public/data/taxonomy.json", "utf-8"));
+  const { readFile, writeFile } = await import("fs/promises");
+  const taxRaw = await readFile("public/data/taxonomy.json", "utf-8");
   const taxonomy: TaxonomyEntry[] = JSON.parse(taxRaw);
 
-  const out: ProductData[] = [];
-  for (const entry of taxonomy) {
-    console.log(`[ingest] ${entry.slug} ...`);
-    try {
-      const data = await ingestOne(entry);
-      console.log(`  -> ${data.prices.length} detail rows, conv=${data.summary.conventional?.mean} ${data.summary.conventional?.unit ?? ""}, bio=${data.summary.bio?.mean} ${data.summary.bio?.unit ?? ""}`);
-      out.push(data);
-    } catch (e) {
-      console.error(`[error] ${entry.slug}:`, e);
-      out.push({ ...entry, prices: [], summary: { conventional: null, bio: null }, lastDate: null });
+  // Support resuming: if prices.json exists, load existing progress
+  let out: ProductData[] = [];
+  let doneSlugs = new Set<string>();
+  try {
+    const existing = JSON.parse(await readFile("public/data/prices.json", "utf-8"));
+    if (existing.products) {
+      out = existing.products;
+      doneSlugs = new Set(out.map((p: ProductData) => p.slug));
+      console.log(`[resume] loaded ${out.length} existing products`);
+    }
+  } catch {}
+
+  const pending = taxonomy.filter((e) => !doneSlugs.has(e.slug));
+  console.log(`[ingest] total ${taxonomy.length}, pending ${pending.length}, done ${doneSlugs.size}`);
+
+  const CONCURRENCY = 3;
+  let active = 0;
+  let idx = 0;
+
+  async function runOne(entry: TaxonomyEntry) {
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        console.log(`[ingest] ${entry.slug} (attempt ${attempt}) ...`);
+        const data = await ingestOne(entry);
+        console.log(`  -> ${data.prices.length} detail rows, conv=${data.summary.conventional?.mean} ${data.summary.conventional?.unit ?? ""}, bio=${data.summary.bio?.mean} ${data.summary.bio?.unit ?? ""}`);
+        out.push(data);
+        // incremental save every 5
+        if (out.length % 5 === 0) {
+          const payload = {
+            meta: {
+              generatedAt: new Date().toISOString(),
+              source: "RNM FranceAgriMer — stade Détail (M2502/M2503/M3026/M3027)",
+              note: "Free Détail tier is T+8 days (rnm/MO_site_RNM.shtml). Units verbatim (le kg / la pièce / la botte).",
+            },
+            products: [...out],
+          };
+          await writeFile("public/data/prices.json", JSON.stringify(payload, null, 2));
+          console.log(`[save] ${out.length} products`);
+        }
+        return;
+      } catch (e) {
+        console.error(`[error] ${entry.slug} attempt ${attempt}:`, (e as Error).message ?? e);
+        if (attempt === 3) {
+          out.push({ ...entry, prices: [], summary: { conventional: null, bio: null }, lastDate: null });
+          return;
+        }
+        await new Promise((r) => setTimeout(r, 1000 * attempt));
+      }
     }
   }
+
+  // concurrency pool
+  async function pool() {
+    const workers: Promise<void>[] = [];
+    for (let w = 0; w < CONCURRENCY; w++) {
+      workers.push((async () => {
+        while (idx < pending.length) {
+          const cur = idx++;
+          await runOne(pending[cur]);
+        }
+      })());
+    }
+    await Promise.all(workers);
+  }
+
+  await pool();
+
+  // ensure sorted by slug for stable output
+  out.sort((a, b) => a.slug.localeCompare(b.slug));
 
   const payload = {
     meta: {
@@ -158,7 +216,6 @@ async function main() {
     products: out,
   };
 
-  const { writeFile } = await import("fs/promises");
   await writeFile("public/data/prices.json", JSON.stringify(payload, null, 2));
   console.log(`[done] wrote public/data/prices.json with ${out.length} products`);
 }

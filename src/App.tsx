@@ -11,6 +11,7 @@ function Home() {
   const [data, setData] = useState<PricesPayload | null>(null);
   const [q, setQ] = useState("");
   const [group, setGroup] = useState<string>("All");
+  const [showUnavailable, setShowUnavailable] = useState(false);
 
   useEffect(() => {
     fetch("/data/prices.json")
@@ -27,17 +28,21 @@ function Home() {
   const filtered = useMemo(() => {
     if (!data) return [];
     const needle = q.trim().toLowerCase();
+    const normalize = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    const nNeedle = normalize(needle);
     return data.products.filter((p) => {
       const matchesGroup = group === "All" || p.group === group;
       if (!matchesGroup) return false;
+      const hasPrice = !!(p.summary.conventional || p.summary.bio);
+      if (!showUnavailable && !hasPrice && !needle) return false;
       if (!needle) return true;
       return (
-        p.slug.toLowerCase().includes(needle) ||
-        p.name_fr.toLowerCase().includes(needle) ||
-        p.name_en.toLowerCase().includes(needle)
+        normalize(p.slug).includes(nNeedle) ||
+        normalize(p.name_fr).includes(nNeedle) ||
+        normalize(p.name_en).includes(nNeedle)
       );
     });
-  }, [data, q, group]);
+  }, [data, q, group, showUnavailable]);
 
   return (
     <div style={{ padding: 16, maxWidth: 720, margin: "0 auto" }}>
@@ -83,8 +88,12 @@ function Home() {
           ))}
         </div>
         {data?.meta && (
-          <div style={{ fontSize: 11, color: "#888", marginTop: 6 }}>
-            {data.meta.source} — {formatDate(filtered[0]?.lastDate ?? "")} · {filtered.length} / {data.products.length}
+          <div style={{ fontSize: 11, color: "#888", marginTop: 6, display: "flex", gap: 12, flexWrap: "wrap", alignItems: "center" }}>
+            <span>{data.meta.source} — {formatDate(filtered[0]?.lastDate ?? "")} · {filtered.length} / {data.products.length} ({data.products.filter(p=>p.summary.conventional||p.summary.bio).length} with price)</span>
+            <label style={{ display: "flex", alignItems: "center", gap: 4, cursor: "pointer" }}>
+              <input type="checkbox" checked={showUnavailable} onChange={(e)=> setShowUnavailable(e.target.checked)} />
+              Show unavailable
+            </label>
           </div>
         )}
       </div>

@@ -1,37 +1,519 @@
 {
   "meta": {
-    "generatedAt": "2026-09-01T13:30:00.000Z",
+    "generatedAt": "2026-09-01T11:46:47.737Z",
     "source": "RNM FranceAgriMer — stade Détail (M2502/M2503/M3026/M3027)",
-    "note": "Free Détail tier is T+8 days (rnm/MO_site_RNM.shtml). Units verbatim (le kg / la pièce / la botte). Ingest partial — 6 products live, rest pending full ingest."
+    "note": "Free Détail tier is T+8 days (rnm/MO_site_RNM.shtml). Units verbatim (le kg / la pièce / la botte)."
   },
   "products": [
     {
-      "slug": "POMME",
-      "name_fr": "Pomme",
-      "name_en": "Apple",
-      "group": "Fruits",
+      "slug": "ABRICOT",
+      "name_fr": "Abricot",
+      "name_en": "Abricot",
+      "group": "Fruits et Légumes",
       "prices": [
-        {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"POMME Gala France +170g vrac","unit":"le kg","mean":2.95,"varia":0.27,"min":1.99,"max":3.4,"isBio":false},
-        {"date":"27-08-2026","marche":"Fruits France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"POMME Golden France biologique","unit":"le kg","mean":3.65,"varia":0.09,"min":2.99,"max":3.89,"isBio":true}
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ABRICOT France 40-45mm vrac",
+          "unit": "le kg",
+          "mean": 4.45,
+          "varia": 0.22,
+          "min": 3.79,
+          "max": 4.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ABRICOT France 45-50mm vrac",
+          "unit": "le kg",
+          "mean": 4.57,
+          "varia": 0.28,
+          "min": 3.99,
+          "max": 4.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ABRICOT France barq.1kg",
+          "unit": "le kg",
+          "mean": 3.39,
+          "varia": 0.02,
+          "min": 2.99,
+          "max": 3.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "ABRICOT France biologique",
+          "unit": "le kg",
+          "mean": 8.9,
+          "varia": -0.32,
+          "min": 6.99,
+          "max": 9.99,
+          "isBio": true
+        }
       ],
       "summary": {
-        "conventional": {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"POMME Gala France +170g vrac","unit":"le kg","mean":2.95,"varia":0.27,"min":1.99,"max":3.4,"isBio":false},
-        "bio": {"date":"27-08-2026","marche":"Fruits France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"POMME Golden France biologique","unit":"le kg","mean":3.65,"varia":0.09,"min":2.99,"max":3.89,"isBio":true}
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ABRICOT France 40-45mm vrac",
+          "unit": "le kg",
+          "mean": 4.45,
+          "varia": 0.22,
+          "min": 3.79,
+          "max": 4.99,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "ABRICOT France biologique",
+          "unit": "le kg",
+          "mean": 8.9,
+          "varia": -0.32,
+          "min": 6.99,
+          "max": 9.99,
+          "isBio": true
+        }
       },
       "lastDate": "27-08-2026"
     },
     {
-      "slug": "POIRE",
-      "name_fr": "Poire",
-      "name_en": "Pear",
-      "group": "Fruits",
+      "slug": "ABRICOT-SEC",
+      "name_fr": "Abricot Sec",
+      "name_en": "Abricot Sec",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "AGRUMES",
+      "name_fr": "Agrumes",
+      "name_en": "Agrumes",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "AIL",
+      "name_fr": "Ail",
+      "name_en": "Ail",
+      "group": "Fruits et Légumes",
       "prices": [
-        {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"POIRE Conférence France","unit":"le kg","mean":3.47,"varia":0.05,"min":2.49,"max":4.2,"isBio":false},
-        {"date":"27-08-2026","marche":"Fruits France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"POIRE Conférence France biologique","unit":"le kg","mean":3.25,"varia":null,"min":2.99,"max":3.89,"isBio":true}
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AIL blanc sec France 50-70 ou 60-80mm filet 3 têtes",
+          "unit": "le filet",
+          "mean": 3.75,
+          "varia": 0.13,
+          "min": 2.89,
+          "max": 4.68,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AIL blanc sec France biologique",
+          "unit": "le kg",
+          "mean": 18.57,
+          "varia": 0.09,
+          "min": 14.75,
+          "max": 21.96,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AIL blanc sec France vrac",
+          "unit": "le kg",
+          "mean": 11.71,
+          "varia": 0.03,
+          "min": 7.95,
+          "max": 13.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AIL blanc sec hors Fr. vrac",
+          "unit": "le kg",
+          "mean": 11.13,
+          "varia": -0.11,
+          "min": null,
+          "max": null,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "AIL blanc sec France biologique",
+          "unit": "le kg",
+          "mean": 17.75,
+          "varia": 0.34,
+          "min": 15.7,
+          "max": 19.5,
+          "isBio": true
+        }
       ],
       "summary": {
-        "conventional": {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"POIRE Conférence France","unit":"le kg","mean":3.47,"varia":0.05,"min":2.49,"max":4.2,"isBio":false},
-        "bio": {"date":"27-08-2026","marche":"Fruits France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"POIRE Conférence France biologique","unit":"le kg","mean":3.25,"varia":null,"min":2.99,"max":3.89,"isBio":true}
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AIL blanc sec France vrac",
+          "unit": "le kg",
+          "mean": 11.71,
+          "varia": 0.03,
+          "min": 7.95,
+          "max": 13.99,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "AIL blanc sec France biologique",
+          "unit": "le kg",
+          "mean": 17.75,
+          "varia": 0.34,
+          "min": 15.7,
+          "max": 19.5,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "AILLET",
+      "name_fr": "Aillet",
+      "name_en": "Aillet",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "AMANDE",
+      "name_fr": "Amande",
+      "name_en": "Amande",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "ANANAS",
+      "name_fr": "Ananas",
+      "name_en": "Ananas",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ANANAS standard (hors Victoria)",
+          "unit": "la pièce",
+          "mean": 2.56,
+          "varia": -0.05,
+          "min": 1.49,
+          "max": 2.99,
+          "isBio": false
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ANANAS standard (hors Victoria)",
+          "unit": "la pièce",
+          "mean": 2.56,
+          "varia": -0.05,
+          "min": 1.49,
+          "max": 2.99,
+          "isBio": false
+        },
+        "bio": null
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "ANETH",
+      "name_fr": "Aneth",
+      "name_en": "Aneth",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "ANONE",
+      "name_fr": "Anone",
+      "name_en": "Anone",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "ARTICHAUT",
+      "name_fr": "Artichaut",
+      "name_en": "Artichaut",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ARTICHAUT Globuleux France",
+          "unit": "la pièce",
+          "mean": 2.41,
+          "varia": -0.2,
+          "min": 1.99,
+          "max": 2.99,
+          "isBio": false
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ARTICHAUT Globuleux France",
+          "unit": "la pièce",
+          "mean": 2.41,
+          "varia": -0.2,
+          "min": 1.99,
+          "max": 2.99,
+          "isBio": false
+        },
+        "bio": null
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "ASPERGE",
+      "name_fr": "Asperge",
+      "name_en": "Asperge",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "AUBERGINE",
+      "name_fr": "Aubergine",
+      "name_en": "Aubergine",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AUBERGINE violette France biologique",
+          "unit": "le kg",
+          "mean": 6.88,
+          "varia": 0.18,
+          "min": null,
+          "max": null,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AUBERGINE violette France biologique cdt 2",
+          "unit": "le cdt 2",
+          "mean": 3.46,
+          "varia": -0.09,
+          "min": 2.99,
+          "max": 3.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AUBERGINE violette France vrac",
+          "unit": "le kg",
+          "mean": 3.65,
+          "varia": -0.19,
+          "min": 2.99,
+          "max": 4.39,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AUBERGINE violette hors Fr. vrac",
+          "unit": "le kg",
+          "mean": 3.54,
+          "varia": 0.1,
+          "min": 2.99,
+          "max": 3.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "AUBERGINE longue-violette France biologique",
+          "unit": "le kg",
+          "mean": 4.83,
+          "varia": 0.03,
+          "min": 4.29,
+          "max": 5.8,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AUBERGINE violette France vrac",
+          "unit": "le kg",
+          "mean": 3.65,
+          "varia": -0.19,
+          "min": 2.99,
+          "max": 4.39,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "AUBERGINE longue-violette France biologique",
+          "unit": "le kg",
+          "mean": 4.83,
+          "varia": 0.03,
+          "min": 4.29,
+          "max": 5.8,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "AVOCAT",
+      "name_fr": "Avocat",
+      "name_en": "Avocat",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AVOCAT hors Fr. biologique",
+          "unit": "la pièce",
+          "mean": 1.53,
+          "varia": -0.01,
+          "min": 1.37,
+          "max": 1.85,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AVOCAT hors Fr. filet",
+          "unit": "la pièce",
+          "mean": 0.75,
+          "varia": 0.01,
+          "min": 0.66,
+          "max": 0.83,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AVOCAT hors Fr. vrac",
+          "unit": "la pièce",
+          "mean": 1.29,
+          "varia": 0.06,
+          "min": 0.83,
+          "max": 1.69,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "AVOCAT Hass Import biologique vendu à la pièce",
+          "unit": "la pièce",
+          "mean": 1.72,
+          "varia": -0.04,
+          "min": 1.55,
+          "max": 1.9,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "AVOCAT hors Fr. filet",
+          "unit": "la pièce",
+          "mean": 0.75,
+          "varia": 0.01,
+          "min": 0.66,
+          "max": 0.83,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "AVOCAT Hass Import biologique vendu à la pièce",
+          "unit": "la pièce",
+          "mean": 1.72,
+          "varia": -0.04,
+          "min": 1.55,
+          "max": 1.9,
+          "isBio": true
+        }
       },
       "lastDate": "27-08-2026"
     },
@@ -41,43 +523,728 @@
       "name_en": "Banana",
       "group": "Fruits",
       "prices": [
-        {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"BANANE Import","unit":"le kg","mean":1.96,"varia":null,"min":1.49,"max":2.29,"isBio":false},
-        {"date":"27-08-2026","marche":"Fruits France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"BANANE Import biologique","unit":"le kg","mean":2.06,"varia":null,"min":1.79,"max":2.49,"isBio":true}
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "BANANE Import",
+          "unit": "le kg",
+          "mean": 1.96,
+          "varia": null,
+          "min": 1.49,
+          "max": 2.29,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "BANANE Import biologique",
+          "unit": "le kg",
+          "mean": 2.06,
+          "varia": null,
+          "min": 1.79,
+          "max": 2.49,
+          "isBio": true
+        }
       ],
       "summary": {
-        "conventional": {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"BANANE Import","unit":"le kg","mean":1.96,"varia":null,"min":1.49,"max":2.29,"isBio":false},
-        "bio": {"date":"27-08-2026","marche":"Fruits France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"BANANE Import biologique","unit":"le kg","mean":2.06,"varia":null,"min":1.79,"max":2.49,"isBio":true}
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "BANANE Import",
+          "unit": "le kg",
+          "mean": 1.96,
+          "varia": null,
+          "min": 1.49,
+          "max": 2.29,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "BANANE Import biologique",
+          "unit": "le kg",
+          "mean": 2.06,
+          "varia": null,
+          "min": 1.79,
+          "max": 2.49,
+          "isBio": true
+        }
       },
       "lastDate": "27-08-2026"
     },
     {
-      "slug": "FRAISE",
-      "name_fr": "Fraise",
-      "name_en": "Strawberry",
-      "group": "Fruits",
+      "slug": "BASILIC",
+      "name_fr": "Basilic",
+      "name_en": "Basilic",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "BETTE",
+      "name_fr": "Bette",
+      "name_en": "Bette",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "BETTERAVE-ROUGE",
+      "name_fr": "Betterave Rouge",
+      "name_en": "Betterave Rouge",
+      "group": "Fruits et Légumes",
       "prices": [
-        {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"FRAISE France","unit":"le kg","mean":10.33,"varia":null,"min":8.5,"max":12.0,"isBio":false}
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "BETTERAVE ROUGE ronde crue France biologique",
+          "unit": "le kg",
+          "mean": 3.72,
+          "varia": -0.05,
+          "min": 3,
+          "max": 4.49,
+          "isBio": true
+        }
       ],
       "summary": {
-        "conventional": {"date":"27-08-2026","marche":"Fruits France DETAIL GMS","stade":"Détail","libelle":"FRAISE France","unit":"le kg","mean":10.33,"varia":null,"min":8.5,"max":12.0,"isBio":false},
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "BETTERAVE ROUGE ronde crue France biologique",
+          "unit": "le kg",
+          "mean": 3.72,
+          "varia": -0.05,
+          "min": 3,
+          "max": 4.49,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "CARAMBOLE",
+      "name_fr": "Carambole",
+      "name_en": "Carambole",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CARDON",
+      "name_fr": "Cardon",
+      "name_en": "Cardon",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CAROTTE",
+      "name_fr": "Carotte",
+      "name_en": "Carotte",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "CAROTTE France lavée biologique",
+          "unit": "le kg",
+          "mean": 2.61,
+          "varia": -0.01,
+          "min": 1.99,
+          "max": 2.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "CAROTTE France lavée sachet 1,5 kg",
+          "unit": "le kg",
+          "mean": 2.06,
+          "varia": 0.01,
+          "min": 1.33,
+          "max": 2.46,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "CAROTTE France lavée sachet 2kg",
+          "unit": "le kg",
+          "mean": 1.32,
+          "varia": -0.02,
+          "min": 1.25,
+          "max": 1.5,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "CAROTTE France lavée vrac",
+          "unit": "le kg",
+          "mean": 2.06,
+          "varia": 0.04,
+          "min": 1.49,
+          "max": 2.49,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CAROTTE France avec fane biologique",
+          "unit": "la botte",
+          "mean": 3.57,
+          "varia": -0.04,
+          "min": 3.49,
+          "max": 3.69,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CAROTTE France lavée biologique",
+          "unit": "le kg",
+          "mean": 3.04,
+          "varia": 0.24,
+          "min": 2.6,
+          "max": 2.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CAROTTE France non lavée biologique",
+          "unit": "le kg",
+          "mean": 3.37,
+          "varia": -0.08,
+          "min": 3,
+          "max": 3.85,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "CAROTTE France lavée sachet 1,5 kg",
+          "unit": "le kg",
+          "mean": 2.06,
+          "varia": 0.01,
+          "min": 1.33,
+          "max": 2.46,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CAROTTE France lavée biologique",
+          "unit": "le kg",
+          "mean": 3.04,
+          "varia": 0.24,
+          "min": 2.6,
+          "max": 2.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "CASSIS",
+      "name_fr": "Cassis",
+      "name_en": "Cassis",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CELERI-BRANCHE",
+      "name_fr": "Celeri Branche",
+      "name_en": "Celeri Branche",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CÉLERI-BRANCHE France biologique",
+          "unit": "le kg",
+          "mean": 4.84,
+          "varia": 0.33,
+          "min": null,
+          "max": null,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CÉLERI-BRANCHE France biologique",
+          "unit": "le kg",
+          "mean": 4.84,
+          "varia": 0.33,
+          "min": null,
+          "max": null,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "CELERI-RAVE",
+      "name_fr": "Celeri Rave",
+      "name_en": "Celeri Rave",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CÉLERI-RAVE France biologique",
+          "unit": "le kg",
+          "mean": 4.39,
+          "varia": 0.07,
+          "min": 3.65,
+          "max": 4.99,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CÉLERI-RAVE France biologique",
+          "unit": "le kg",
+          "mean": 4.39,
+          "varia": 0.07,
+          "min": 3.65,
+          "max": 4.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "CEPE",
+      "name_fr": "Cepe",
+      "name_en": "Cepe",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CERFEUIL",
+      "name_fr": "Cerfeuil",
+      "name_en": "Cerfeuil",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CERISE",
+      "name_fr": "Cerise",
+      "name_en": "Cerise",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CHAMPIGNON-DE-PARIS",
+      "name_fr": "Champignon De Paris",
+      "name_en": "Champignon De Paris",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CHAMPIGNON DE PARIS France biologique",
+          "unit": "le kg",
+          "mean": 12.38,
+          "varia": -0.14,
+          "min": 11.5,
+          "max": 13.5,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CHAMPIGNON DE PARIS France biologique",
+          "unit": "le kg",
+          "mean": 12.38,
+          "varia": -0.14,
+          "min": 11.5,
+          "max": 13.5,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "CHAMPIGNONS",
+      "name_fr": "Champignons",
+      "name_en": "Champignons",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CHANTERELLE",
+      "name_fr": "Chanterelle",
+      "name_en": "Chanterelle",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CHAYOTTE",
+      "name_fr": "Chayotte",
+      "name_en": "Chayotte",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CHICOREE",
+      "name_fr": "Chicoree",
+      "name_en": "Chicoree",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "CHICORÉE frisée France",
+          "unit": "la pièce",
+          "mean": 3.58,
+          "varia": 0.12,
+          "min": 2.89,
+          "max": 3.99,
+          "isBio": false
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "CHICORÉE frisée France",
+          "unit": "la pièce",
+          "mean": 3.58,
+          "varia": 0.12,
+          "min": 2.89,
+          "max": 3.99,
+          "isBio": false
+        },
         "bio": null
       },
       "lastDate": "27-08-2026"
     },
     {
-      "slug": "TOMATE",
-      "name_fr": "Tomate",
-      "name_en": "Tomato",
-      "group": "Légumes",
+      "slug": "CHOU",
+      "name_fr": "Chou",
+      "name_en": "Chou",
+      "group": "Fruits et Légumes",
       "prices": [
-        {"date":"27-08-2026","marche":"Légumes France DETAIL GMS","stade":"Détail","libelle":"TOMATE ronde France","unit":"le kg","mean":3.45,"varia":0.1,"min":2.49,"max":4.2,"isBio":false},
-        {"date":"27-08-2026","marche":"Légumes France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"TOMATE ronde France biologique","unit":"le kg","mean":4.2,"varia":null,"min":3.5,"max":5.0,"isBio":true}
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CHOU blanc France biologique vendu à la pièce",
+          "unit": "la pièce",
+          "mean": 3.35,
+          "varia": 0.03,
+          "min": 2.9,
+          "max": 3.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CHOU Brocoli France biologique",
+          "unit": "le kg",
+          "mean": 7.09,
+          "varia": 0.15,
+          "min": 6.45,
+          "max": 7.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CHOU Chinois France biologique",
+          "unit": "le kg",
+          "mean": 5.63,
+          "varia": 0.64,
+          "min": 4.9,
+          "max": 5.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CHOU Rave France biologique",
+          "unit": "la pièce",
+          "mean": 2.49,
+          "varia": 0.29,
+          "min": 1.8,
+          "max": 2.5,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CHOU rouge France biologique vendu à la pièce",
+          "unit": "la pièce",
+          "mean": 3.67,
+          "varia": 0.36,
+          "min": 2.99,
+          "max": 4.49,
+          "isBio": true
+        }
       ],
       "summary": {
-        "conventional": {"date":"27-08-2026","marche":"Légumes France DETAIL GMS","stade":"Détail","libelle":"TOMATE ronde France","unit":"le kg","mean":3.45,"varia":0.1,"min":2.49,"max":4.2,"isBio":false},
-        "bio": {"date":"27-08-2026","marche":"Légumes France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"TOMATE ronde France biologique","unit":"le kg","mean":4.2,"varia":null,"min":3.5,"max":5.0,"isBio":true}
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CHOU Brocoli France biologique",
+          "unit": "le kg",
+          "mean": 7.09,
+          "varia": 0.15,
+          "min": 6.45,
+          "max": 7.99,
+          "isBio": true
+        }
       },
       "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "CHOU-DE-BRUXELLES",
+      "name_fr": "Chou De Bruxelles",
+      "name_en": "Chou De Bruxelles",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CHOU-FLEUR",
+      "name_fr": "Chou Fleur",
+      "name_en": "Chou Fleur",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "CHOU FLEUR France",
+          "unit": "la pièce",
+          "mean": 4.38,
+          "varia": -0.17,
+          "min": 2.69,
+          "max": 4.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CHOU FLEUR France couronné biologique",
+          "unit": "la pièce",
+          "mean": 5.19,
+          "varia": -0.65,
+          "min": 4.6,
+          "max": 6.3,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "CHOU FLEUR France",
+          "unit": "la pièce",
+          "mean": 4.38,
+          "varia": -0.17,
+          "min": 2.69,
+          "max": 4.99,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CHOU FLEUR France couronné biologique",
+          "unit": "la pièce",
+          "mean": 5.19,
+          "varia": -0.65,
+          "min": 4.6,
+          "max": 6.3,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "CHOUCHOU",
+      "name_fr": "Chouchou",
+      "name_en": "Chouchou",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CIBOULETTE",
+      "name_fr": "Ciboulette",
+      "name_en": "Ciboulette",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CITRON",
+      "name_fr": "Citron",
+      "name_en": "Citron",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CITRON U.E. biologique",
+          "unit": "le kg",
+          "mean": 4.31,
+          "varia": 0.03,
+          "min": 3.9,
+          "max": 4.99,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CITRON U.E. biologique",
+          "unit": "le kg",
+          "mean": 4.31,
+          "varia": 0.03,
+          "min": 3.9,
+          "max": 4.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "CLEMENTINE",
+      "name_fr": "Clementine",
+      "name_en": "Clementine",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "COING",
+      "name_fr": "Coing",
+      "name_en": "Coing",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
     },
     {
       "slug": "CONCOMBRE",
@@ -85,14 +1252,1754 @@
       "name_en": "Cucumber",
       "group": "Légumes",
       "prices": [
-        {"date":"27-08-2026","marche":"Légumes France DETAIL GMS","stade":"Détail","libelle":"CONCOMBRE France","unit":"la pièce","mean":1.28,"varia":-0.41,"min":0.99,"max":1.79,"isBio":false},
-        {"date":"27-08-2026","marche":"Légumes France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"CONCOMBRE France biologique","unit":"la pièce","mean":1.65,"varia":0.14,"min":1.2,"max":2.1,"isBio":true}
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "CONCOMBRE France",
+          "unit": "la pièce",
+          "mean": 1.28,
+          "varia": -0.41,
+          "min": 0.99,
+          "max": 1.79,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CONCOMBRE France biologique",
+          "unit": "la pièce",
+          "mean": 1.65,
+          "varia": 0.14,
+          "min": 1.2,
+          "max": 2.1,
+          "isBio": true
+        }
       ],
       "summary": {
-        "conventional": {"date":"27-08-2026","marche":"Légumes France DETAIL GMS","stade":"Détail","libelle":"CONCOMBRE France","unit":"la pièce","mean":1.28,"varia":-0.41,"min":0.99,"max":1.79,"isBio":false},
-        "bio": {"date":"27-08-2026","marche":"Légumes France DETAIL MAG. SPECIALISES BIO","stade":"Détail","libelle":"CONCOMBRE France biologique","unit":"la pièce","mean":1.65,"varia":0.14,"min":1.2,"max":2.1,"isBio":true}
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "CONCOMBRE France",
+          "unit": "la pièce",
+          "mean": 1.28,
+          "varia": -0.41,
+          "min": 0.99,
+          "max": 1.79,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "CONCOMBRE France biologique",
+          "unit": "la pièce",
+          "mean": 1.65,
+          "varia": 0.14,
+          "min": 1.2,
+          "max": 2.1,
+          "isBio": true
+        }
       },
       "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "CORIANDRE",
+      "name_fr": "Coriandre",
+      "name_en": "Coriandre",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CORNICHON",
+      "name_fr": "Cornichon",
+      "name_en": "Cornichon",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "COULEMELLE",
+      "name_fr": "Coulemelle",
+      "name_en": "Coulemelle",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "COURGE",
+      "name_fr": "Courge",
+      "name_en": "Courge",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "COURGE Potimarron France",
+          "unit": "la pièce",
+          "mean": 3.31,
+          "varia": 0.05,
+          "min": 2.5,
+          "max": 3.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "COURGE Butternut France biologique",
+          "unit": "le kg",
+          "mean": 4.22,
+          "varia": 0.04,
+          "min": 3.19,
+          "max": 3.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "COURGE Potimarron France biologique",
+          "unit": "le kg",
+          "mean": 4.16,
+          "varia": 0,
+          "min": 3.49,
+          "max": 4.89,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "COURGE Potimarron France",
+          "unit": "la pièce",
+          "mean": 3.31,
+          "varia": 0.05,
+          "min": 2.5,
+          "max": 3.99,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "COURGE Butternut France biologique",
+          "unit": "le kg",
+          "mean": 4.22,
+          "varia": 0.04,
+          "min": 3.19,
+          "max": 3.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "COURGETTE",
+      "name_fr": "Courgette",
+      "name_en": "Courgette",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "COURGETTE longue verte France biologique",
+          "unit": "le kg",
+          "mean": 3.57,
+          "varia": 0.01,
+          "min": 2.99,
+          "max": 4.49,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "COURGETTE longue verte France filet 1kg",
+          "unit": "le kg",
+          "mean": 2.04,
+          "varia": 0.03,
+          "min": 1.49,
+          "max": 2.2,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "COURGETTE longue verte France vrac",
+          "unit": "le kg",
+          "mean": 2.06,
+          "varia": -0.03,
+          "min": 1.49,
+          "max": 2.5,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "COURGETTE longue verte hors Fr. filet 1kg",
+          "unit": "le kg",
+          "mean": 1.75,
+          "varia": 0.04,
+          "min": 1.49,
+          "max": 2.39,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "COURGETTE verte France biologique",
+          "unit": "le kg",
+          "mean": 2.87,
+          "varia": 0.2,
+          "min": 2.35,
+          "max": 3.09,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "COURGETTE longue verte France filet 1kg",
+          "unit": "le kg",
+          "mean": 2.04,
+          "varia": 0.03,
+          "min": 1.49,
+          "max": 2.2,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "COURGETTE verte France biologique",
+          "unit": "le kg",
+          "mean": 2.87,
+          "varia": 0.2,
+          "min": 2.35,
+          "max": 3.09,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "CRESSON",
+      "name_fr": "Cresson",
+      "name_en": "Cresson",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CROSNE",
+      "name_fr": "Crosne",
+      "name_en": "Crosne",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "CURCUMA",
+      "name_fr": "Curcuma",
+      "name_en": "Curcuma",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "DATTE",
+      "name_fr": "Datte",
+      "name_en": "Datte",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "ECHALION",
+      "name_fr": "Echalion",
+      "name_en": "Echalion",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "ECHALOTE",
+      "name_fr": "Echalote",
+      "name_en": "Echalote",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "ÉCHALOTE France biologique",
+          "unit": "le kg",
+          "mean": 6.35,
+          "varia": 0.04,
+          "min": 4.9,
+          "max": 6.99,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "ÉCHALOTE France biologique",
+          "unit": "le kg",
+          "mean": 6.35,
+          "varia": 0.04,
+          "min": 4.9,
+          "max": 6.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "ENDIVE",
+      "name_fr": "Endive",
+      "name_en": "Endive",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ENDIVE France sachet 1kg",
+          "unit": "le kg",
+          "mean": 4.57,
+          "varia": 0.16,
+          "min": 3.49,
+          "max": 4.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ENDIVE France vrac",
+          "unit": "le kg",
+          "mean": 4.77,
+          "varia": 0.17,
+          "min": 3.99,
+          "max": 5.19,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "ENDIVE France biologique",
+          "unit": "le kg",
+          "mean": 9.35,
+          "varia": -0.21,
+          "min": null,
+          "max": null,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ENDIVE France sachet 1kg",
+          "unit": "le kg",
+          "mean": 4.57,
+          "varia": 0.16,
+          "min": 3.49,
+          "max": 4.99,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "ENDIVE France biologique",
+          "unit": "le kg",
+          "mean": 9.35,
+          "varia": -0.21,
+          "min": null,
+          "max": null,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "EPINARD",
+      "name_fr": "Epinard",
+      "name_en": "Epinard",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "ESTRAGON",
+      "name_fr": "Estragon",
+      "name_en": "Estragon",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "FENOUIL",
+      "name_fr": "Fenouil",
+      "name_en": "Fenouil",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "FENOUIL France biologique",
+          "unit": "le kg",
+          "mean": 5.76,
+          "varia": 0.24,
+          "min": 5.15,
+          "max": 6.65,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "FENOUIL France biologique",
+          "unit": "le kg",
+          "mean": 5.76,
+          "varia": 0.24,
+          "min": 5.15,
+          "max": 6.65,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "FEVE",
+      "name_fr": "Feve",
+      "name_en": "Feve",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "FIGUE",
+      "name_fr": "Figue",
+      "name_en": "Figue",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "FIGUE fraîche France biologique",
+          "unit": "le kg",
+          "mean": 14.98,
+          "varia": null,
+          "min": 11.99,
+          "max": 15,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "FIGUE fraîche France biologique",
+          "unit": "le kg",
+          "mean": 14.98,
+          "varia": null,
+          "min": 11.99,
+          "max": 15,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "FIGUE-SECHE",
+      "name_fr": "Figue Seche",
+      "name_en": "Figue Seche",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "FRAISE",
+      "name_fr": "Fraise",
+      "name_en": "Strawberry",
+      "group": "Fruits",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "FRAISE France",
+          "unit": "le kg",
+          "mean": 10.33,
+          "varia": null,
+          "min": 8.5,
+          "max": 12,
+          "isBio": false
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "FRAISE France",
+          "unit": "le kg",
+          "mean": 10.33,
+          "varia": null,
+          "min": 8.5,
+          "max": 12,
+          "isBio": false
+        },
+        "bio": null
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "FRAMBOISE",
+      "name_fr": "Framboise",
+      "name_en": "Framboise",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "FRAMBOISE France barq.125g",
+          "unit": "le kg",
+          "mean": 27.31,
+          "varia": 1.8,
+          "min": 20.72,
+          "max": 31.92,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "FRAMBOISE hors Fr. barq.125g",
+          "unit": "le kg",
+          "mean": 24.7,
+          "varia": 0.96,
+          "min": 15.92,
+          "max": 31.12,
+          "isBio": false
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "FRAMBOISE France barq.125g",
+          "unit": "le kg",
+          "mean": 27.31,
+          "varia": 1.8,
+          "min": 20.72,
+          "max": 31.92,
+          "isBio": false
+        },
+        "bio": null
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "FRUIT-DE-LA-PASSION",
+      "name_fr": "Fruit De La Passion",
+      "name_en": "Fruit De La Passion",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "GINGEMBRE",
+      "name_fr": "Gingembre",
+      "name_en": "Gingembre",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "GINGEMBRE Import biologique",
+          "unit": "le kg",
+          "mean": 9.85,
+          "varia": 0.04,
+          "min": 7.69,
+          "max": 11.99,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "GINGEMBRE Import biologique",
+          "unit": "le kg",
+          "mean": 9.85,
+          "varia": 0.04,
+          "min": 7.69,
+          "max": 11.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "GIROLLE",
+      "name_fr": "Girolle",
+      "name_en": "Girolle",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "GOMBO",
+      "name_fr": "Gombo",
+      "name_en": "Gombo",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "GOYAVE",
+      "name_fr": "Goyave",
+      "name_en": "Goyave",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "GRENADE",
+      "name_fr": "Grenade",
+      "name_en": "Grenade",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "GRENADE U.E. biologique",
+          "unit": "le kg",
+          "mean": 7.2,
+          "varia": null,
+          "min": 5.99,
+          "max": 7.99,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "GRENADE U.E. biologique",
+          "unit": "le kg",
+          "mean": 7.2,
+          "varia": null,
+          "min": 5.99,
+          "max": 7.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "GRENADILLE",
+      "name_fr": "Grenadille",
+      "name_en": "Grenadille",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "GRIOTTE",
+      "name_fr": "Griotte",
+      "name_en": "Griotte",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "GROSEILLE",
+      "name_fr": "Groseille",
+      "name_en": "Groseille",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "GROSEILLE-A-MAQUEREAU",
+      "name_fr": "Groseille A Maquereau",
+      "name_en": "Groseille A Maquereau",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "HARICOT",
+      "name_fr": "Haricot",
+      "name_en": "Haricot",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "HARICOT-VERT",
+      "name_fr": "Haricot Vert",
+      "name_en": "Haricot Vert",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "HARICOT VERT France biologique ramassé main",
+          "unit": "le kg",
+          "mean": 11.11,
+          "varia": -3.94,
+          "min": 9.25,
+          "max": 14.95,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "HARICOT VERT France biologique ramassé main",
+          "unit": "le kg",
+          "mean": 11.11,
+          "varia": -3.94,
+          "min": 9.25,
+          "max": 14.95,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "IGNAME",
+      "name_fr": "Igname",
+      "name_en": "Igname",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "KAKI",
+      "name_fr": "Kaki",
+      "name_en": "Kaki",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "KIWI",
+      "name_fr": "Kiwi",
+      "name_en": "Kiwi",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "KIWI Gold Import biologique",
+          "unit": "le kg",
+          "mean": 9.6,
+          "varia": -0.22,
+          "min": null,
+          "max": null,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "KIWI Hayward Import biologique",
+          "unit": "le kg",
+          "mean": 9.43,
+          "varia": 0.21,
+          "min": null,
+          "max": null,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "KIWI Gold Import biologique",
+          "unit": "le kg",
+          "mean": 9.6,
+          "varia": -0.22,
+          "min": null,
+          "max": null,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "KUMQUATE",
+      "name_fr": "Kumquate",
+      "name_en": "Kumquate",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "LACTAIRE",
+      "name_fr": "Lactaire",
+      "name_en": "Lactaire",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "LAITUE",
+      "name_fr": "Laitue",
+      "name_en": "Laitue",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "LAITUE Batavia France",
+          "unit": "la pièce",
+          "mean": 1.69,
+          "varia": -0.04,
+          "min": 1.29,
+          "max": 1.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "LAITUE Feuille de chêne France",
+          "unit": "la pièce",
+          "mean": 1.77,
+          "varia": -0.01,
+          "min": 1.39,
+          "max": 1.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "LAITUE pommée France",
+          "unit": "la pièce",
+          "mean": 1.77,
+          "varia": -0.04,
+          "min": 1.49,
+          "max": 1.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "LAITUE Batavia France biologique",
+          "unit": "la pièce",
+          "mean": 1.69,
+          "varia": 0.03,
+          "min": 1.29,
+          "max": 1.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "LAITUE Feuille de chêne blonde France biologique",
+          "unit": "la pièce",
+          "mean": 1.69,
+          "varia": 0.08,
+          "min": 1.49,
+          "max": 1.79,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "LAITUE Feuille de chêne rouge France biologique",
+          "unit": "la pièce",
+          "mean": 1.64,
+          "varia": -0.06,
+          "min": 1.35,
+          "max": 1.8,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "LAITUE pommée France biologique",
+          "unit": "la pièce",
+          "mean": 1.69,
+          "varia": 0.11,
+          "min": null,
+          "max": null,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "LAITUE Batavia France",
+          "unit": "la pièce",
+          "mean": 1.69,
+          "varia": -0.04,
+          "min": 1.29,
+          "max": 1.99,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "LAITUE Batavia France biologique",
+          "unit": "la pièce",
+          "mean": 1.69,
+          "varia": 0.03,
+          "min": 1.29,
+          "max": 1.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "LAURIER",
+      "name_fr": "Laurier",
+      "name_en": "Laurier",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "LIME",
+      "name_fr": "Lime",
+      "name_en": "Lime",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "LITCHI",
+      "name_fr": "Litchi",
+      "name_en": "Litchi",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MACHE",
+      "name_fr": "Mache",
+      "name_en": "Mache",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MANDARINE",
+      "name_fr": "Mandarine",
+      "name_en": "Mandarine",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MANGOUSTAN",
+      "name_fr": "Mangoustan",
+      "name_en": "Mangoustan",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MANGUE",
+      "name_fr": "Mangue",
+      "name_en": "Mangue",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "MANGUE Import biologique vendu à la pièce",
+          "unit": "la pièce",
+          "mean": 2.72,
+          "varia": 0.41,
+          "min": 2,
+          "max": 3.29,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "MANGUE Import biologique vendu à la pièce",
+          "unit": "la pièce",
+          "mean": 2.72,
+          "varia": 0.41,
+          "min": 2,
+          "max": 3.29,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "MANIOC",
+      "name_fr": "Manioc",
+      "name_en": "Manioc",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MARRON",
+      "name_fr": "Marron",
+      "name_en": "Marron",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MELANGE-SALADES",
+      "name_fr": "Melange Salades",
+      "name_en": "Melange Salades",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MELON",
+      "name_fr": "Melon",
+      "name_en": "Melon",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "MELON Charentais France biologique",
+          "unit": "la pièce",
+          "mean": 3.51,
+          "varia": 0.08,
+          "min": 2.49,
+          "max": 3.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "MELON Charentais jaune France 1150-1450g",
+          "unit": "la pièce",
+          "mean": 2.59,
+          "varia": 0.17,
+          "min": null,
+          "max": null,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "MELON Charentais jaune France 1350-1750g",
+          "unit": "la pièce",
+          "mean": 2.67,
+          "varia": null,
+          "min": null,
+          "max": null,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "MELON Charentais jaune France  600-780g",
+          "unit": "la pièce",
+          "mean": 1.42,
+          "varia": 0.04,
+          "min": 0.99,
+          "max": 1.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "MELON Charentais jaune France 750-1250g",
+          "unit": "la pièce",
+          "mean": 2.29,
+          "varia": 0.07,
+          "min": 1.59,
+          "max": 2.79,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "MELON Charentais France biologique",
+          "unit": "la pièce",
+          "mean": 3.55,
+          "varia": 0.49,
+          "min": 2.5,
+          "max": 3.5,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "MELON Charentais jaune France 1150-1450g",
+          "unit": "la pièce",
+          "mean": 2.59,
+          "varia": 0.17,
+          "min": null,
+          "max": null,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "MELON Charentais France biologique",
+          "unit": "la pièce",
+          "mean": 3.55,
+          "varia": 0.49,
+          "min": 2.5,
+          "max": 3.5,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "MENTHE",
+      "name_fr": "Menthe",
+      "name_en": "Menthe",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MESCLUN",
+      "name_fr": "Mesclun",
+      "name_en": "Mesclun",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MINEOLA",
+      "name_fr": "Mineola",
+      "name_en": "Mineola",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MORILLE",
+      "name_fr": "Morille",
+      "name_en": "Morille",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MOUSSERON",
+      "name_fr": "Mousseron",
+      "name_en": "Mousseron",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MURE",
+      "name_fr": "Mure",
+      "name_en": "Mure",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "MYRTILLE",
+      "name_fr": "Myrtille",
+      "name_en": "Myrtille",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "NAVET",
+      "name_fr": "Navet",
+      "name_en": "Navet",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "NECTARINE",
+      "name_fr": "Nectarine",
+      "name_en": "Nectarine",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "NECTARINE chair blanche France A-AA vrac",
+          "unit": "le kg",
+          "mean": 3.99,
+          "varia": 0.06,
+          "min": 2.99,
+          "max": 4.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "NECTARINE chair jaune France A-AA vrac",
+          "unit": "le kg",
+          "mean": 3.97,
+          "varia": 0.05,
+          "min": 2.49,
+          "max": 4.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "NECTARINE France barq.1kg",
+          "unit": "le kg",
+          "mean": 3.17,
+          "varia": 0.12,
+          "min": 2.99,
+          "max": 3.49,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "NECTARINE France biologique cdt 4",
+          "unit": "le cdt 4",
+          "mean": 5.08,
+          "varia": 0.08,
+          "min": 4.49,
+          "max": 5.95,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "NECTARINE chair blanche France biologique",
+          "unit": "le kg",
+          "mean": 9.17,
+          "varia": 0.35,
+          "min": 7.99,
+          "max": 9.7,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "NECTARINE chair jaune France biologique",
+          "unit": "le kg",
+          "mean": 8.65,
+          "varia": 0.02,
+          "min": 7.99,
+          "max": 9.7,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "NECTARINE chair blanche France A-AA vrac",
+          "unit": "le kg",
+          "mean": 3.99,
+          "varia": 0.06,
+          "min": 2.99,
+          "max": 4.99,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "NECTARINE chair blanche France biologique",
+          "unit": "le kg",
+          "mean": 9.17,
+          "varia": 0.35,
+          "min": 7.99,
+          "max": 9.7,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "NEFLE",
+      "name_fr": "Nefle",
+      "name_en": "Nefle",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "NOISETTE",
+      "name_fr": "Noisette",
+      "name_en": "Noisette",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "NOIX",
+      "name_fr": "Noix",
+      "name_en": "Noix",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "NOIX France biologique",
+          "unit": "le kg",
+          "mean": 9.18,
+          "varia": -0.14,
+          "min": 7.9,
+          "max": 9.99,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "NOIX France biologique",
+          "unit": "le kg",
+          "mean": 9.18,
+          "varia": -0.14,
+          "min": 7.9,
+          "max": 9.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "NOIX-DE-COCO",
+      "name_fr": "Noix De Coco",
+      "name_en": "Noix De Coco",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "OIGNON",
+      "name_fr": "Oignon",
+      "name_en": "Oignon",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "OIGNON jaune France biologique",
+          "unit": "le kg",
+          "mean": 3.04,
+          "varia": -0.04,
+          "min": 2.78,
+          "max": 3.49,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "OIGNON jaune France filet 1kg",
+          "unit": "le kg",
+          "mean": 2.23,
+          "varia": 0.05,
+          "min": 1.15,
+          "max": 2.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "OIGNON blanc France avec fane biologique",
+          "unit": "la botte",
+          "mean": 2.84,
+          "varia": 0.29,
+          "min": 2.35,
+          "max": 2.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "OIGNON jaune France biologique",
+          "unit": "le kg",
+          "mean": 3.35,
+          "varia": -0.06,
+          "min": 2.95,
+          "max": 3.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "OIGNON rouge France biologique",
+          "unit": "le kg",
+          "mean": 4.34,
+          "varia": -0.22,
+          "min": 3.9,
+          "max": 4.95,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "OIGNON jaune France filet 1kg",
+          "unit": "le kg",
+          "mean": 2.23,
+          "varia": 0.05,
+          "min": 1.15,
+          "max": 2.99,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "OIGNON jaune France biologique",
+          "unit": "le kg",
+          "mean": 3.35,
+          "varia": -0.06,
+          "min": 2.95,
+          "max": 3.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "ORANGE",
+      "name_fr": "Orange",
+      "name_en": "Orange",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ORANGE hors Fr. vrac",
+          "unit": "le kg",
+          "mean": 2.93,
+          "varia": 0.04,
+          "min": 1.99,
+          "max": 3.49,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "ORANGE U.E. biologique",
+          "unit": "le kg",
+          "mean": 4.22,
+          "varia": -0.14,
+          "min": 3.35,
+          "max": 4.49,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "ORANGE hors Fr. vrac",
+          "unit": "le kg",
+          "mean": 2.93,
+          "varia": 0.04,
+          "min": 1.99,
+          "max": 3.49,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "ORANGE U.E. biologique",
+          "unit": "le kg",
+          "mean": 4.22,
+          "varia": -0.14,
+          "min": 3.35,
+          "max": 4.49,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "ORTANIQUE",
+      "name_fr": "Ortanique",
+      "name_en": "Ortanique",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
     },
     {
       "slug": "OSEILLE",
@@ -100,7 +3007,1573 @@
       "name_en": "Sorrel",
       "group": "Légumes",
       "prices": [],
-      "summary": {"conventional": null, "bio": null},
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "PANAIS",
+      "name_fr": "Panais",
+      "name_en": "Panais",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "04-06-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PANAIS France biologique",
+          "unit": "le kg",
+          "mean": 4.12,
+          "varia": 0.19,
+          "min": null,
+          "max": null,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "04-06-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PANAIS France biologique",
+          "unit": "le kg",
+          "mean": 4.12,
+          "varia": 0.19,
+          "min": null,
+          "max": null,
+          "isBio": true
+        }
+      },
+      "lastDate": "04-06-2026"
+    },
+    {
+      "slug": "PAPAYE",
+      "name_fr": "Papaye",
+      "name_en": "Papaye",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "PASTEQUE",
+      "name_fr": "Pasteque",
+      "name_en": "Pasteque",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "PATATE-DOUCE",
+      "name_fr": "Patate Douce",
+      "name_en": "Patate Douce",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PATATE DOUCE France biologique",
+          "unit": "le kg",
+          "mean": 5.4,
+          "varia": 0.01,
+          "min": 4.5,
+          "max": 6.15,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PATATE DOUCE France biologique",
+          "unit": "le kg",
+          "mean": 5.4,
+          "varia": 0.01,
+          "min": 4.5,
+          "max": 6.15,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "PATISSON",
+      "name_fr": "Patisson",
+      "name_en": "Patisson",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "26-02-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PATISSON France biologique",
+          "unit": "le kg",
+          "mean": 3.45,
+          "varia": null,
+          "min": null,
+          "max": null,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "26-02-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PATISSON France biologique",
+          "unit": "le kg",
+          "mean": 3.45,
+          "varia": null,
+          "min": null,
+          "max": null,
+          "isBio": true
+        }
+      },
+      "lastDate": "26-02-2026"
+    },
+    {
+      "slug": "PECHE",
+      "name_fr": "Peche",
+      "name_en": "Peche",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PÊCHE chair blanche France A-AA vrac",
+          "unit": "le kg",
+          "mean": 4.08,
+          "varia": 0.38,
+          "min": 3.29,
+          "max": 4.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PÊCHE chair jaune France A-AA vrac",
+          "unit": "le kg",
+          "mean": 4.03,
+          "varia": 0.3,
+          "min": 3.29,
+          "max": 4.79,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PÊCHE France barq.1kg",
+          "unit": "le kg",
+          "mean": 3.13,
+          "varia": 0.07,
+          "min": 2.79,
+          "max": 3.49,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PÊCHE France biologique cdt 4",
+          "unit": "le cdt 4",
+          "mean": 4.82,
+          "varia": 0.04,
+          "min": null,
+          "max": null,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PÊCHE chair blanche France biologique",
+          "unit": "le kg",
+          "mean": 8.2,
+          "varia": 0.22,
+          "min": 6.99,
+          "max": 8.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PÊCHE chair jaune France biologique",
+          "unit": "le kg",
+          "mean": 8.3,
+          "varia": -0.09,
+          "min": 6.99,
+          "max": 8.99,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PÊCHE chair blanche France A-AA vrac",
+          "unit": "le kg",
+          "mean": 4.08,
+          "varia": 0.38,
+          "min": 3.29,
+          "max": 4.99,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PÊCHE chair blanche France biologique",
+          "unit": "le kg",
+          "mean": 8.2,
+          "varia": 0.22,
+          "min": 6.99,
+          "max": 8.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "PERSIL",
+      "name_fr": "Persil",
+      "name_en": "Persil",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PERSIL France biologique",
+          "unit": "la botte",
+          "mean": 2,
+          "varia": -0.05,
+          "min": 1.79,
+          "max": 2.1,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PERSIL France biologique",
+          "unit": "la botte",
+          "mean": 2,
+          "varia": -0.05,
+          "min": 1.79,
+          "max": 2.1,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "PHYSALIS",
+      "name_fr": "Physalis",
+      "name_en": "Physalis",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "PIED-DE-MOUTON",
+      "name_fr": "Pied De Mouton",
+      "name_en": "Pied De Mouton",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "PIMENT",
+      "name_fr": "Piment",
+      "name_en": "Piment",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "PISSENLIT",
+      "name_fr": "Pissenlit",
+      "name_en": "Pissenlit",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "PITAHAYA",
+      "name_fr": "Pitahaya",
+      "name_en": "Pitahaya",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "PLEUROTE",
+      "name_fr": "Pleurote",
+      "name_en": "Pleurote",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "POIRE",
+      "name_fr": "Poire",
+      "name_en": "Pear",
+      "group": "Fruits",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POIRE Conférence France",
+          "unit": "le kg",
+          "mean": 3.47,
+          "varia": 0.05,
+          "min": 2.49,
+          "max": 4.2,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "POIRE Conférence France biologique",
+          "unit": "le kg",
+          "mean": 3.25,
+          "varia": null,
+          "min": 2.99,
+          "max": 3.89,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POIRE Conférence France",
+          "unit": "le kg",
+          "mean": 3.47,
+          "varia": 0.05,
+          "min": 2.49,
+          "max": 4.2,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "POIRE Conférence France biologique",
+          "unit": "le kg",
+          "mean": 3.25,
+          "varia": null,
+          "min": 2.99,
+          "max": 3.89,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "POIREAU",
+      "name_fr": "Poireau",
+      "name_en": "Poireau",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POIREAU France entier biologique",
+          "unit": "le kg",
+          "mean": 5.75,
+          "varia": 0.22,
+          "min": null,
+          "max": null,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POIREAU France entier vrac",
+          "unit": "le kg",
+          "mean": 3.19,
+          "varia": 0.04,
+          "min": 2.79,
+          "max": 3.65,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "POIREAU France biologique",
+          "unit": "le kg",
+          "mean": 5.04,
+          "varia": 0.03,
+          "min": 4.29,
+          "max": 5.5,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POIREAU France entier vrac",
+          "unit": "le kg",
+          "mean": 3.19,
+          "varia": 0.04,
+          "min": 2.79,
+          "max": 3.65,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "POIREAU France biologique",
+          "unit": "le kg",
+          "mean": 5.04,
+          "varia": 0.03,
+          "min": 4.29,
+          "max": 5.5,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "POIS",
+      "name_fr": "Pois",
+      "name_en": "Pois",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "POIVRON",
+      "name_fr": "Poivron",
+      "name_en": "Poivron",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POIVRON carré France biologique cdt 2",
+          "unit": "le cdt 2",
+          "mean": 3.76,
+          "varia": -0.05,
+          "min": 3.49,
+          "max": 3.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POIVRON carré hors Fr. biologique cdt 2",
+          "unit": "le cdt 2",
+          "mean": 2.28,
+          "varia": 0.16,
+          "min": 1.99,
+          "max": 3.19,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POIVRON rouge carré France vrac",
+          "unit": "le kg",
+          "mean": 5.63,
+          "varia": -0.22,
+          "min": null,
+          "max": null,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POIVRON rouge carré hors Fr. vrac",
+          "unit": "le kg",
+          "mean": 4.33,
+          "varia": -0.8,
+          "min": 2.09,
+          "max": 5.79,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POIVRON vert carré France vrac",
+          "unit": "le kg",
+          "mean": 5.06,
+          "varia": -0.29,
+          "min": 4.29,
+          "max": 5.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POIVRON vert carré hors Fr. vrac",
+          "unit": "le kg",
+          "mean": 4.2,
+          "varia": -0.91,
+          "min": 2.09,
+          "max": 5.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "POIVRON France biologique",
+          "unit": "le kg",
+          "mean": 5.82,
+          "varia": -0.34,
+          "min": 4.99,
+          "max": 6.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "POIVRON U.E. biologique",
+          "unit": "le kg",
+          "mean": 7.63,
+          "varia": 0.15,
+          "min": 4.89,
+          "max": 7.99,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POIVRON rouge carré France vrac",
+          "unit": "le kg",
+          "mean": 5.63,
+          "varia": -0.22,
+          "min": null,
+          "max": null,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "POIVRON France biologique",
+          "unit": "le kg",
+          "mean": 5.82,
+          "varia": -0.34,
+          "min": 4.99,
+          "max": 6.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "POMELOS",
+      "name_fr": "Pomelos",
+      "name_en": "Pomelos",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "POMME",
+      "name_fr": "Pomme",
+      "name_en": "Apple",
+      "group": "Fruits",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POMME Gala France +170g vrac",
+          "unit": "le kg",
+          "mean": 2.95,
+          "varia": 0.27,
+          "min": 1.99,
+          "max": 3.4,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "POMME Golden France biologique",
+          "unit": "le kg",
+          "mean": 3.65,
+          "varia": 0.09,
+          "min": 2.99,
+          "max": 3.89,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POMME Gala France +170g vrac",
+          "unit": "le kg",
+          "mean": 2.95,
+          "varia": 0.27,
+          "min": 1.99,
+          "max": 3.4,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "POMME Golden France biologique",
+          "unit": "le kg",
+          "mean": 3.65,
+          "varia": 0.09,
+          "min": 2.99,
+          "max": 3.89,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "POMME-DE-TERRE",
+      "name_fr": "Pomme De Terre",
+      "name_en": "Pomme De Terre",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POMME DE TERRE de conservation France lavée sac 5kg",
+          "unit": "le kg",
+          "mean": 0.84,
+          "varia": -0.17,
+          "min": 0.6,
+          "max": 1.2,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POMME DE TERRE de conservation France vrac",
+          "unit": "le kg",
+          "mean": 2.16,
+          "varia": 0.04,
+          "min": 1.49,
+          "max": 2.89,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POMME DE TERRE four, frites ou purée de conservation France filet 2,5kg",
+          "unit": "le kg",
+          "mean": 1.46,
+          "varia": 0,
+          "min": 1.16,
+          "max": 1.8,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POMME DE TERRE four, frites ou purée de conservation France filet 2kg",
+          "unit": "le kg",
+          "mean": 1.49,
+          "varia": -0.03,
+          "min": 0.85,
+          "max": 1.85,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POMME DE TERRE France biologique",
+          "unit": "le kg",
+          "mean": 2.22,
+          "varia": 0.03,
+          "min": 1.75,
+          "max": 2.66,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POMME DE TERRE vapeur ou rissolée de conservation France filet 2,5kg",
+          "unit": "le kg",
+          "mean": 1.55,
+          "varia": -0.01,
+          "min": 1.16,
+          "max": 1.8,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POMME DE TERRE vapeur ou rissolée de conservation France filet 2kg",
+          "unit": "le kg",
+          "mean": 1.71,
+          "varia": 0.06,
+          "min": 1.25,
+          "max": 2.25,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "POMME DE TERRE de conservation France biologique",
+          "unit": "le kg",
+          "mean": 2.42,
+          "varia": 0.1,
+          "min": 1.99,
+          "max": 2.99,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "POMME DE TERRE de conservation France lavée sac 5kg",
+          "unit": "le kg",
+          "mean": 0.84,
+          "varia": -0.17,
+          "min": 0.6,
+          "max": 1.2,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "POMME DE TERRE de conservation France biologique",
+          "unit": "le kg",
+          "mean": 2.42,
+          "varia": 0.1,
+          "min": 1.99,
+          "max": 2.99,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "POTIRON",
+      "name_fr": "Potiron",
+      "name_en": "Potiron",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "PRUNE",
+      "name_fr": "Prune",
+      "name_en": "Prune",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PRUNE bleue Quetsche France vrac",
+          "unit": "le kg",
+          "mean": 4.13,
+          "varia": null,
+          "min": 3.89,
+          "max": 4.5,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PRUNE jaune autre ou inconnue France vrac",
+          "unit": "le kg",
+          "mean": 4.24,
+          "varia": 0.17,
+          "min": 2.99,
+          "max": 4.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PRUNE jaune Mirabelle France vrac",
+          "unit": "le kg",
+          "mean": 5.95,
+          "varia": 0.07,
+          "min": 4.99,
+          "max": 6.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PRUNE jaune T-C Sun France vrac",
+          "unit": "le kg",
+          "mean": 3.76,
+          "varia": -0.28,
+          "min": 2.19,
+          "max": 4.69,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PRUNE Reine-Claude Dorée France biologique",
+          "unit": "le kg",
+          "mean": 7.98,
+          "varia": -0.58,
+          "min": 6.99,
+          "max": 9.98,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PRUNE rouge-bleue France barq.",
+          "unit": "le kg",
+          "mean": 3.76,
+          "varia": 0.18,
+          "min": 2.98,
+          "max": 4.59,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PRUNE rouge France vrac",
+          "unit": "le kg",
+          "mean": 3.85,
+          "varia": -0.02,
+          "min": 2.19,
+          "max": 4.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PRUNE verte autre ou inconnue France vrac",
+          "unit": "le kg",
+          "mean": 4.51,
+          "varia": null,
+          "min": null,
+          "max": null,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PRUNE verte Reine-Claude Dorée France barq.",
+          "unit": "le kg",
+          "mean": 7.16,
+          "varia": 0.62,
+          "min": 5.72,
+          "max": 7.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PRUNE verte Reine-Claude Dorée France vrac",
+          "unit": "le kg",
+          "mean": 4.85,
+          "varia": -0.23,
+          "min": 3.15,
+          "max": 5.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PRUNE jaune France biologique",
+          "unit": "le kg",
+          "mean": 7.21,
+          "varia": 0.16,
+          "min": 6.95,
+          "max": 7.5,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PRUNE jaune Mirabelle France biologique",
+          "unit": "le kg",
+          "mean": 7.49,
+          "varia": -0.26,
+          "min": 6.5,
+          "max": 8.3,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PRUNE rouge-bleue France biologique",
+          "unit": "le kg",
+          "mean": 6.41,
+          "varia": -0.37,
+          "min": 4.7,
+          "max": 7.69,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PRUNE verte Reine-Claude Dorée France biologique",
+          "unit": "le kg",
+          "mean": 7.12,
+          "varia": 0.08,
+          "min": 5.99,
+          "max": 7.99,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "PRUNE bleue Quetsche France vrac",
+          "unit": "le kg",
+          "mean": 4.13,
+          "varia": null,
+          "min": 3.89,
+          "max": 4.5,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "PRUNE jaune France biologique",
+          "unit": "le kg",
+          "mean": 7.21,
+          "varia": 0.16,
+          "min": 6.95,
+          "max": 7.5,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "PRUNEAU",
+      "name_fr": "Pruneau",
+      "name_en": "Pruneau",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "RADIS",
+      "name_fr": "Radis",
+      "name_en": "Radis",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "RADIS demi-long France biologique",
+          "unit": "la botte",
+          "mean": 2.34,
+          "varia": 0.06,
+          "min": 1.99,
+          "max": 2.25,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "RADIS noir France biologique",
+          "unit": "le kg",
+          "mean": 4.31,
+          "varia": -0.15,
+          "min": 3.25,
+          "max": 4.69,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": null,
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "RADIS noir France biologique",
+          "unit": "le kg",
+          "mean": 4.31,
+          "varia": -0.15,
+          "min": 3.25,
+          "max": 4.69,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "RAISIN",
+      "name_fr": "Raisin",
+      "name_en": "Raisin",
+      "group": "Fruits et Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN blanc Chasselas AOP Moissac France barq.",
+          "unit": "le kg",
+          "mean": 6.78,
+          "varia": -0.05,
+          "min": 5.98,
+          "max": 7.98,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN blanc Chasselas AOP Moissac France vrac",
+          "unit": "le kg",
+          "mean": 5.01,
+          "varia": null,
+          "min": 4.49,
+          "max": 5.69,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN blanc Chasselas sans label France vrac",
+          "unit": "le kg",
+          "mean": 4.02,
+          "varia": -0.18,
+          "min": 2.99,
+          "max": 4.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN blanc France biologique",
+          "unit": "le kg",
+          "mean": 8.97,
+          "varia": null,
+          "min": null,
+          "max": null,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN blanc hors Fr. biologique",
+          "unit": "le kg",
+          "mean": 8.25,
+          "varia": -0.15,
+          "min": 5.98,
+          "max": 8.98,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN blanc Idéal ou Italia hors Fr. vrac",
+          "unit": "le kg",
+          "mean": 2.87,
+          "varia": 0.31,
+          "min": 1.19,
+          "max": 3.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN blanc Vittoria hors Fr. vrac",
+          "unit": "le kg",
+          "mean": 3.33,
+          "varia": 0.07,
+          "min": 2.49,
+          "max": 3.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN noir autre noir France vrac",
+          "unit": "le kg",
+          "mean": 4.18,
+          "varia": 0.1,
+          "min": 2.99,
+          "max": 4.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN noir France biologique",
+          "unit": "le kg",
+          "mean": 8.46,
+          "varia": null,
+          "min": 6.52,
+          "max": 9.78,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN noir Lavallée France vrac",
+          "unit": "le kg",
+          "mean": 3.93,
+          "varia": 0.01,
+          "min": 2.99,
+          "max": 4.29,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN noir Muscat Hambourg AOP Ventoux France barq.",
+          "unit": "le kg",
+          "mean": 8.24,
+          "varia": null,
+          "min": null,
+          "max": null,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN noir Muscat Hambourg sans label France barq.",
+          "unit": "le kg",
+          "mean": 8,
+          "varia": 0.23,
+          "min": 6.65,
+          "max": 8.65,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN noir Muscat Hambourg sans label France vrac",
+          "unit": "le kg",
+          "mean": 4.99,
+          "varia": -0.2,
+          "min": 3.99,
+          "max": 5.99,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "RAISIN blanc France biologique",
+          "unit": "le kg",
+          "mean": 5.75,
+          "varia": 0.74,
+          "min": 3.99,
+          "max": 6.95,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "RAISIN blanc U.E. biologique",
+          "unit": "le kg",
+          "mean": 4.23,
+          "varia": -0.18,
+          "min": 3.75,
+          "max": 4.99,
+          "isBio": true
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "RAISIN noir France biologique",
+          "unit": "le kg",
+          "mean": 5.4,
+          "varia": -0.43,
+          "min": 3.99,
+          "max": 6.89,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "RAISIN blanc Chasselas AOP Moissac France barq.",
+          "unit": "le kg",
+          "mean": 6.78,
+          "varia": -0.05,
+          "min": 5.98,
+          "max": 7.98,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Fruits France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "RAISIN blanc France biologique",
+          "unit": "le kg",
+          "mean": 5.75,
+          "varia": 0.74,
+          "min": 3.99,
+          "max": 6.95,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "RHUBARBE",
+      "name_fr": "Rhubarbe",
+      "name_en": "Rhubarbe",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "ROMARIN",
+      "name_fr": "Romarin",
+      "name_en": "Romarin",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "ROQUETTE",
+      "name_fr": "Roquette",
+      "name_en": "Roquette",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "RUTABAGA",
+      "name_fr": "Rutabaga",
+      "name_en": "Rutabaga",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "SALSIFIS",
+      "name_fr": "Salsifis",
+      "name_en": "Salsifis",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "SATSUMA",
+      "name_fr": "Satsuma",
+      "name_en": "Satsuma",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "SAUGE",
+      "name_fr": "Sauge",
+      "name_en": "Sauge",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "SCORSONERE",
+      "name_fr": "Scorsonere",
+      "name_en": "Scorsonere",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "SHII-TAKE",
+      "name_fr": "Shii Take",
+      "name_en": "Shii Take",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "SOJA",
+      "name_fr": "Soja",
+      "name_en": "Soja",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "TARO",
+      "name_fr": "Taro",
+      "name_en": "Taro",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "THYM",
+      "name_fr": "Thym",
+      "name_en": "Thym",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "TOMATE",
+      "name_fr": "Tomate",
+      "name_en": "Tomato",
+      "group": "Légumes",
+      "prices": [
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "TOMATE ronde France",
+          "unit": "le kg",
+          "mean": 3.45,
+          "varia": 0.1,
+          "min": 2.49,
+          "max": 4.2,
+          "isBio": false
+        },
+        {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "TOMATE ronde France biologique",
+          "unit": "le kg",
+          "mean": 4.2,
+          "varia": null,
+          "min": 3.5,
+          "max": 5,
+          "isBio": true
+        }
+      ],
+      "summary": {
+        "conventional": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL GMS",
+          "stade": "Détail",
+          "libelle": "TOMATE ronde France",
+          "unit": "le kg",
+          "mean": 3.45,
+          "varia": 0.1,
+          "min": 2.49,
+          "max": 4.2,
+          "isBio": false
+        },
+        "bio": {
+          "date": "27-08-2026",
+          "marche": "Légumes France DETAIL MAG. SPECIALISES BIO",
+          "stade": "Détail",
+          "libelle": "TOMATE ronde France biologique",
+          "unit": "le kg",
+          "mean": 4.2,
+          "varia": null,
+          "min": 3.5,
+          "max": 5,
+          "isBio": true
+        }
+      },
+      "lastDate": "27-08-2026"
+    },
+    {
+      "slug": "TOPINAMBOUR",
+      "name_fr": "Topinambour",
+      "name_en": "Topinambour",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "TROMPETTE-DE-LA-MORT",
+      "name_fr": "Trompette De La Mort",
+      "name_en": "Trompette De La Mort",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
+      "lastDate": null
+    },
+    {
+      "slug": "TRUFFE",
+      "name_fr": "Truffe",
+      "name_en": "Truffe",
+      "group": "Fruits et Légumes",
+      "prices": [],
+      "summary": {
+        "conventional": null,
+        "bio": null
+      },
       "lastDate": null
     }
   ]
