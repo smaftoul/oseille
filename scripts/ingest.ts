@@ -16,13 +16,19 @@ function toNum(s: string): number | null {
   return isNaN(n) ? null : n;
 }
 
-async function fetchWithTimeout(url: string, init: RequestInit = {}, ms = 60000): Promise<Response> {
-  const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), ms);
+async function fetchWithTimeout(url: string, init: RequestInit = {}): Promise<Response> {
+  const started = Date.now();
+  let res: Response;
   try {
-    return await fetch(url, { ...init, signal: ctrl.signal });
-  } finally {
-    clearTimeout(t);
+    // no abort — let the server respond (or fail on its own); we log timing below
+    res = await fetch(url, init);
+    const ms = Date.now() - started;
+    console.log(`    [timing] ${init.method ?? "GET"} ${ms}ms -> status ${res.status}`);
+    return res;
+  } catch (e) {
+    const ms = Date.now() - started;
+    console.log(`    [timing] ${init.method ?? "GET"} ${ms}ms -> ERROR ${(e as Error).message}`);
+    throw e;
   }
 }
 
