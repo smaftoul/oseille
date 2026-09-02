@@ -27,18 +27,28 @@ async function fetchWithTimeout(url: string, init: RequestInit = {}, ms = 60000)
 }
 
 async function fetchEspece(slug: string): Promise<string | null> {
-  const res = await fetchWithTimeout(`${RNM_BASE}/prix?${slug}`);
-  if (!res.ok) return null;
+  const url = `${RNM_BASE}/prix?${slug}`;
+  console.log(`  [HTTP GET] ${url}`);
+  const res = await fetchWithTimeout(url);
+  if (!res.ok) {
+    console.warn(`  [HTTP GET] ${url} -> status ${res.status}`);
+    return null;
+  }
   const html = await res.text();
   const m = html.match(/name="ESPECE" value="([^"]+)"/);
-  return m ? m[1] : null;
+  const code = m ? m[1] : null;
+  console.log(`  [HTTP GET] ${url} -> ESPECE=${code ?? "not found"} (${html.length} bytes)`);
+  return code;
 }
 
 async function fetchSylk(espece: string, isMonthly = false): Promise<string> {
   const params: Record<string, string> = { ESPECE: espece, LASTDATE: "01/09/26" };
   if (isMonthly) params.MENSUEL = "1";
   const body = new URLSearchParams(params).toString();
-  const res = await fetchWithTimeout(`${RNM_BASE}/prix`, {
+  const url = `${RNM_BASE}/prix`;
+  const label = isMonthly ? "monthly (MENSUEL=1)" : "weekly";
+  console.log(`  [HTTP POST] ${url} body={${body}} (${label})`);
+  const res = await fetchWithTimeout(url, {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body,
@@ -54,6 +64,8 @@ async function fetchSylk(espece: string, isMonthly = false): Promise<string> {
   if (text.includes("\uFFFD")) {
     text = new TextDecoder("iso-8859-1").decode(buf);
   }
+  const isSylk = text.trimStart().startsWith("ID");
+  console.log(`  [HTTP POST] ${label} -> ${res.status}, ${buf.byteLength} bytes (${isSylk ? "SYLK" : "HTML/other"})`);
   return text;
 }
 
@@ -90,19 +102,25 @@ function summarizeGroup(rows: PriceRow[]): ItemSummary {
 const espCache = new Map<string, PriceRow[]>();
 
 async function fetchEntryPrices(entry: TaxonomyEntry): Promise<PriceRow[]> {
+  console.log(`--- ${entry.slug} (${entry.group}) ---`);
   const espece = await fetchEspece(entry.slug);
   if (!espece) {
     console.warn(`[warn] no ESPECE for ${entry.slug}`);
     return [];
   }
-  if (espCache.has(espece)) return espCache.get(espece)!;
+  if (espCache.has(espece)) {
+    const cached = espCache.get(espece)!;
+    console.log(`  [cache] ${entry.slug} -> reused ${cached.length} rows for ESPECE=${espece}`);
+    return cached;
+  }
 
   await new Promise((r) => setTimeout(r, 50));
   
   // 1. Try weekly SYLK
   const weeklySylk = await fetchSylk(espece, false);
-  const { rows: weeklyRows } = parseSylk(weeklySylk);
+  const { rows: weeklyRows, header: weeklyHeader } = parseSylk(weeklySylk);
   const weeklyDetail = filterDetail(weeklyRows);
+  console.log(`  [weekly] ${weeklyRows.length} table rows, ${weeklyDetail.length} Détail rows (header: ${weeklyHeader.join(" | ")})`);
 
   let prices: PriceRow[] = weeklyDetail.map((r) => {
     const lib = r["LIBELLE"] ?? r["LIBELLE "] ?? r["Libellé"] ?? "";
@@ -122,15 +140,18 @@ async function fetchEntryPrices(entry: TaxonomyEntry): Promise<PriceRow[]> {
       isMonthly: false,
     };
   }).filter((p) => p.mean !== null);
+  console.log(`  [weekly] -> ${prices.length} priced Détail rows (after filtering null MOY)`);
 
   // 2. If no weekly Détail, fallback to 12-month tableur (MENSUEL=1)
   if (prices.length === 0) {
+    console.log(`  [monthly] no weekly Détail, falling back to monthly tableur...`);
     await new Promise((r) => setTimeout(r, 50));
     try {
       const monthlySylk = await fetchSylk(espece, true);
       const { header, rows: monthlyRows } = parseSylk(monthlySylk);
       const monthlyDetail = filterDetail(monthlyRows);
       const monthCols = header.slice(4); // All month columns after Stade, Marché, Libellé, Unité
+      console.log(`  [monthly] ${monthlyRows.length} table rows, ${monthlyDetail.length} Détail rows, ${monthCols.length} month columns (${monthCols[0] ?? ""} → ${monthCols[monthCols.length - 1] ?? ""})`);
 
       const monthlyRowsParsed: PriceRow[] = [];
       for (const r of monthlyDetail) {
@@ -168,16 +189,15 @@ async function fetchEntryPrices(entry: TaxonomyEntry): Promise<PriceRow[]> {
         }
       }
       prices = monthlyRowsParsed;
-
-      if (prices.length > 0) {
-        console.log(`  -> monthly fallback found ${prices.length} detail rows for ${entry.slug}`);
-      }
+      console.log(`  [monthly] -> ${prices.length} priced Détail rows (latest month per libellé)`);
     } catch (e) {
-      console.warn(`  -> monthly fallback error for ${entry.slug}:`, (e as Error).message);
+      console.warn(`  [monthly] fallback error for ${entry.slug}:`, (e as Error).message);
     }
   }
 
   espCache.set(espece, prices);
+  const source = prices.length > 0 ? prices[0].isMonthly ? "SOURCED: monthly" : "SOURCED: weekly" : "SOURCED: none";
+  console.log(`  [result] ${entry.slug} -> ${prices.length} rows (${source})`);
   return prices;
 }
 
@@ -227,10 +247,39 @@ async function main() {
   const taxonomy: TaxonomyEntry[] = JSON.parse(taxRaw);
 
   const allItems: ItemData[] = [];
-  const CONCURRENCY = 3;
-  let idx = 0;
+  const doneSlugs = new Set<string>();
+  // Resume from partially-written prices.json (skip already-ingested products)
+  try {
+    const existing = JSON.parse(await readFile("public/data/prices.json", "utf-8"));
+    if (Array.isArray(existing.items)) {
+      for (const it of existing.items as ItemData[]) {
+        allItems.push(it);
+        doneSlugs.add(it.productSlug);
+      }
+      console.log(`[resume] loaded ${allItems.length} existing cards from ${doneSlugs.size} products`);
+    }
+  } catch {}
 
-  console.log(`[ingest] processing ${taxonomy.length} taxonomy entries...`);
+  const pending = taxonomy.filter((e) => !doneSlugs.has(e.slug));
+  console.log(`[ingest] total ${taxonomy.length}, pending ${pending.length}, done ${doneSlugs.size}`);
+
+  const CONCURRENCY = 3;
+
+  async function save() {
+    allItems.sort((a, b) => a.libelle.localeCompare(b.libelle, "fr"));
+    const payload: PricesPayload = {
+      meta: {
+        generatedAt: new Date().toISOString(),
+        source: "RNM FranceAgriMer — stade Détail (GMS / Magasins Spécialisés Bio)",
+        note: "Weekly Détail tier (T+8 days) with monthly 12-month quotation fallback.",
+      },
+      items: allItems,
+    };
+    await writeFile("public/data/prices.json", JSON.stringify(payload, null, 2));
+    console.log(`[save] ${allItems.length} cards from ${doneSlugs.size} products`);
+  }
+
+  let idx = 0;
 
   async function runOne(entry: TaxonomyEntry) {
     for (let attempt = 1; attempt <= 3; attempt++) {
@@ -238,11 +287,13 @@ async function main() {
         const prices = await fetchEntryPrices(entry);
         const items = createItemsForEntry(entry, prices);
         if (items.length > 0) {
+          const src = prices.some((p) => p.isMonthly) ? "monthly" : "weekly";
           allItems.push(...items);
-          console.log(`[ok] ${entry.slug} -> ${items.length} cards (weekly/monthly)`);
+          console.log(`[ok] ${entry.slug} -> ${items.length} cards (source: ${src})`);
         } else {
           console.log(`[skip] ${entry.slug} -> 0 detail rows (dropped)`);
         }
+        doneSlugs.add(entry.slug);
         return;
       } catch (e) {
         console.error(`[error] ${entry.slug} attempt ${attempt}:`, (e as Error).message ?? e);
@@ -257,9 +308,13 @@ async function main() {
     for (let w = 0; w < CONCURRENCY; w++) {
       workers.push(
         (async () => {
-          while (idx < taxonomy.length) {
+          while (idx < pending.length) {
             const cur = idx++;
-            await runOne(taxonomy[cur]);
+            await runOne(pending[cur]);
+            // incremental save every 5 handled products
+            if (doneSlugs.size % 5 === 0) {
+              try { await save(); } catch {}
+            }
           }
         })()
       );
@@ -269,19 +324,7 @@ async function main() {
 
   await pool();
 
-  // Sort items alphabetically by libelle
-  allItems.sort((a, b) => a.libelle.localeCompare(b.libelle, "fr"));
-
-  const payload: PricesPayload = {
-    meta: {
-      generatedAt: new Date().toISOString(),
-      source: "RNM FranceAgriMer — stade Détail (GMS / Magasins Spécialisés Bio)",
-      note: "Weekly Détail tier (T+8 days) with monthly 12-month quotation fallback.",
-    },
-    items: allItems,
-  };
-
-  await writeFile("public/data/prices.json", JSON.stringify(payload, null, 2));
+  await save();
   console.log(`[done] wrote public/data/prices.json with ${allItems.length} cards across ${new Set(allItems.map(i => i.productSlug)).size} products`);
 }
 
