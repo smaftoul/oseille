@@ -16,7 +16,7 @@ function toNum(s: string): number | null {
   return isNaN(n) ? null : n;
 }
 
-async function fetchWithTimeout(url: string, init: RequestInit = {}, ms = 7000): Promise<Response> {
+async function fetchWithTimeout(url: string, init: RequestInit = {}, ms = 60000): Promise<Response> {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), ms);
   try {
@@ -227,7 +227,7 @@ async function main() {
   const taxonomy: TaxonomyEntry[] = JSON.parse(taxRaw);
 
   const allItems: ItemData[] = [];
-  const CONCURRENCY = 8;
+  const CONCURRENCY = 3;
   let idx = 0;
 
   console.log(`[ingest] processing ${taxonomy.length} taxonomy entries...`);
