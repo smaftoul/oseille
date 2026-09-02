@@ -42,14 +42,24 @@ function Home() {
 
     return data.items.filter((item) => {
       const groupTranslated = t(`groups.${item.group}`, { defaultValue: item.group });
-      return (
-        normalize(item.libelle).includes(nNeedle) ||
-        normalize(item.productSlug).includes(nNeedle) ||
-        normalize(item.productName_fr).includes(nNeedle) ||
-        normalize(item.productName_en).includes(nNeedle) ||
-        normalize(item.group).includes(nNeedle) ||
-        normalize(groupTranslated).includes(nNeedle)
-      );
+      const haystack = [
+        item.libelle,
+        item.productSlug,
+        item.productName_fr,
+        item.productName_en,
+        item.group,
+        groupTranslated,
+        item.attrs?.variety,
+        item.attrs?.color,
+        item.attrs?.origin,
+        item.attrs?.packaging,
+        item.attrs?.size,
+        item.attrs?.label,
+        item.attrs?.saleUnit,
+      ]
+        .filter((x): x is string => !!x)
+        .join(" ");
+      return normalize(haystack).includes(nNeedle);
     });
   }, [data, q, t]);
 

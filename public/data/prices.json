@@ -57,7 +57,17 @@
           "max": 9.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "ABRICOT"
+      }
     },
     {
       "id": "ABRICOT_abricot-france-40-45mm-vrac",
@@ -100,7 +110,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": "40-45mm",
+        "label": null,
+        "saleUnit": null,
+        "note": "ABRICOT"
+      }
     },
     {
       "id": "ABRICOT_abricot-france-45-50mm-vrac",
@@ -143,7 +163,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": "45-50mm",
+        "label": null,
+        "saleUnit": null,
+        "note": "ABRICOT"
+      }
     },
     {
       "id": "ABRICOT_abricot-france-barq-1kg",
@@ -186,7 +216,17 @@
           "max": 3.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "barq.",
+        "size": "1kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "ABRICOT"
+      }
     },
     {
       "id": "AIL_ail-blanc-sec-france",
@@ -263,7 +303,17 @@
           "max": 19.5,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanc",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "AIL sec"
+      }
     },
     {
       "id": "AIL_ail-blanc-sec-france-50-70-ou-60-80mm-filet-3-t-tes",
@@ -306,7 +356,17 @@
           "max": 4.68,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanc",
+        "origin": "France",
+        "packaging": "filet",
+        "size": "50-70 ou 60-80mm",
+        "label": null,
+        "saleUnit": null,
+        "note": "AIL sec 3 têtes"
+      }
     },
     {
       "id": "AIL_ail-blanc-sec-france-vrac",
@@ -349,7 +409,17 @@
           "max": 13.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanc",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "AIL sec"
+      }
     },
     {
       "id": "AIL_ail-blanc-sec-hors-fr-vrac",
@@ -392,7 +462,17 @@
           "max": null,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanc",
+        "origin": "hors Fr.",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "AIL sec"
+      }
     },
     {
       "id": "ANANAS_ananas-standard-hors-victoria-",
@@ -435,7 +515,17 @@
           "max": 2.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "standard",
+        "color": null,
+        "origin": null,
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "ANANAS (hors Victoria)"
+      }
     },
     {
       "id": "ARTICHAUT_artichaut-globuleux-france",
@@ -478,7 +568,17 @@
           "max": 2.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Globuleux",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "ARTICHAUT"
+      }
     },
     {
       "id": "AUBERGINE_aubergine-longue-violette-france",
@@ -532,7 +632,17 @@
           "max": 5.8,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "AUBERGINE longue-violette"
+      }
     },
     {
       "id": "AUBERGINE_aubergine-violette-france",
@@ -586,7 +696,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "AUBERGINE violette"
+      }
     },
     {
       "id": "AUBERGINE_aubergine-violette-france-cdt-2",
@@ -640,7 +760,17 @@
           "max": 3.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "cdt",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "AUBERGINE violette 2"
+      }
     },
     {
       "id": "AUBERGINE_aubergine-violette-france-vrac",
@@ -683,7 +813,17 @@
           "max": 4.39,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "AUBERGINE violette"
+      }
     },
     {
       "id": "AUBERGINE_aubergine-violette-hors-fr-vrac",
@@ -726,7 +866,17 @@
           "max": 3.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "hors Fr.",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "AUBERGINE violette"
+      }
     },
     {
       "id": "AVOCAT_avocat-hass-import-vendu-la-pi-ce",
@@ -780,7 +930,17 @@
           "max": 1.9,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Hass",
+        "color": null,
+        "origin": "Import",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": "vendu à la pièce",
+        "note": "AVOCAT"
+      }
     },
     {
       "id": "AVOCAT_avocat-hors-fr-",
@@ -834,7 +994,17 @@
           "max": 1.85,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "hors Fr.",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "AVOCAT"
+      }
     },
     {
       "id": "AVOCAT_avocat-hors-fr-filet",
@@ -877,7 +1047,17 @@
           "max": 0.83,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "hors Fr.",
+        "packaging": "filet",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "AVOCAT"
+      }
     },
     {
       "id": "AVOCAT_avocat-hors-fr-vrac",
@@ -920,7 +1100,17 @@
           "max": 1.69,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "hors Fr.",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "AVOCAT"
+      }
     },
     {
       "id": "BANANE_banane-afrique-vrac",
@@ -963,7 +1153,17 @@
           "max": 1.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "Afrique",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "BANANE"
+      }
     },
     {
       "id": "BANANE_banane-am-rique-vrac",
@@ -1006,7 +1206,17 @@
           "max": 1.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "Amérique",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "BANANE"
+      }
     },
     {
       "id": "BANANE_banane-france-vrac",
@@ -1049,7 +1259,17 @@
           "max": 2.29,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "BANANE"
+      }
     },
     {
       "id": "BANANE_banane-hors-fr-",
@@ -1103,7 +1323,17 @@
           "max": 2.09,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "hors Fr.",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "BANANE"
+      }
     },
     {
       "id": "BANANE_banane-hors-fr-5-fruits",
@@ -1157,7 +1387,17 @@
           "max": 2.19,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "hors Fr.",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "BANANE 5 fruits"
+      }
     },
     {
       "id": "BANANE_banane-import",
@@ -1211,7 +1451,17 @@
           "max": 2.19,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "Import",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "BANANE"
+      }
     },
     {
       "id": "BETTERAVE-ROUGE_betterave-rouge-ronde-crue-france",
@@ -1265,7 +1515,17 @@
           "max": 4.49,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "ronde",
+        "color": "ROUGE",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "BETTERAVE crue"
+      }
     },
     {
       "id": "CAROTTE_carotte-france-avec-fane",
@@ -1319,7 +1579,17 @@
           "max": 3.69,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CAROTTE avec fane"
+      }
     },
     {
       "id": "CAROTTE_carotte-france-lav-e",
@@ -1396,7 +1666,17 @@
           "max": 2.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CAROTTE lavée"
+      }
     },
     {
       "id": "CAROTTE_carotte-france-lav-e-sachet-1-5-kg",
@@ -1439,7 +1719,17 @@
           "max": 2.46,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "sachet",
+        "size": "1,5 kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "CAROTTE lavée"
+      }
     },
     {
       "id": "CAROTTE_carotte-france-lav-e-sachet-2kg",
@@ -1482,7 +1772,17 @@
           "max": 1.5,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "sachet",
+        "size": "2kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "CAROTTE lavée"
+      }
     },
     {
       "id": "CAROTTE_carotte-france-lav-e-vrac",
@@ -1525,7 +1825,17 @@
           "max": 2.49,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CAROTTE lavée"
+      }
     },
     {
       "id": "CAROTTE_carotte-france-non-lav-e",
@@ -1579,7 +1889,17 @@
           "max": 3.85,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CAROTTE non lavée"
+      }
     },
     {
       "id": "CELERI-BRANCHE_c-leri-branche-france",
@@ -1633,7 +1953,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CÉLERI-BRANCHE"
+      }
     },
     {
       "id": "CELERI-RAVE_c-leri-rave-france",
@@ -1687,7 +2017,17 @@
           "max": 4.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "RAVE",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CÉLERI-"
+      }
     },
     {
       "id": "CHAMPIGNON-DE-PARIS_champignon-de-paris-france",
@@ -1741,7 +2081,17 @@
           "max": 13.5,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CHAMPIGNON DE PARIS"
+      }
     },
     {
       "id": "CHICOREE_chicor-e-fris-e-france",
@@ -1784,7 +2134,17 @@
           "max": 3.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CHICORÉE frisée"
+      }
     },
     {
       "id": "CHOU_chou-blanc-france-vendu-la-pi-ce",
@@ -1838,7 +2198,17 @@
           "max": 3.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanc",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": "vendu à la pièce",
+        "note": "CHOU"
+      }
     },
     {
       "id": "CHOU_chou-brocoli-france",
@@ -1892,7 +2262,17 @@
           "max": 7.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Brocoli",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CHOU"
+      }
     },
     {
       "id": "CHOU_chou-chinois-france",
@@ -1946,7 +2326,17 @@
           "max": 5.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Chinois",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CHOU"
+      }
     },
     {
       "id": "CHOU-FLEUR_chou-fleur-france",
@@ -1989,7 +2379,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "FLEUR",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CHOU"
+      }
     },
     {
       "id": "CHOU-FLEUR_chou-fleur-france-couronn-",
@@ -2043,7 +2443,17 @@
           "max": 6.3,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "FLEUR",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CHOU couronné"
+      }
     },
     {
       "id": "CHOU_chou-rave-france",
@@ -2097,7 +2507,17 @@
           "max": 2.5,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Rave",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CHOU"
+      }
     },
     {
       "id": "CHOU_chou-rouge-france-vendu-la-pi-ce",
@@ -2151,7 +2571,17 @@
           "max": 4.49,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "rouge",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": "vendu à la pièce",
+        "note": "CHOU"
+      }
     },
     {
       "id": "CITRON_citron-u-e-",
@@ -2205,7 +2635,17 @@
           "max": 4.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "U.E.",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CITRON"
+      }
     },
     {
       "id": "CONCOMBRE_concombre-france",
@@ -2305,7 +2745,17 @@
           "max": 2.7,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CONCOMBRE"
+      }
     },
     {
       "id": "CONCOMBRE_concombre-noa-france",
@@ -2359,7 +2809,17 @@
           "max": 5.3,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Noa",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "CONCOMBRE"
+      }
     },
     {
       "id": "COURGE_courge-butternut-france",
@@ -2413,7 +2873,17 @@
           "max": 3.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Butternut",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "COURGE"
+      }
     },
     {
       "id": "COURGE_courge-potimarron-france",
@@ -2490,7 +2960,17 @@
           "max": 4.89,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Potimarron",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "COURGE"
+      }
     },
     {
       "id": "COURGETTE_courgette-longue-verte-france",
@@ -2544,7 +3024,17 @@
           "max": 4.49,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "verte",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "COURGETTE longue"
+      }
     },
     {
       "id": "COURGETTE_courgette-longue-verte-france-filet-1kg",
@@ -2587,7 +3077,17 @@
           "max": 2.2,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "verte",
+        "origin": "France",
+        "packaging": "filet",
+        "size": "1kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "COURGETTE longue"
+      }
     },
     {
       "id": "COURGETTE_courgette-longue-verte-france-vrac",
@@ -2630,7 +3130,17 @@
           "max": 2.5,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "verte",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "COURGETTE longue"
+      }
     },
     {
       "id": "COURGETTE_courgette-longue-verte-hors-fr-filet-1kg",
@@ -2673,7 +3183,17 @@
           "max": 2.39,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "verte",
+        "origin": "hors Fr.",
+        "packaging": "filet",
+        "size": "1kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "COURGETTE longue"
+      }
     },
     {
       "id": "COURGETTE_courgette-verte-france",
@@ -2727,7 +3247,17 @@
           "max": 3.09,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "verte",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "COURGETTE"
+      }
     },
     {
       "id": "ECHALOTE_-chalote-france",
@@ -2781,7 +3311,17 @@
           "max": 6.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "ÉCHALOTE"
+      }
     },
     {
       "id": "ENDIVE_endive-france",
@@ -2835,7 +3375,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "ENDIVE"
+      }
     },
     {
       "id": "ENDIVE_endive-france-sachet-1kg",
@@ -2878,7 +3428,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "sachet",
+        "size": "1kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "ENDIVE"
+      }
     },
     {
       "id": "ENDIVE_endive-france-vrac",
@@ -2921,7 +3481,17 @@
           "max": 5.19,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "ENDIVE"
+      }
     },
     {
       "id": "FENOUIL_fenouil-france",
@@ -2975,7 +3545,17 @@
           "max": 6.65,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "FENOUIL"
+      }
     },
     {
       "id": "FIGUE_figue-fra-che-france",
@@ -3029,7 +3609,17 @@
           "max": 15,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "FIGUE fraîche"
+      }
     },
     {
       "id": "FRAISE_fraise-standard-france-barq-500g",
@@ -3072,7 +3662,17 @@
           "max": 11.98,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "standard",
+        "color": null,
+        "origin": "France",
+        "packaging": "barq.",
+        "size": "500g",
+        "label": null,
+        "saleUnit": null,
+        "note": "FRAISE"
+      }
     },
     {
       "id": "FRAMBOISE_framboise-france-barq-125g",
@@ -3115,7 +3715,17 @@
           "max": 31.92,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "barq.",
+        "size": "125g",
+        "label": null,
+        "saleUnit": null,
+        "note": "FRAMBOISE"
+      }
     },
     {
       "id": "FRAMBOISE_framboise-hors-fr-barq-125g",
@@ -3158,7 +3768,17 @@
           "max": 31.12,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "hors Fr.",
+        "packaging": "barq.",
+        "size": "125g",
+        "label": null,
+        "saleUnit": null,
+        "note": "FRAMBOISE"
+      }
     },
     {
       "id": "GINGEMBRE_gingembre-import",
@@ -3212,7 +3832,17 @@
           "max": 11.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "Import",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "GINGEMBRE"
+      }
     },
     {
       "id": "GRENADE_grenade-u-e-",
@@ -3266,7 +3896,17 @@
           "max": 7.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "U.E.",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "GRENADE"
+      }
     },
     {
       "id": "HARICOT-VERT_haricot-vert-france-ramass-main",
@@ -3320,7 +3960,17 @@
           "max": 14.95,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "HARICOT VERT ramassé main"
+      }
     },
     {
       "id": "KIWI_kiwi-gold-import",
@@ -3374,7 +4024,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Gold",
+        "color": null,
+        "origin": "Import",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "KIWI"
+      }
     },
     {
       "id": "KIWI_kiwi-hayward-import",
@@ -3428,7 +4088,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Hayward",
+        "color": null,
+        "origin": "Import",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "KIWI"
+      }
     },
     {
       "id": "LAITUE_laitue-batavia-france",
@@ -3505,7 +4175,17 @@
           "max": 1.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Batavia",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "LAITUE"
+      }
     },
     {
       "id": "LAITUE_laitue-feuille-de-ch-ne-blonde-france",
@@ -3559,7 +4239,17 @@
           "max": 1.79,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Feuille de chêne",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "LAITUE blonde"
+      }
     },
     {
       "id": "LAITUE_laitue-feuille-de-ch-ne-france",
@@ -3602,7 +4292,17 @@
           "max": 1.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Feuille de chêne",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "LAITUE"
+      }
     },
     {
       "id": "LAITUE_laitue-feuille-de-ch-ne-rouge-france",
@@ -3656,7 +4356,17 @@
           "max": 1.8,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Feuille de chêne",
+        "color": "rouge",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "LAITUE"
+      }
     },
     {
       "id": "LAITUE_laitue-pomm-e-france",
@@ -3733,7 +4443,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "pommée",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "LAITUE"
+      }
     },
     {
       "id": "MANGUE_mangue-import-vendu-la-pi-ce",
@@ -3787,7 +4507,17 @@
           "max": 3.29,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "Import",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": "vendu à la pièce",
+        "note": "MANGUE"
+      }
     },
     {
       "id": "MELON_melon-charentais-france",
@@ -3864,7 +4594,17 @@
           "max": 3.5,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Charentais",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "MELON"
+      }
     },
     {
       "id": "MELON_melon-charentais-jaune-france-1150-1450g",
@@ -3907,7 +4647,17 @@
           "max": null,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Charentais",
+        "color": "jaune",
+        "origin": "France",
+        "packaging": null,
+        "size": "1150-1450g",
+        "label": null,
+        "saleUnit": null,
+        "note": "MELON"
+      }
     },
     {
       "id": "MELON_melon-charentais-jaune-france-1350-1750g",
@@ -3950,7 +4700,17 @@
           "max": null,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Charentais",
+        "color": "jaune",
+        "origin": "France",
+        "packaging": null,
+        "size": "1350-1750g",
+        "label": null,
+        "saleUnit": null,
+        "note": "MELON"
+      }
     },
     {
       "id": "MELON_melon-charentais-jaune-france-600-780g",
@@ -3993,7 +4753,17 @@
           "max": 1.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Charentais",
+        "color": "jaune",
+        "origin": "France",
+        "packaging": null,
+        "size": "600-780g",
+        "label": null,
+        "saleUnit": null,
+        "note": "MELON"
+      }
     },
     {
       "id": "MELON_melon-charentais-jaune-france-750-1250g",
@@ -4036,7 +4806,17 @@
           "max": 2.79,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Charentais",
+        "color": "jaune",
+        "origin": "France",
+        "packaging": null,
+        "size": "750-1250g",
+        "label": null,
+        "saleUnit": null,
+        "note": "MELON"
+      }
     },
     {
       "id": "NECTARINE_nectarine-chair-blanche-france",
@@ -4090,7 +4870,17 @@
           "max": 9.7,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanche",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "NECTARINE chair"
+      }
     },
     {
       "id": "NECTARINE_nectarine-chair-blanche-france-a-aa-vrac",
@@ -4133,7 +4923,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanche",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": "A-AA",
+        "saleUnit": null,
+        "note": "NECTARINE chair"
+      }
     },
     {
       "id": "NECTARINE_nectarine-chair-jaune-france",
@@ -4187,7 +4987,17 @@
           "max": 9.7,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "jaune",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "NECTARINE chair"
+      }
     },
     {
       "id": "NECTARINE_nectarine-chair-jaune-france-a-aa-vrac",
@@ -4230,7 +5040,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "jaune",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": "A-AA",
+        "saleUnit": null,
+        "note": "NECTARINE chair"
+      }
     },
     {
       "id": "NECTARINE_nectarine-france-barq-1kg",
@@ -4273,7 +5093,17 @@
           "max": 3.49,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "barq.",
+        "size": "1kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "NECTARINE"
+      }
     },
     {
       "id": "NECTARINE_nectarine-france-cdt-4",
@@ -4327,7 +5157,17 @@
           "max": 5.95,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "cdt",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "NECTARINE 4"
+      }
     },
     {
       "id": "NOIX_noix-france",
@@ -4381,7 +5221,17 @@
           "max": 9.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "NOIX"
+      }
     },
     {
       "id": "OIGNON_oignon-blanc-france-avec-fane",
@@ -4435,7 +5285,17 @@
           "max": 2.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanc",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "OIGNON avec fane"
+      }
     },
     {
       "id": "OIGNON_oignon-jaune-france",
@@ -4512,7 +5372,17 @@
           "max": 3.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "jaune",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "OIGNON"
+      }
     },
     {
       "id": "OIGNON_oignon-jaune-france-filet-1kg",
@@ -4555,7 +5425,17 @@
           "max": 2.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "jaune",
+        "origin": "France",
+        "packaging": "filet",
+        "size": "1kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "OIGNON"
+      }
     },
     {
       "id": "OIGNON_oignon-rouge-france",
@@ -4609,7 +5489,17 @@
           "max": 4.95,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "rouge",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "OIGNON"
+      }
     },
     {
       "id": "ORANGE_orange-hors-fr-vrac",
@@ -4652,7 +5542,17 @@
           "max": 3.49,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "hors Fr.",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "ORANGE"
+      }
     },
     {
       "id": "ORANGE_orange-u-e-",
@@ -4706,7 +5606,17 @@
           "max": 4.49,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "U.E.",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "ORANGE"
+      }
     },
     {
       "id": "PANAIS_panais-france",
@@ -4760,7 +5670,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PANAIS"
+      }
     },
     {
       "id": "PATATE-DOUCE_patate-douce-france",
@@ -4814,7 +5734,17 @@
           "max": 6.15,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PATATE DOUCE"
+      }
     },
     {
       "id": "PATISSON_patisson-france",
@@ -4868,7 +5798,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PATISSON"
+      }
     },
     {
       "id": "PECHE_p-che-chair-blanche-france",
@@ -4922,7 +5862,17 @@
           "max": 8.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanche",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PÊCHE chair"
+      }
     },
     {
       "id": "PECHE_p-che-chair-blanche-france-a-aa-vrac",
@@ -4965,7 +5915,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanche",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": "A-AA",
+        "saleUnit": null,
+        "note": "PÊCHE chair"
+      }
     },
     {
       "id": "PECHE_p-che-chair-jaune-france",
@@ -5019,7 +5979,17 @@
           "max": 8.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "jaune",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PÊCHE chair"
+      }
     },
     {
       "id": "PECHE_p-che-chair-jaune-france-a-aa-vrac",
@@ -5062,7 +6032,17 @@
           "max": 4.79,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "jaune",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": "A-AA",
+        "saleUnit": null,
+        "note": "PÊCHE chair"
+      }
     },
     {
       "id": "PECHE_p-che-france-barq-1kg",
@@ -5105,7 +6085,17 @@
           "max": 3.49,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "barq.",
+        "size": "1kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "PÊCHE"
+      }
     },
     {
       "id": "PECHE_p-che-france-cdt-4",
@@ -5159,7 +6149,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "cdt",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PÊCHE 4"
+      }
     },
     {
       "id": "PERSIL_persil-france",
@@ -5213,7 +6213,17 @@
           "max": 2.1,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PERSIL"
+      }
     },
     {
       "id": "POIRE_poire-conf-rence-hors-fr-vrac",
@@ -5256,7 +6266,17 @@
           "max": 3.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Conférence",
+        "color": null,
+        "origin": "hors Fr.",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIRE"
+      }
     },
     {
       "id": "POIRE_poire-france-cdt-4",
@@ -5310,7 +6330,17 @@
           "max": 3.49,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "cdt",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIRE 4"
+      }
     },
     {
       "id": "POIRE_poire-guyot-france",
@@ -5364,7 +6394,17 @@
           "max": 3.9,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Guyot",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIRE"
+      }
     },
     {
       "id": "POIRE_poire-guyot-ou-limonera-france-vrac",
@@ -5407,7 +6447,17 @@
           "max": 3.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Guyot",
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIRE ou Limonera"
+      }
     },
     {
       "id": "POIRE_poire-williams-france",
@@ -5461,7 +6511,17 @@
           "max": 4.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Williams",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIRE"
+      }
     },
     {
       "id": "POIRE_poire-williams-verte-france-vrac",
@@ -5504,7 +6564,17 @@
           "max": 3.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Williams",
+        "color": "verte",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIRE"
+      }
     },
     {
       "id": "POIREAU_poireau-france",
@@ -5558,7 +6628,17 @@
           "max": 5.5,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIREAU"
+      }
     },
     {
       "id": "POIREAU_poireau-france-entier",
@@ -5612,7 +6692,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIREAU entier"
+      }
     },
     {
       "id": "POIREAU_poireau-france-entier-vrac",
@@ -5655,7 +6745,17 @@
           "max": 3.65,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIREAU entier"
+      }
     },
     {
       "id": "POIVRON_poivron-carr-france-cdt-2",
@@ -5709,7 +6809,17 @@
           "max": 3.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "cdt",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIVRON carré 2"
+      }
     },
     {
       "id": "POIVRON_poivron-carr-hors-fr-cdt-2",
@@ -5763,7 +6873,17 @@
           "max": 3.19,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "hors Fr.",
+        "packaging": "cdt",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIVRON carré 2"
+      }
     },
     {
       "id": "POIVRON_poivron-france",
@@ -5817,7 +6937,17 @@
           "max": 6.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIVRON"
+      }
     },
     {
       "id": "POIVRON_poivron-rouge-carr-france-vrac",
@@ -5860,7 +6990,17 @@
           "max": null,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "rouge",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIVRON carré"
+      }
     },
     {
       "id": "POIVRON_poivron-rouge-carr-hors-fr-vrac",
@@ -5903,7 +7043,17 @@
           "max": 5.79,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "rouge",
+        "origin": "hors Fr.",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIVRON carré"
+      }
     },
     {
       "id": "POIVRON_poivron-u-e-",
@@ -5957,7 +7107,17 @@
           "max": 7.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "U.E.",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIVRON"
+      }
     },
     {
       "id": "POIVRON_poivron-vert-carr-france-vrac",
@@ -6000,7 +7160,17 @@
           "max": 5.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIVRON vert carré"
+      }
     },
     {
       "id": "POIVRON_poivron-vert-carr-hors-fr-vrac",
@@ -6043,7 +7213,17 @@
           "max": 5.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "hors Fr.",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POIVRON vert carré"
+      }
     },
     {
       "id": "POMME_pomme-autres-vari-t-s-france",
@@ -6097,7 +7277,17 @@
           "max": 3.65,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME autres variétés"
+      }
     },
     {
       "id": "POMME_pomme-bicolore-france",
@@ -6174,7 +7364,17 @@
           "max": 3.89,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "Bicolore",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME"
+      }
     },
     {
       "id": "POMME_pomme-bicolore-france-cdt-4",
@@ -6228,7 +7428,17 @@
           "max": 3.15,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "Bicolore",
+        "origin": "France",
+        "packaging": "cdt",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME 4"
+      }
     },
     {
       "id": "POMME_pomme-bicolore-france-sachet",
@@ -6271,7 +7481,17 @@
           "max": 2.19,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "Bicolore",
+        "origin": "France",
+        "packaging": "sachet",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME"
+      }
     },
     {
       "id": "POMME-DE-TERRE_pomme-de-terre-de-conservation-france",
@@ -6325,7 +7545,17 @@
           "max": 2.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME DE TERRE de conservation"
+      }
     },
     {
       "id": "POMME-DE-TERRE_pomme-de-terre-de-conservation-france-lav-e-sac-5kg",
@@ -6368,7 +7598,17 @@
           "max": 1.2,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "sac",
+        "size": "5kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME DE TERRE de conservation lavée"
+      }
     },
     {
       "id": "POMME-DE-TERRE_pomme-de-terre-de-conservation-france-vrac",
@@ -6411,7 +7651,17 @@
           "max": 2.89,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME DE TERRE de conservation"
+      }
     },
     {
       "id": "POMME-DE-TERRE_pomme-de-terre-four-frites-ou-pur-e-de-conservation-france-filet-2-5kg",
@@ -6454,7 +7704,17 @@
           "max": 1.8,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "filet",
+        "size": "2,5kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME DE TERRE four, frites ou purée de conservation"
+      }
     },
     {
       "id": "POMME-DE-TERRE_pomme-de-terre-four-frites-ou-pur-e-de-conservation-france-filet-2kg",
@@ -6497,7 +7757,17 @@
           "max": 1.85,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "filet",
+        "size": "2kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME DE TERRE four, frites ou purée de conservation"
+      }
     },
     {
       "id": "POMME-DE-TERRE_pomme-de-terre-france",
@@ -6551,7 +7821,17 @@
           "max": 2.66,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME DE TERRE"
+      }
     },
     {
       "id": "POMME-DE-TERRE_pomme-de-terre-vapeur-ou-rissol-e-de-conservation-france-filet-2-5kg",
@@ -6594,7 +7874,17 @@
           "max": 1.8,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "filet",
+        "size": "2,5kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME DE TERRE vapeur ou rissolée de conservation"
+      }
     },
     {
       "id": "POMME-DE-TERRE_pomme-de-terre-vapeur-ou-rissol-e-de-conservation-france-filet-2kg",
@@ -6637,7 +7927,17 @@
           "max": 2.25,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "filet",
+        "size": "2kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME DE TERRE vapeur ou rissolée de conservation"
+      }
     },
     {
       "id": "POMME_pomme-gala-france-170g-vrac",
@@ -6680,7 +7980,17 @@
           "max": 3.4,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Gala",
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": "+170g",
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME"
+      }
     },
     {
       "id": "POMME_pomme-gala-france-136-180g-vrac",
@@ -6723,7 +8033,17 @@
           "max": 3.29,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Gala",
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": "136/180g",
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME"
+      }
     },
     {
       "id": "POMME_pomme-golden-france",
@@ -6777,7 +8097,17 @@
           "max": 3.89,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Golden",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME"
+      }
     },
     {
       "id": "POMME_pomme-golden-france-170g-vrac",
@@ -6820,7 +8150,17 @@
           "max": 3.49,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Golden",
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": "+170g",
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME"
+      }
     },
     {
       "id": "POMME_pomme-golden-france-136-180g-vrac",
@@ -6863,7 +8203,17 @@
           "max": null,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Golden",
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": "136/180g",
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME"
+      }
     },
     {
       "id": "POMME_pomme-golden-france-cdt-4",
@@ -6917,7 +8267,17 @@
           "max": 2.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Golden",
+        "color": null,
+        "origin": "France",
+        "packaging": "cdt",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME 4"
+      }
     },
     {
       "id": "POMME_pomme-golden-france-cdt-6",
@@ -6971,7 +8331,17 @@
           "max": 3.19,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Golden",
+        "color": null,
+        "origin": "France",
+        "packaging": "cdt",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME 6"
+      }
     },
     {
       "id": "POMME_pomme-golden-france-sachet",
@@ -7014,7 +8384,17 @@
           "max": 2.26,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Golden",
+        "color": null,
+        "origin": "France",
+        "packaging": "sachet",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME"
+      }
     },
     {
       "id": "POMME_pomme-granny-smith-france-170g-vrac",
@@ -7057,7 +8437,17 @@
           "max": 3.69,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Granny smith",
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": "+170g",
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME"
+      }
     },
     {
       "id": "POMME_pomme-granny-smith-france-136-180g-vrac",
@@ -7100,7 +8490,17 @@
           "max": null,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Granny smith",
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": "136/180g",
+        "label": null,
+        "saleUnit": null,
+        "note": "POMME"
+      }
     },
     {
       "id": "PRUNE_prune-bleue-quetsche-france-vrac",
@@ -7143,7 +8543,17 @@
           "max": 4.5,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Quetsche",
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE bleue"
+      }
     },
     {
       "id": "PRUNE_prune-jaune-autre-ou-inconnue-france-vrac",
@@ -7186,7 +8596,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "jaune",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE autre ou inconnue"
+      }
     },
     {
       "id": "PRUNE_prune-jaune-france",
@@ -7240,7 +8660,17 @@
           "max": 7.5,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "jaune",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE"
+      }
     },
     {
       "id": "PRUNE_prune-jaune-mirabelle-france",
@@ -7294,7 +8724,17 @@
           "max": 8.3,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Mirabelle",
+        "color": "jaune",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE"
+      }
     },
     {
       "id": "PRUNE_prune-jaune-mirabelle-france-vrac",
@@ -7337,7 +8777,17 @@
           "max": 6.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Mirabelle",
+        "color": "jaune",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE"
+      }
     },
     {
       "id": "PRUNE_prune-jaune-t-c-sun-france-vrac",
@@ -7380,7 +8830,17 @@
           "max": 4.69,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "T-C Sun",
+        "color": "jaune",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE"
+      }
     },
     {
       "id": "PRUNE_prune-reine-claude-dor-e-france",
@@ -7434,7 +8894,17 @@
           "max": 9.98,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Reine-Claude Dorée",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE"
+      }
     },
     {
       "id": "PRUNE_prune-rouge-france-vrac",
@@ -7477,7 +8947,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "rouge",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE"
+      }
     },
     {
       "id": "PRUNE_prune-rouge-bleue-france",
@@ -7531,7 +9011,17 @@
           "max": 7.69,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "rouge",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE -bleue"
+      }
     },
     {
       "id": "PRUNE_prune-rouge-bleue-france-barq-",
@@ -7574,7 +9064,17 @@
           "max": 4.59,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "rouge",
+        "origin": "France",
+        "packaging": "barq.",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE -bleue"
+      }
     },
     {
       "id": "PRUNE_prune-verte-autre-ou-inconnue-france-vrac",
@@ -7617,7 +9117,17 @@
           "max": null,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "verte",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE autre ou inconnue"
+      }
     },
     {
       "id": "PRUNE_prune-verte-reine-claude-dor-e-france",
@@ -7671,7 +9181,17 @@
           "max": 7.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Reine-Claude Dorée",
+        "color": "verte",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE"
+      }
     },
     {
       "id": "PRUNE_prune-verte-reine-claude-dor-e-france-barq-",
@@ -7714,7 +9234,17 @@
           "max": 7.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Reine-Claude Dorée",
+        "color": "verte",
+        "origin": "France",
+        "packaging": "barq.",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE"
+      }
     },
     {
       "id": "PRUNE_prune-verte-reine-claude-dor-e-france-vrac",
@@ -7757,7 +9287,17 @@
           "max": 5.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Reine-Claude Dorée",
+        "color": "verte",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "PRUNE"
+      }
     },
     {
       "id": "RADIS_radis-demi-long-france",
@@ -7811,7 +9351,17 @@
           "max": 2.25,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "RADIS demi-long"
+      }
     },
     {
       "id": "RADIS_radis-noir-france",
@@ -7865,7 +9415,17 @@
           "max": 4.69,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "RADIS noir"
+      }
     },
     {
       "id": "RAISIN_raisin-blanc-chasselas-aop-moissac-france-barq-",
@@ -7908,7 +9468,17 @@
           "max": 7.98,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Chasselas",
+        "color": "blanc",
+        "origin": "France",
+        "packaging": "barq.",
+        "size": null,
+        "label": "AOP",
+        "saleUnit": null,
+        "note": "RAISIN AOP Moissac"
+      }
     },
     {
       "id": "RAISIN_raisin-blanc-chasselas-aop-moissac-france-vrac",
@@ -7951,7 +9521,17 @@
           "max": 5.69,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Chasselas",
+        "color": "blanc",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": "AOP",
+        "saleUnit": null,
+        "note": "RAISIN AOP Moissac"
+      }
     },
     {
       "id": "RAISIN_raisin-blanc-chasselas-sans-label-france-vrac",
@@ -7994,7 +9574,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Chasselas",
+        "color": "blanc",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": "sans label",
+        "saleUnit": null,
+        "note": "RAISIN sans label"
+      }
     },
     {
       "id": "RAISIN_raisin-blanc-france",
@@ -8071,7 +9661,17 @@
           "max": 6.95,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanc",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "RAISIN"
+      }
     },
     {
       "id": "RAISIN_raisin-blanc-hors-fr-",
@@ -8125,7 +9725,17 @@
           "max": 8.98,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanc",
+        "origin": "hors Fr.",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "RAISIN"
+      }
     },
     {
       "id": "RAISIN_raisin-blanc-id-al-ou-italia-hors-fr-vrac",
@@ -8168,7 +9778,17 @@
           "max": 3.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Idéal",
+        "color": "blanc",
+        "origin": "hors Fr.",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "RAISIN ou Italia"
+      }
     },
     {
       "id": "RAISIN_raisin-blanc-u-e-",
@@ -8222,7 +9842,17 @@
           "max": 4.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": "blanc",
+        "origin": "U.E.",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "RAISIN"
+      }
     },
     {
       "id": "RAISIN_raisin-blanc-vittoria-hors-fr-vrac",
@@ -8265,7 +9895,17 @@
           "max": 3.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Vittoria",
+        "color": "blanc",
+        "origin": "hors Fr.",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "RAISIN"
+      }
     },
     {
       "id": "RAISIN_raisin-noir-autre-noir-france-vrac",
@@ -8308,7 +9948,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "RAISIN noir autre noir"
+      }
     },
     {
       "id": "RAISIN_raisin-noir-france",
@@ -8385,7 +10035,17 @@
           "max": 6.89,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": null,
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "RAISIN noir"
+      }
     },
     {
       "id": "RAISIN_raisin-noir-lavall-e-france-vrac",
@@ -8428,7 +10088,17 @@
           "max": 4.29,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Lavallée",
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "RAISIN noir"
+      }
     },
     {
       "id": "RAISIN_raisin-noir-muscat-hambourg-aop-ventoux-france-barq-",
@@ -8471,7 +10141,17 @@
           "max": null,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Muscat Hambourg",
+        "color": null,
+        "origin": "France",
+        "packaging": "barq.",
+        "size": null,
+        "label": "AOP",
+        "saleUnit": null,
+        "note": "RAISIN noir AOP Ventoux"
+      }
     },
     {
       "id": "RAISIN_raisin-noir-muscat-hambourg-sans-label-france-barq-",
@@ -8514,7 +10194,17 @@
           "max": 8.65,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Muscat Hambourg",
+        "color": null,
+        "origin": "France",
+        "packaging": "barq.",
+        "size": null,
+        "label": "sans label",
+        "saleUnit": null,
+        "note": "RAISIN noir sans label"
+      }
     },
     {
       "id": "RAISIN_raisin-noir-muscat-hambourg-sans-label-france-vrac",
@@ -8557,7 +10247,17 @@
           "max": 5.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "Muscat Hambourg",
+        "color": null,
+        "origin": "France",
+        "packaging": "vrac",
+        "size": null,
+        "label": "sans label",
+        "saleUnit": null,
+        "note": "RAISIN noir sans label"
+      }
     },
     {
       "id": "TOMATE-ALLONGEE_tomate-allong-e-coeur-france",
@@ -8611,7 +10311,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "allongée",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE coeur"
+      }
     },
     {
       "id": "TOMATE-ANCIENNES_tomate-anciennes-france",
@@ -8665,7 +10375,17 @@
           "max": 8.95,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "anciennes",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE"
+      }
     },
     {
       "id": "TOMATE-CERISE_tomate-cerise-allong-e-rouge-france-barq-250g",
@@ -8708,7 +10428,17 @@
           "max": 13.16,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "cerise",
+        "color": "rouge",
+        "origin": "France",
+        "packaging": "barq.",
+        "size": "250g",
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE allongée"
+      }
     },
     {
       "id": "TOMATE-CERISE_tomate-cerise-allong-e-rouge-hors-fr-barq-250g",
@@ -8751,7 +10481,17 @@
           "max": 3.96,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "cerise",
+        "color": "rouge",
+        "origin": "hors Fr.",
+        "packaging": "barq.",
+        "size": "250g",
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE allongée"
+      }
     },
     {
       "id": "TOMATE-CERISE_tomate-cerise-coloris-m-lang-s-france",
@@ -8805,7 +10545,17 @@
           "max": 13.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "cerise",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE coloris mélangés"
+      }
     },
     {
       "id": "TOMATE-CERISE_tomate-cerise-france",
@@ -8859,7 +10609,17 @@
           "max": 15.56,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "cerise",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE"
+      }
     },
     {
       "id": "TOMATE-CERISE_tomate-cerise-rouge-france",
@@ -8913,7 +10673,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "cerise",
+        "color": "rouge",
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE"
+      }
     },
     {
       "id": "TOMATE-RONDE_tomate-ronde-france",
@@ -8967,7 +10737,17 @@
           "max": null,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "ronde",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE"
+      }
     },
     {
       "id": "TOMATE-RONDE_tomate-ronde-france-grappe",
@@ -9021,7 +10801,17 @@
           "max": 6.99,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "ronde",
+        "color": null,
+        "origin": "France",
+        "packaging": "grappe",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE"
+      }
     },
     {
       "id": "TOMATE-RONDE_tomate-ronde-ou-ronde-grappe-france",
@@ -9075,7 +10865,17 @@
           "max": 8.58,
           "isBio": true
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "ronde",
+        "color": null,
+        "origin": "France",
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE ou ronde grappe"
+      }
     },
     {
       "id": "TOMATE-RONDE_tomate-ronde-rouge-autre-pays-filet-1kg",
@@ -9118,7 +10918,17 @@
           "max": null,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "ronde",
+        "color": "rouge",
+        "origin": null,
+        "packaging": null,
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE autre pays filet 1kg"
+      }
     },
     {
       "id": "TOMATE-RONDE_tomate-ronde-rouge-belgique-77-82-ou-82-102mm-vrac",
@@ -9161,7 +10971,17 @@
           "max": 6.59,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "ronde",
+        "color": "rouge",
+        "origin": "Belgique",
+        "packaging": "vrac",
+        "size": "77-82 ou 82-102mm",
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE"
+      }
     },
     {
       "id": "TOMATE-RONDE_tomate-ronde-rouge-espagne-filet-1kg",
@@ -9204,7 +11024,17 @@
           "max": 2.49,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "ronde",
+        "color": "rouge",
+        "origin": "Espagne",
+        "packaging": "filet",
+        "size": "1kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE"
+      }
     },
     {
       "id": "TOMATE-RONDE_tomate-ronde-rouge-france-57-67-ou-67-82mm-vrac",
@@ -9247,7 +11077,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "ronde",
+        "color": "rouge",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": "57-67 ou 67-82mm",
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE"
+      }
     },
     {
       "id": "TOMATE-RONDE_tomate-ronde-rouge-france-77-82-ou-82-102mm-vrac",
@@ -9290,7 +11130,17 @@
           "max": 5.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "ronde",
+        "color": "rouge",
+        "origin": "France",
+        "packaging": "vrac",
+        "size": "77-82 ou 82-102mm",
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE"
+      }
     },
     {
       "id": "TOMATE-RONDE_tomate-ronde-rouge-france-filet-1kg",
@@ -9333,7 +11183,17 @@
           "max": 2.5,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "ronde",
+        "color": "rouge",
+        "origin": "France",
+        "packaging": "filet",
+        "size": "1kg",
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE"
+      }
     },
     {
       "id": "TOMATE-RONDE_tomate-ronde-rouge-france-grappe-vrac",
@@ -9376,7 +11236,17 @@
           "max": 4.99,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "ronde",
+        "color": "rouge",
+        "origin": "France",
+        "packaging": "grappe",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE vrac"
+      }
     },
     {
       "id": "TOMATE-RONDE_tomate-ronde-rouge-pays-bas-grappe-vrac",
@@ -9419,7 +11289,17 @@
           "max": null,
           "isBio": false
         }
-      ]
+      ],
+      "attrs": {
+        "variety": "ronde",
+        "color": "rouge",
+        "origin": "Pays-Bas",
+        "packaging": "grappe",
+        "size": null,
+        "label": null,
+        "saleUnit": null,
+        "note": "TOMATE vrac"
+      }
     }
   ]
 }

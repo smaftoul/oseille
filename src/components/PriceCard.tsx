@@ -2,6 +2,14 @@ import { useTranslation } from "react-i18next";
 import type { ItemData } from "../lib/types";
 import { formatDate, formatPrice } from "../lib/format";
 
+function AttrBadge({ label }: { label: string }) {
+  return (
+    <span className="inline-flex items-center rounded bg-zinc-100 px-1.5 py-0.5 text-[10px] font-medium text-zinc-600">
+      {label}
+    </span>
+  );
+}
+
 export function PriceCard({ item }: { item: ItemData }) {
   const { t, i18n } = useTranslation();
   const locale = i18n.language === "en" ? "en-GB" : "fr-FR";
@@ -11,6 +19,10 @@ export function PriceCard({ item }: { item: ItemData }) {
   const bioMag = item.summary.bioMag;
   const productName = i18n.language === "en" ? item.productName_en : item.productName_fr;
   const groupName = t(`groups.${item.group}`, { defaultValue: item.group });
+  const a = item.attrs;
+  const chips = [a?.variety, a?.color, a?.origin, a?.packaging, a?.size, a?.label && !a.label.toLowerCase().includes("biologique") ? a.label : null]
+    .filter((x): x is string => !!x)
+    .filter((x, i, arr) => arr.indexOf(x) === i);
 
   return (
     <div className="rounded-xl border border-zinc-200 bg-white p-4 shadow-sm transition hover:border-zinc-300">
@@ -22,6 +34,11 @@ export function PriceCard({ item }: { item: ItemData }) {
           <div className="mt-0.5 text-xs text-zinc-500 font-medium">
             {productName} · {groupName}
           </div>
+          {chips.length > 0 && (
+            <div className="mt-1.5 flex flex-wrap gap-1">
+              {chips.map((c) => <AttrBadge key={c} label={c} />)}
+            </div>
+          )}
         </div>
         <div className="shrink-0">
           {item.isMonthly ? (

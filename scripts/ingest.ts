@@ -1,5 +1,6 @@
 import { parseSylk, filterDetail } from "./sylk.ts";
 import type { PriceRow, ItemSummary, ItemData, PricesPayload } from "../src/lib/types.ts";
+import { parseLibelle } from "../src/lib/libelle.ts";
 
 type TaxonomyEntry = {
   slug: string;
@@ -231,6 +232,7 @@ function createItemsForEntry(entry: TaxonomyEntry, prices: PriceRow[]): ItemData
     items.push({
       id,
       libelle: baseLib,
+      attrs: parseLibelle(baseLib),
       productSlug: entry.slug,
       productName_fr: entry.name_fr,
       productName_en: entry.name_en,

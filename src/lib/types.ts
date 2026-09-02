@@ -12,6 +12,8 @@ export type PriceRow = {
   isMonthly?: boolean;
 };
 
+import type { LibelleAttrs } from "./libelle";
+
 export type ItemSummary = {
   conventional: PriceRow | null;
   bio: PriceRow | null; // preferred bio (Mag if exists else Gms)
@@ -22,6 +24,7 @@ export type ItemSummary = {
 export type ItemData = {
   id: string;
   libelle: string;
+  attrs: LibelleAttrs;
   productSlug: string;
   productName_fr: string;
   productName_en: string;
