@@ -1,8 +1,11 @@
 # Managed by https://github.com/repository-settings/app
 # Branch protection as code — requires check workflow to pass before merging to main
 repository:
-  # keep Pages enabled (app will not overwrite if false)
   has_pages: true
+  pages:
+    source:
+      branch: main
+      path: /
 
 branches:
   - name: main
