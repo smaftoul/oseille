@@ -9,7 +9,7 @@ export type LibelleAttrs = {
   note: string | null;
 };
 
-const ORIGIN =
+export const ORIGIN =
   /hors\s+Fr\.(?:\s*étranger)?|\bImport\b|U\.E\.|\bUnion\s+européenne\b|\bFrance\b|\bBelgique\b|\bEspagne\b|\bPays-Bas\b|\bAfrique\b|\bAmérique\b|\bMaroc\b|\bItalie\b|\bPortugal\b|\bHollande\b/i;
 
 const COLOR =

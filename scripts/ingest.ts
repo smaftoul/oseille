@@ -1,6 +1,6 @@
 import { parseSylk, filterDetail } from "./sylk.ts";
+import { parseLibelle, ORIGIN } from "../src/lib/libelle.ts";
 import type { PriceRow, ItemSummary, ItemData, PricesPayload } from "../src/lib/types.ts";
-import { parseLibelle } from "../src/lib/libelle.ts";
 
 type TaxonomyEntry = {
   slug: string;
@@ -208,31 +208,40 @@ async function fetchEntryPrices(entry: TaxonomyEntry): Promise<PriceRow[]> {
   return prices;
 }
 
+function matchLibelle(libelle: string): string {
+  const normalized = baseLibelle(libelle);
+  const origin = normalized.match(ORIGIN);
+  if (!origin || origin.index === undefined) return normalized;
+  return normalized.slice(0, origin.index).replace(/\s{2,}/g, " ").trim();
+}
+
 function createItemsForEntry(entry: TaxonomyEntry, prices: PriceRow[]): ItemData[] {
   if (prices.length === 0) return [];
 
-  // Group price rows by baseLibelle
+  // Match conventional and organic rows by the shared product/variety description.
   const groups = new Map<string, PriceRow[]>();
   for (const p of prices) {
-    const key = baseLibelle(p.libelle);
+    const key = matchLibelle(p.libelle);
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key)!.push(p);
   }
 
   const items: ItemData[] = [];
-  for (const [baseLib, groupRows] of groups.entries()) {
+  for (const [matchKey, groupRows] of groups.entries()) {
     const summary = summarizeGroup(groupRows);
     if (!summary.conventional && !summary.bio) continue;
 
+    const representative = summary.conventional?.libelle ?? summary.bio?.libelle ?? groupRows[0].libelle;
+    const displayLibelle = baseLibelle(representative);
     const isMonthly = groupRows.some((r) => r.isMonthly);
     const period = groupRows[0]?.date ?? "";
     const unit = summary.conventional?.unit || summary.bio?.unit || groupRows[0]?.unit || "";
-    const id = `${entry.slug}_${baseLib.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+    const id = `${entry.slug}_${matchKey.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
 
     items.push({
       id,
-      libelle: baseLib,
-      attrs: parseLibelle(baseLib),
+      libelle: displayLibelle,
+      attrs: parseLibelle(displayLibelle),
       productSlug: entry.slug,
       productName_fr: entry.name_fr,
       productName_en: entry.name_en,
