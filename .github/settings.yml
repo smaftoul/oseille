@@ -6,6 +6,7 @@ repository:
     source:
       branch: main
       path: /
+  allow_rebase_merge: true
 
 branches:
   - name: main
