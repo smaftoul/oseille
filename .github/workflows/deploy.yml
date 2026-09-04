@@ -18,6 +18,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Ensure Pages is enabled (Actions source)
+        run: gh api repos/$GITHUB_REPOSITORY/pages -X PUT -f build_type=workflow || true
+        env:
+          GH_TOKEN: ${{ github.token }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
