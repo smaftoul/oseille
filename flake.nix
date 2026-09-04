@@ -22,6 +22,7 @@
           ];
           shellHook = ''
             echo "oseille devShell — node $(node --version) pnpm $(pnpm --version)"
+            [ -d node_modules ] || npm install
           '';
         };
 
