@@ -2,11 +2,6 @@
 # Branch protection as code — requires check workflow to pass before merging to main
 repository:
   has_pages: true
-  pages:
-    source:
-      branch: main
-      path: /
-  allow_rebase_merge: true
 
 branches:
   - name: main
