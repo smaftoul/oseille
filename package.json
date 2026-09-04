@@ -8,6 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "preview": "vite preview",
+    "test:integration": "vitest run",
+    "lhci:prod": "lhci collect --config lighthouserc.prod.cjs && lhci assert --config lighthouserc.prod.cjs",
     "ingest": "tsx scripts/ingest.ts"
   },
   "dependencies": {
@@ -18,6 +20,7 @@
     "react-router-dom": "^7.18.3"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.15.1",
     "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
@@ -30,6 +33,7 @@
     "typescript": "~6.0.2",
     "vite": "^8.2.2",
     "vite-plugin-pwa": "^1.3.0",
+    "vitest": "^5.0.0",
     "workbox-window": "^7.4.1"
   }
 }

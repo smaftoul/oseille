@@ -22,3 +22,7 @@ jobs:
         run: nix develop -c npx tsc --noEmit
       - name: Build
         run: nix develop -c npm run build
+      - name: Integration test (dev + prod)
+        run: nix develop -c npm run test:integration
+      - name: Lighthouse (prod)
+        run: nix develop -c npm run lhci:prod
