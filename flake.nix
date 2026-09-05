@@ -19,6 +19,7 @@
             typescript
             nil
             nixpkgs-fmt
+            playwright-test
           ];
           shellHook = ''
             echo "oseille devShell — node $(node --version) pnpm $(pnpm --version)"
