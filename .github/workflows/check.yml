@@ -24,8 +24,6 @@ jobs:
         run: nix develop -c npm run build
       - name: Integration test (dev + prod)
         run: nix develop -c npm run test:integration
-      - name: Install Playwright browsers
-        run: nix develop -c npx playwright install
       - name: Playwright tests
         run: nix develop -c npm run test:pwa
       - name: Lighthouse (prod)
