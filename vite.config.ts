@@ -5,7 +5,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_ACTIONS ? "/oseille/" : "/",
+  base: './',
   plugins: [tailwindcss(), react(),
     VitePWA({
       registerType: 'autoUpdate',
