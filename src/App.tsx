@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Route, Routes, Link } from "react-router-dom";
-import { useInstallPrompt } from "./hooks/useInstallPrompt.ts";
 import type { PricesPayload, ItemData } from "./lib/types";
 import { PriceCard } from "./components/PriceCard.tsx";
 import { formatDate } from "./lib/format";
@@ -147,7 +146,6 @@ function Home() {
 
 export default function App() {
   const { t } = useTranslation();
-  const { canInstall, install } = useInstallPrompt();
   return (
     <div className="flex min-h-screen flex-col bg-zinc-50">
       <header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/90 backdrop-blur">
@@ -156,15 +154,13 @@ export default function App() {
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-700 font-extrabold text-white">O</span>
             <span className="text-xl font-extrabold tracking-tight">{t("app.name")}</span>
           </Link>
-          {canInstall && (
-            <button
-              type="button"
-              onClick={install}
-              className="rounded-full bg-emerald-700 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-emerald-800"
-            >
-              {t("install.cta")}
-            </button>
-          )}
+          <button
+            type="button"
+            onClick={() => (window as any).AddToHomeScreenShow?.()}
+            className="rounded-full bg-emerald-700 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-emerald-800"
+          >
+            {t("install.cta")}
+          </button>
         </div>
       </header>
       <div className="mx-auto w-full max-w-[720px] px-4 pt-3 text-sm text-zinc-500">{t("app.tagline")}</div>

@@ -38,7 +38,21 @@
         };
 
         checks = {
-          # placeholder — wired once tests exist
+          lint = pkgs.runCommand "lint" { buildInputs = [ pkgs.nodejs_22 ]; } ''
+            npm run lint
+          '';
+          typecheck = pkgs.runCommand "typecheck" { buildInputs = [ pkgs.nodejs_22 ]; } ''
+            npx tsc --noEmit
+          '';
+          build = pkgs.runCommand "build" { buildInputs = [ pkgs.nodejs_22 ]; } ''
+            npm run build
+          '';
+          test-integration = pkgs.runCommand "test-integration" { buildInputs = [ pkgs.nodejs_22 ]; } ''
+            npm run test:integration
+          '';
+          test-pwa = pkgs.runCommand "test-pwa" { buildInputs = [ pkgs.nodejs_22 ]; } ''
+            npm run test:pwa
+          '';
         };
       });
 }
