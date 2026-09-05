@@ -20,6 +20,7 @@
             nil
             nixpkgs-fmt
             playwright-test
+            playwright-driver.browsers
           ];
           shellHook = ''
             echo "oseille devShell — node $(node --version) pnpm $(pnpm --version)"
