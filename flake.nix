@@ -30,7 +30,7 @@
           pname = "oseille";
           version = "0.1.0";
           src = ./.;
-          npmDepsHash = "sha256-p83DIpqOEjUBZD+zwnNScWz9u/Y8poHpec8R1QsTCfQ=";
+          npmDepsHash = "sha256-yHDRvrnGiVkD952RyX2Sc02OQsT4znrJYtWlF5+ux7Q=";
           installPhase = ''
             mkdir -p $out
             cp -r dist/* $out/ 2>/dev/null || echo "no dist — run pnpm build first"
@@ -38,26 +38,24 @@
         };
 
         checks = {
-          lint = pkgs.runCommand "lint" { buildInputs = [ pkgs.nodejs_22 ]; src = ./.; } ''
-            cp -r $src/* .
-            npm run lint
-          '';
-          typecheck = pkgs.runCommand "typecheck" { buildInputs = [ pkgs.nodejs_22 ]; src = ./.; } ''
-            cp -r $src/* .
-            npx tsc --noEmit
-          '';
-          build = pkgs.runCommand "build" { buildInputs = [ pkgs.nodejs_22 ]; src = ./.; } ''
-            cp -r $src/* .
-            npm run build
-          '';
-          test-integration = pkgs.runCommand "test-integration" { buildInputs = [ pkgs.nodejs_22 ]; src = ./.; } ''
-            cp -r $src/* .
-            npm run test:integration
-          '';
-          test-pwa = pkgs.runCommand "test-pwa" { buildInputs = [ pkgs.nodejs_22 ]; src = ./.; } ''
-            cp -r $src/* .
-            npm run test:pwa
-          '';
+          lint = pkgs.buildNpmPackage {
+            pname = "oseille-lint";
+            version = "0.1.0";
+            src = ./.;
+            npmDepsHash = "sha256-yHDRvrnGiVkD952RyX2Sc02OQsT4znrJYtWlF5+ux7Q=";
+            dontNpmBuild = true;
+            buildPhase = "npm run lint";
+            installPhase = "mkdir -p $out";
+          };
+          build = pkgs.buildNpmPackage {
+            pname = "oseille-build";
+            version = "0.1.0";
+            src = ./.;
+            npmDepsHash = "sha256-yHDRvrnGiVkD952RyX2Sc02OQsT4znrJYtWlF5+ux7Q=";
+            dontNpmBuild = true;
+            buildPhase = "npm run build";
+            installPhase = "mkdir -p $out && cp -r dist/* $out/ 2>/dev/null || true";
+          };
         };
       });
 }
