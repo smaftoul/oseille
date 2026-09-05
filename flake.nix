@@ -10,6 +10,8 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = import nixpkgs { inherit system; };
+        browsers = (builtins.fromJSON (builtins.readFile "${pkgs.playwright-driver}/browsers.json")).browsers;
+        chromium-rev = (builtins.head (builtins.filter (x: x.name == "chromium") browsers)).revision;
       in
       {
         devShells.default = pkgs.mkShell {
@@ -19,10 +21,15 @@
             typescript
             nil
             nixpkgs-fmt
+            playwright-test
+            playwright-driver.browsers
           ];
           shellHook = ''
             echo "oseille devShell — node $(node --version) pnpm $(pnpm --version)"
             [ -d node_modules ] || npm install
+            export PLAYWRIGHT_BROWSERS_PATH="${pkgs.playwright-driver.browsers}"
+            export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=true
+            export PLAYWRIGHT_LAUNCH_OPTIONS_EXECUTABLE_PATH="${pkgs.playwright-driver.browsers}/chromium-${chromium-rev}/chrome-linux64/chrome"
           '';
         };
 
@@ -30,7 +37,7 @@
           pname = "oseille";
           version = "0.1.0";
           src = ./.;
-          npmDepsHash = "sha256-p83DIpqOEjUBZD+zwnNScWz9u/Y8poHpec8R1QsTCfQ=";
+          npmDepsHash = "sha256-yHDRvrnGiVkD952RyX2Sc02OQsT4znrJYtWlF5+ux7Q=";
           installPhase = ''
             mkdir -p $out
             cp -r dist/* $out/ 2>/dev/null || echo "no dist — run pnpm build first"
@@ -38,7 +45,24 @@
         };
 
         checks = {
-          # placeholder — wired once tests exist
+          lint = pkgs.buildNpmPackage {
+            pname = "oseille-lint";
+            version = "0.1.0";
+            src = ./.;
+            npmDepsHash = "sha256-yHDRvrnGiVkD952RyX2Sc02OQsT4znrJYtWlF5+ux7Q=";
+            dontNpmBuild = true;
+            buildPhase = "npm run lint";
+            installPhase = "mkdir -p $out";
+          };
+          build = pkgs.buildNpmPackage {
+            pname = "oseille-build";
+            version = "0.1.0";
+            src = ./.;
+            npmDepsHash = "sha256-yHDRvrnGiVkD952RyX2Sc02OQsT4znrJYtWlF5+ux7Q=";
+            dontNpmBuild = true;
+            buildPhase = "npm run build";
+            installPhase = "mkdir -p $out && cp -r dist/* $out/ 2>/dev/null || true";
+          };
         };
       });
 }
