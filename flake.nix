@@ -38,19 +38,24 @@
         };
 
         checks = {
-          lint = pkgs.runCommand "lint" { buildInputs = [ pkgs.nodejs_22 ]; } ''
+          lint = pkgs.runCommand "lint" { buildInputs = [ pkgs.nodejs_22 ]; src = ./.; } ''
+            cp -r $src/* .
             npm run lint
           '';
-          typecheck = pkgs.runCommand "typecheck" { buildInputs = [ pkgs.nodejs_22 ]; } ''
+          typecheck = pkgs.runCommand "typecheck" { buildInputs = [ pkgs.nodejs_22 ]; src = ./.; } ''
+            cp -r $src/* .
             npx tsc --noEmit
           '';
-          build = pkgs.runCommand "build" { buildInputs = [ pkgs.nodejs_22 ]; } ''
+          build = pkgs.runCommand "build" { buildInputs = [ pkgs.nodejs_22 ]; src = ./.; } ''
+            cp -r $src/* .
             npm run build
           '';
-          test-integration = pkgs.runCommand "test-integration" { buildInputs = [ pkgs.nodejs_22 ]; } ''
+          test-integration = pkgs.runCommand "test-integration" { buildInputs = [ pkgs.nodejs_22 ]; src = ./.; } ''
+            cp -r $src/* .
             npm run test:integration
           '';
-          test-pwa = pkgs.runCommand "test-pwa" { buildInputs = [ pkgs.nodejs_22 ]; } ''
+          test-pwa = pkgs.runCommand "test-pwa" { buildInputs = [ pkgs.nodejs_22 ]; src = ./.; } ''
+            cp -r $src/* .
             npm run test:pwa
           '';
         };
