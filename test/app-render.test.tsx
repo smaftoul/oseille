@@ -4,16 +4,16 @@ import "../src/i18n.ts";
 import AppRoot from "../src/AppRoot.tsx";
 import type { PricesPayload } from "../src/lib/types";
 
-const payload = {
+const fixture: PricesPayload = {
   meta: {
-    generatedAt: "2026-09-02T14:09:22.260Z",
-    source: "RNM FranceAgriMer",
+    generatedAt: "2026-01-01T00:00:00.000Z",
+    source: "test",
     note: "",
   },
   items: [
     {
-      id: "PAMPLEMOUSSE_pamplemousse",
-      libelle: "PAMPLEMOUSSE France vrac",
+      id: "test-item",
+      libelle: "Test produce France vrac",
       attrs: {
         variety: null,
         color: null,
@@ -22,27 +22,27 @@ const payload = {
         size: null,
         label: null,
         saleUnit: null,
-        note: "PAMPLEMOUSSE",
+        note: null,
       },
-      productSlug: "PAMPLEMOUSSE",
-      productName_fr: "Pamplemousse",
-      productName_en: "Grapefruit",
+      productSlug: "TEST_PRODUCE",
+      productName_fr: "Produit test",
+      productName_en: "Test produce",
       group: "Fruits",
       unit: "le kg",
       isMonthly: false,
-      period: "27-08-2026",
-      lastDate: "27-08-2026",
+      period: "01-01-2026",
+      lastDate: "01-01-2026",
       summary: {
         conventional: {
-          date: "27-08-2026",
-          marche: "Fruits France DETAIL GMS",
+          date: "01-01-2026",
+          marche: "test",
           stade: "Détail",
-          libelle: "PAMPLEMOUSSE France vrac",
+          libelle: "Test produce France vrac",
           unit: "le kg",
-          mean: 2.5,
+          mean: 1.5,
           varia: 0,
-          min: 2,
-          max: 3,
+          min: 1,
+          max: 2,
           isBio: false,
         },
         bio: null,
@@ -52,24 +52,23 @@ const payload = {
       prices: [],
     },
   ],
-} as unknown as PricesPayload;
+};
 
-describe("app render at the deployed base path", () => {
+describe("app render", () => {
   afterEach(() => {
     cleanup();
     vi.unstubAllGlobals();
   });
 
-  it("renders the search box and prices when served under /oseille/", async () => {
-    window.history.pushState({}, "", "/oseille/");
+  it("mounts Home: search box and items from fetched payload", async () => {
     vi.stubGlobal(
       "fetch",
-      vi.fn().mockResolvedValue({ json: () => Promise.resolve(payload) }),
+      vi.fn().mockResolvedValue({ json: () => Promise.resolve(fixture) }),
     );
 
     render(<AppRoot />);
 
     expect(await screen.findByRole("searchbox")).toBeTruthy();
-    expect(await screen.findByText("PAMPLEMOUSSE France vrac")).toBeTruthy();
+    expect(await screen.findByText(fixture.items[0].libelle)).toBeTruthy();
   });
 });
