@@ -9,7 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "test:integration": "vitest run",
-    "lhci:prod": "lhci collect --config lighthouserc.prod.cjs && lhci assert --config lighthouserc.prod.cjs",
+    "lhci:prod": "lhci collect && lhci assert",
     "ingest": "tsx scripts/ingest.ts"
   },
   "dependencies": {
@@ -22,10 +22,13 @@
   "devDependencies": {
     "@lhci/cli": "^0.15.1",
     "@tailwindcss/vite": "^4.3.3",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.3",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
     "@vitejs/plugin-react": "^6.1.0",
+    "jsdom": "^30.0.1",
     "oxlint": "^1.79.0",
     "sharp": "^0.35.4",
     "tailwindcss": "^4.3.3",

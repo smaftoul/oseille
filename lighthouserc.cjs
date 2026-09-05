@@ -1,9 +1,9 @@
 module.exports = {
   ci: {
     collect: {
-      startServerCommand: "vite preview --port 4173 --strictPort --base /oseille/",
+      startServerCommand: "vite preview --port 4173 --strictPort",
       startServerReadyPattern: "Local:",
-      url: ["http://localhost:4173/oseille/"],
+      url: ["http://localhost:4173/"],
       numberOfRuns: 3,
       chromeFlags: "--headless --no-sandbox --disable-gpu --disable-dev-shm-usage",
     },
