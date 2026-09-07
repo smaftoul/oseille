@@ -1,10 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Route, Routes, Link } from "react-router-dom";
 import { useInstallPrompt } from "./hooks/useInstallPrompt.ts";
-import type { PricesPayload, ItemData } from "./lib/types";
+import type { ItemData, PricesPayload } from "./lib/types";
 import { PriceCard } from "./components/PriceCard.tsx";
 import { formatDate } from "./lib/format";
+
+const PAGE_SIZE = 12;
 
 function Skeleton() {
   return (
@@ -23,6 +24,8 @@ function Home() {
   const { t, i18n } = useTranslation();
   const [data, setData] = useState<PricesPayload | null>(null);
   const [q, setQ] = useState("");
+  const [paged, setPaged] = useState<{ q: string; count: number }>({ q: "", count: PAGE_SIZE });
+  const sentinelRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/prices.json`)
@@ -31,11 +34,13 @@ function Home() {
       .catch(() => setData(null));
   }, []);
 
+  const visibleCount = paged.q === q ? paged.count : PAGE_SIZE;
+
   const filtered = useMemo(() => {
     if (!data?.items) return [];
     const needle = q.trim();
     if (!needle) return data.items;
-    
+
     const normalize = (s: string) =>
       s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     const nNeedle = normalize(needle);
@@ -63,6 +68,27 @@ function Home() {
     });
   }, [data, q, t]);
 
+  const visible = filtered.slice(0, visibleCount);
+  const hasMore = visibleCount < filtered.length;
+
+  const loadMore = useCallback(() => {
+    setPaged((p) => ({ q, count: Math.min(p.count + PAGE_SIZE, filtered.length) }));
+  }, [filtered.length, q]);
+
+  useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el || !hasMore) return;
+    if (typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) loadMore();
+      },
+      { rootMargin: "400px" },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, [hasMore, loadMore, visible.length]);
+
   const latestDate = useMemo(() => {
     if (!data?.items) return "";
     const weekly = data.items.find((i) => !i.isMonthly && i.lastDate);
@@ -72,23 +98,29 @@ function Home() {
   return (
     <div className="mx-auto max-w-[720px] p-4">
       <div className="sticky top-0 z-10 bg-zinc-50/95 pt-2 pb-3 backdrop-blur">
+        <label className="sr-only" htmlFor="search">
+          {t("search.placeholder")}
+        </label>
         <div className="relative">
-          <span className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 text-lg">⌕</span>
+          <span className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-zinc-400 text-lg" aria-hidden="true">
+            ⌕
+          </span>
           <input
+            id="search"
             type="search"
             placeholder={t("search.placeholder")}
             inputMode="search"
             value={q}
             onChange={(e) => setQ(e.target.value)}
             autoFocus
-            className="w-full rounded-xl border border-zinc-300 bg-white py-3.5 pl-10 pr-10 text-[16px] shadow-sm placeholder:text-zinc-400 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600/20"
+            className="w-full rounded-xl border border-zinc-300 bg-white py-3.5 pl-10 pr-10 text-base shadow-sm placeholder:text-zinc-400 focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600/20"
           />
           {q && (
             <button
               type="button"
               onClick={() => setQ("")}
               className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-zinc-100 p-1.5 text-xs text-zinc-500 hover:bg-zinc-200"
-              aria-label="Clear search"
+              aria-label={t("search.clear")}
             >
               ✕
             </button>
@@ -117,7 +149,6 @@ function Home() {
         </div>
       ) : filtered.length === 0 ? (
         <div className="mt-8 rounded-xl border border-dashed border-zinc-300 bg-white p-8 text-center">
-          <div className="text-3xl">🥕</div>
           <div className="mt-2 font-semibold text-zinc-800">{t("search.noResult")}</div>
           <div className="mt-1 text-sm text-zinc-500">
             {i18n.language === "en"
@@ -127,14 +158,16 @@ function Home() {
         </div>
       ) : (
         <div className="mt-2 flex flex-col gap-3">
-          {filtered.map((item: ItemData) => (
+          {visible.map((item: ItemData) => (
             <PriceCard key={item.id} item={item} />
           ))}
+          {hasMore ? <div ref={sentinelRef} className="h-8" aria-hidden="true" /> : null}
         </div>
       )}
 
       <div className="mt-8 flex justify-center pb-4">
         <button
+          type="button"
           onClick={() => i18n.changeLanguage(i18n.language === "en" ? "fr" : "en")}
           className="rounded-full border border-zinc-300 bg-white px-3.5 py-1.5 text-xs font-medium text-zinc-600 shadow-sm hover:bg-zinc-50"
         >
@@ -152,10 +185,10 @@ export default function App() {
     <div className="flex min-h-screen flex-col bg-zinc-50">
       <header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-[720px] items-center justify-between px-4 py-3">
-          <Link to="/" className="flex items-center gap-2 text-emerald-800">
+          <a href="./" className="flex items-center gap-2 text-emerald-800">
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-700 font-extrabold text-white">O</span>
             <span className="text-xl font-extrabold tracking-tight">{t("app.name")}</span>
-          </Link>
+          </a>
           {canInstall && (
             <button
               type="button"
@@ -167,11 +200,9 @@ export default function App() {
           )}
         </div>
       </header>
-      <div className="mx-auto w-full max-w-[720px] px-4 pt-3 text-sm text-zinc-500">{t("app.tagline")}</div>
+      <p className="mx-auto w-full max-w-[720px] px-4 pt-3 text-sm text-zinc-500">{t("app.tagline")}</p>
       <div className="flex-1">
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
+        <Home />
       </div>
       <footer className="mt-8 border-t border-zinc-200 bg-white py-4 text-center text-xs text-zinc-500">
         <div className="mx-auto max-w-[720px] px-4">
