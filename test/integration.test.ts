@@ -111,6 +111,10 @@ describe("prod build (vite preview, relative base)", () => {
     const res = await fetch(`${PROD_URL}/`);
     const html = await res.text();
     await expectAssetsResolve(`${PROD_URL}/`, html);
+    expect(html).not.toContain("jsdelivr.net");
+    const swTag = html.match(/<script[^>]*src="[^"]*registerSW\.js"[^>]*>/g) ?? [];
+    expect(swTag).toHaveLength(1);
+    expect(swTag[0]).toMatch(/defer/);
   });
 });
 
