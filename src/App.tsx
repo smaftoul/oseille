@@ -180,9 +180,15 @@ function Home() {
 
 export default function App() {
   const { t } = useTranslation();
-  const { canInstall, install } = useInstallPrompt();
+  const { canInstall, install, pwaInstallRef } = useInstallPrompt();
   return (
     <div className="flex min-h-screen flex-col bg-zinc-50">
+      <pwa-install
+        ref={pwaInstallRef}
+        manualApple={true}
+        manualChrome={true}
+        disableScreenshots={true}
+      />
       <header className="sticky top-0 z-20 border-b border-zinc-200 bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-[720px] items-center justify-between px-4 py-3">
           <a href="./" className="flex items-center gap-2 text-emerald-800">
