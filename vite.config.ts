@@ -9,7 +9,8 @@ export default defineConfig({
   plugins: [tailwindcss(), react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'icons.svg'],
+      injectRegister: 'script-defer',
+      includeAssets: ['favicon.svg', 'icons.svg', 'a2hs/img/*'],
       manifest: {
         name: 'Oseille',
         short_name: 'Oseille',

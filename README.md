@@ -34,7 +34,7 @@ npm run build       # tsc -b && vite build — precache 13 entries
 npm run preview     # http://127.0.0.1:4173 — PWA + SW active (test install/offline)
 ```
 
-Install prompt: Chrome/Edge shows “Installer l’app” (via `useInstallPrompt`); iOS Safari: Share → Add to Home Screen.
+Install prompt: `pwa-add-to-homescreen` shows browser-specific instructions automatically (iOS Chrome/Firefox/Safari steps, Android native prompt).
 
 ## Scripts
 
@@ -55,6 +55,8 @@ Data refresh: `npm run ingest` (weekly cron could commit). After ingestion, `npm
 nix flake check
 npm run lint
 npm run build
+npm run test:integration   # vitest (HTTP + render)
+npm run test:pwa           # Playwright (SW, manifest, icons, install)
 # manual: open preview, DevTools > Application > Service Workers (offline toggle), Manifest (icons 192/512 maskable), Lighthouse (best-practices 1, PWA via SW+manifest)
 ```
 
@@ -74,3 +76,29 @@ Vite 7 + React 19 + TypeScript 6 + React Router + i18next (`fr` default) + vite-
 ## License
 
 Data: Licence Ouverte 2.0 (RNM/FranceAgriMer). Code: MIT.
+
+## Testing
+
+### Playwright E2E Tests
+
+Run tests:
+```bash
+npm run test:e2e        # Run all E2E tests
+```
+
+**Watch tests with slow-motion** (useful for debugging):
+```bash
+SLOW_MO=1000 npx playwright test --headed
+```
+
+This slows down all browser actions by 1000ms (1 second) per action, making it easy to see what's happening on screen. Adjust the value as needed (e.g., `SLOW_MO=500` for 500ms).
+
+### PWA Installation Tests
+
+Tests verify:
+- Manifest is valid and accessible
+- Meta tags are present (theme-color, manifest link)
+- Service worker is registered
+- `pwa-add-to-homescreen` library loads
+- Install button is visible and clickable
+- Service worker precaches data files
