@@ -5,7 +5,7 @@ const resources = {
   fr: {
     translation: {
       app: { name: "Oseille", tagline: "Prix moyens fruits & légumes — référence en magasin" },
-      search: { placeholder: "Rechercher une variété, un fruit, un légume…", noResult: "Aucun résultat" },
+      search: { placeholder: "Rechercher une variété, un fruit, un légume…", noResult: "Aucun résultat", clear: "Effacer la recherche" },
       groups: {
         all: "Tous",
         Champignons: "Champignons",
@@ -33,7 +33,7 @@ const resources = {
   en: {
     translation: {
       app: { name: "Oseille", tagline: "Avg. fruit & veg prices in France — in-store reference" },
-      search: { placeholder: "Search variety, fruit, vegetable…", noResult: "No results" },
+      search: { placeholder: "Search variety, fruit, vegetable…", noResult: "No results", clear: "Clear search" },
       groups: {
         all: "All",
         Champignons: "Mushrooms",
